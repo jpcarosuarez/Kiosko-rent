@@ -18,7 +18,7 @@ function TopAuthors() {
             <GeneralHeader />
 
             {/* Breadcrumb */}
-            <Breadcrumb CurrentPgTitle="Top Authors" MenuPgTitle="pages" img={state.breadcrumbimg} />
+            <Breadcrumb CurrentPgTitle="Top Agentes" MenuPgTitle="Pagina" img={state.breadcrumbimg} />
 
             {/* Authors */}
             <section className="author-area  padding-bottom-100px bg-img-transparent before-none">

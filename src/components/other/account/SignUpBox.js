@@ -26,72 +26,72 @@ function SignUpBox({title, subtitle}) {
 
                                 <div className="col-lg-12">
                                     <div className="account-assist mt-4 mb-4 text-center">
-                                        <p className="account__desc">or</p>
+                                        <p className="account__desc">o</p>
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="input-box">
-                                        <label className="label-text">First name</label>
+                                        <label className="label-text">Primer nombre</label>
                                         <div className="form-group">
                                                 <span className="form-icon">
                                                     <AiOutlineUser />
                                                 </span>
-                                            <input className="form-control" type="text" name="text" placeholder="First name" />
+                                            <input className="form-control" type="text" name="text" placeholder="Primer nombre" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="input-box">
-                                        <label className="label-text">Last name</label>
+                                        <label className="label-text">Apellido</label>
                                         <div className="form-group">
                                                 <span className="form-icon">
                                                     <AiOutlineUser />
                                                 </span>
-                                            <input className="form-control" type="text" name="text" placeholder="Last name" />
+                                            <input className="form-control" type="text" name="text" placeholder="Apellido" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="input-box">
-                                        <label className="label-text">Username</label>
+                                        <label className="label-text">Usuario</label>
                                         <div className="form-group">
                                                 <span className="form-icon">
                                                     <AiOutlineUser />
                                                 </span>
-                                            <input className="form-control" type="text" name="text" placeholder="Username" />
+                                            <input className="form-control" type="text" name="text" placeholder="Usuario" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="input-box">
-                                        <label className="label-text">Email</label>
+                                        <label className="label-text">Correo Electrónico</label>
                                         <div className="form-group">
                                                 <span className="form-icon">
                                                     <FaRegEnvelope />
                                                 </span>
-                                            <input className="form-control" type="email" name="text" placeholder="Enter email" />
+                                            <input className="form-control" type="email" name="text" placeholder="Ingresar correo" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="input-box">
-                                        <label className="label-text">Password</label>
+                                        <label className="label-text">Contraseña</label>
                                         <div className="form-group">
                                                 <span className="form-icon">
                                                     <FiLock />
                                                 </span>
-                                            <input className="form-control" type="text" name="text" placeholder="Password" />
+                                            <input className="form-control" type="text" name="text" placeholder="Contraseña" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="input-box">
-                                        <label className="label-text">Confirm Password</label>
+                                        <label className="label-text">Confirmar Contraseña</label>
                                         <div className="form-group">
                                                 <span className="form-icon">
                                                     <FiLock />
                                                 </span>
-                                            <input className="form-control" type="text" name="text" placeholder="Confirm password" />
+                                            <input className="form-control" type="text" name="text" placeholder="Confirmar Contraseña" />
                                         </div>
                                     </div>
                                 </div>
@@ -99,24 +99,24 @@ function SignUpBox({title, subtitle}) {
                                     <div className="form-group">
                                         <div className="custom-checkbox d-block mr-0">
                                             <input type="checkbox" id="chb13" />
-                                            <label htmlFor="chb13">I Agree to Dirto's <Link to="#" className="color-text">Privacy Policy</Link></label>
+                                            <label htmlFor="chb13">Estoy de acuerdo con las <Link to="#" className="color-text">Politicas y privacidad</Link></label>
                                         </div>
                                         <div className="custom-checkbox d-block mr-0">
                                             <input type="checkbox" id="chb14" />
-                                            <label htmlFor="chb14">I Agree to Dirto's <Link to="#" className="color-text">Terms of Services</Link></label>
+                                            <label htmlFor="chb14">Estoy de acuerdo con las <Link to="#" className="color-text">TTerminos y condiciones</Link></label>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="btn-box margin-top-20px margin-bottom-20px">
                                         <button className="theme-btn border-0" type="submit">
-                                            Register account
+                                            Registrar cuenta
                                         </button>
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
                                     <p className="font-weight-medium">
-                                        Already have an account? <Link to="/login" className="color-text">Login</Link>
+                                    ¿Ya tienes una cuenta? <Link to="/login" className="color-text">Ingresar</Link>
                                     </p>
                                 </div>
                             </div>

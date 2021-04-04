@@ -14,22 +14,22 @@ function ContactInfo({contactinfos}) {
                 <div className="info-list margin-top-35px padding-bottom-35px">
                     <ul>
                         {contactinfos.address ? (
-                            <li className="mb-2"><span><i className="la d-inline-block"><GiPositionMarker /></i> Address:</span>
+                            <li className="mb-2"><span><i className="la d-inline-block"><GiPositionMarker /></i> Dirección:</span>
                                 {contactinfos.address}
                             </li>
                         ) : ''}
                         {contactinfos.email ? (
-                            <li className="mb-2"><span><i className="la d-inline-block"><FaRegEnvelope /></i> Email:</span>
+                            <li className="mb-2"><span><i className="la d-inline-block"><FaRegEnvelope /></i> Correo electrónico:</span>
                                 <a href={'mailto:'+contactinfos.email}>{contactinfos.email}</a>
                             </li>
                         ) : ''}
                         {contactinfos.number ? (
-                            <li className="mb-2"><span><i className="la d-inline-block"><FiPhone /></i> Phone:</span>
+                            <li className="mb-2"><span><i className="la d-inline-block"><FiPhone /></i> Teléfono:</span>
                                 {contactinfos.number}
                             </li>
                         ) : '' }
                         {contactinfos.website ? (
-                            <li><span><i className="la d-inline-block"><FiExternalLink /></i> Website:</span>
+                            <li><span><i className="la d-inline-block"><FiExternalLink /></i> Sitio Web:</span>
                                 <a href={contactinfos.websiteUrl}>{contactinfos.website}</a>
                             </li>
                         ) : ''}

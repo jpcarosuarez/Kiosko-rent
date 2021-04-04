@@ -10,7 +10,7 @@ function AddFullDetails() {
         <>
             <div className="billing-form-item">
                 <div className="billing-title-wrap">
-                    <h3 className="widget-title pb-0">Full Details</h3>
+                    <h3 className="widget-title pb-0">Información de Contacto</h3>
                     <div className="title-shape margin-top-10px"></div>
                 </div>
                 <div className="billing-content">
@@ -19,51 +19,51 @@ function AddFullDetails() {
                             <div className="row">
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text">Owner Name</label>
+                                        <label className="label-text">Responsable</label>
                                         <div className="form-group">
                                             <span className="la form-icon">
                                                 <AiOutlineUser />
                                             </span>
-                                            <input className="form-control" type="text" name="name" placeholder="Name" />
+                                            <input className="form-control" type="text" name="name" placeholder="Nombre" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text">Email</label>
+                                        <label className="label-text">Correo</label>
                                         <div className="form-group">
                                             <span className="la form-icon">
                                                 <FaRegEnvelope />
                                             </span>
-                                            <input className="form-control" type="email" name="email" placeholder="Email address" />
+                                            <input className="form-control" type="email" name="email" placeholder="Correo electrónico" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text">Phone <span className="text-muted">(optional)</span></label>
+                                        <label className="label-text">Teléfono Contacto <span className="text-muted"></span></label>
                                         <div className="form-group">
                                             <span className="la form-icon">
                                                 <FiPhone />
                                             </span>
-                                            <input className="form-control" type="text" name="text" placeholder="Number" />
+                                            <input className="form-control" type="text" name="text" placeholder="Teléfono Contacto" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text">Website <span className="text-muted">(optional)</span></label>
+                                        <label className="label-text">Sitio Web <span className="text-muted">(opcional)</span></label>
                                         <div className="form-group">
                                             <span className="la form-icon">
                                                 <BsLink45Deg />
                                             </span>
-                                            <input className="form-control" type="text" name="text" placeholder="https://techydevs.com" />
+                                            <input className="form-control" type="text" name="text" placeholder="https://kioskoinmobiliario.com" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text">Facebook Link <span className="text-muted">(optional)</span></label>
+                                        <label className="label-text">Facebook <span className="text-muted">(opcional)</span></label>
                                         <div className="form-group">
                                             <span className="la form-icon">
                                                 <AiOutlineFacebook />
@@ -74,7 +74,7 @@ function AddFullDetails() {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text">Twitter Link <span className="text-muted">(optional)</span></label>
+                                        <label className="label-text">Twitter <span className="text-muted">(opcional)</span></label>
                                         <div className="form-group">
                                             <span className="la form-icon">
                                                 <AiOutlineTwitter />
@@ -85,7 +85,7 @@ function AddFullDetails() {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text">Google Plus <span className="text-muted">(optional)</span></label>
+                                        <label className="label-text">Google <span className="text-muted">(opcional)</span></label>
                                         <div className="form-group">
                                             <span className="la form-icon">
                                                 <TiSocialGooglePlus />
@@ -96,7 +96,7 @@ function AddFullDetails() {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text">Linkedin Link <span className="text-muted">(optional)</span></label>
+                                        <label className="label-text">Linkedin <span className="text-muted">(opcional)</span></label>
                                         <div className="form-group">
                                             <span className="la form-icon">
                                                 <AiOutlineLinkedin />
@@ -107,12 +107,12 @@ function AddFullDetails() {
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="input-box">
-                                        <label className="label-text">Description</label>
+                                        <label className="label-text">Descripción</label>
                                         <div className="form-group mb-0">
                                             <span className="la form-icon">
                                                 <BsPencil />
                                             </span>
-                                            <textarea className="message-control form-control" name="message" placeholder="Write description"></textarea>
+                                            <textarea className="message-control form-control" name="message" placeholder="Escribe una breve descripción"></textarea>
                                         </div>
                                     </div>
                                 </div>

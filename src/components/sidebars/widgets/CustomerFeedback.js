@@ -30,7 +30,7 @@ function CustomerFeedback() {
                             </div>
                         </div>
                         <div className="course-rating-text">
-                            <p className="course-rating-text__text">Food Rating</p>
+                            <p className="course-rating-text__text">Evaluación general</p>
                         </div>
                     </div>
                     <div className="review-rating-widget">
@@ -38,7 +38,7 @@ function CustomerFeedback() {
                             <ul>
                                 <li className="review-rating-rate__items">
                                     <div className="review-rating-inner__item">
-                                        <div className="review-rating-rate__item-text">5 stars</div>
+                                        <div className="review-rating-rate__item-text">5 estrellas</div>
                                         <div className="review-rating-rate__item-fill">
                                             <span className="review-rating-rate__item-fill__fill rating-fill-width1"></span>
                                         </div>
@@ -47,7 +47,7 @@ function CustomerFeedback() {
                                 </li>
                                 <li className="review-rating-rate__items">
                                     <div className="review-rating-inner__item">
-                                        <div className="review-rating-rate__item-text">4 stars</div>
+                                        <div className="review-rating-rate__item-text">4 estrellas</div>
                                         <div className="review-rating-rate__item-fill">
                                             <span className="review-rating-rate__item-fill__fill rating-fill-width2"></span>
                                         </div>
@@ -56,7 +56,7 @@ function CustomerFeedback() {
                                 </li>
                                 <li className="review-rating-rate__items">
                                     <div className="review-rating-inner__item">
-                                        <div className="review-rating-rate__item-text">3 stars</div>
+                                        <div className="review-rating-rate__item-text">3 estrellas</div>
                                         <div className="review-rating-rate__item-fill">
                                             <span className="review-rating-rate__item-fill__fill rating-fill-width3"></span>
                                         </div>
@@ -65,7 +65,7 @@ function CustomerFeedback() {
                                 </li>
                                 <li className="review-rating-rate__items">
                                     <div className="review-rating-inner__item">
-                                        <div className="review-rating-rate__item-text">2 stars</div>
+                                        <div className="review-rating-rate__item-text">2 estrellas</div>
                                         <div className="review-rating-rate__item-fill">
                                             <span className="review-rating-rate__item-fill__fill rating-fill-width4"></span>
                                         </div>
@@ -74,7 +74,7 @@ function CustomerFeedback() {
                                 </li>
                                 <li className="review-rating-rate__items">
                                     <div className="review-rating-inner__item">
-                                        <div className="review-rating-rate__item-text">1 stars</div>
+                                        <div className="review-rating-rate__item-text">1 estrella</div>
                                         <div className="review-rating-rate__item-fill">
                                             <span className="review-rating-rate__item-fill__fill rating-fill-width5"></span>
                                         </div>

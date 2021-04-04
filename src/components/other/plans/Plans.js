@@ -53,7 +53,7 @@ function Plans({plans}) {
                                 {item.active ? (
                                     <div className="recommended-wrap padding-bottom-30px">
                                         <i className="la"><FiCheck /></i>
-                                        <span>Recommended</span>
+                                        <span>Recomendada</span>
                                     </div>
                                 ) : ''}
 

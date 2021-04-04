@@ -3,7 +3,6 @@ import SectionsHeading from "../../common/SectionsHeading";
 import BannerOneSearchInput from "../banner1/BannerOneSearchInput";
 import HighlightedCategory from "../../other/categories/HighlightedCategory";
 import sectiondata from "../../../store/store";
-
 export default function BannerTwo({bgImg}) {
     return (
         <>

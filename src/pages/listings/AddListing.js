@@ -12,7 +12,7 @@ import NewsLetter from "../../components/other/cta/NewsLetter";
 import Footer from "../../components/common/footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import {Link} from "react-router-dom";
-import breadcrumbimg from '../../assets/images/bread-bg.jpg'
+import breadcrumbimg from '../../assets/images/bogotayAndes.jpg'
 import sectiondata from "../../store/store";
 
 const states = {
@@ -25,7 +25,7 @@ function AddListing() {
             <GeneralHeader />
 
             {/* Breadcrumb */}
-            <Breadcrumb CurrentPgTitle="Add Listing" MenuPgTitle="Listings" img={states.breadcrumbimg} />
+            <Breadcrumb CurrentPgTitle="Nueva Publicación" MenuPgTitle="Publicaciones" img={states.breadcrumbimg} />
 
             {/* Add Listing */}
             <section className="add-listing-area padding-top-40px padding-bottom-100px">
@@ -50,15 +50,15 @@ function AddListing() {
                                 <div className="billing-content p-0">
                                     <div className="custom-checkbox d-block mr-0">
                                         <input type="checkbox" id="privacy" />
-                                        <label htmlFor="privacy">I Agree to Dirto's <Link to="#" className="color-text">Privacy Policy</Link></label>
+                                        <label htmlFor="privacy">Estoy de acuerdo <Link to="#" className="color-text">Politicas y Privacidad</Link></label>
                                     </div>
                                     <div className="custom-checkbox d-block mr-0">
                                         <input type="checkbox" id="terms" />
-                                        <label htmlFor="terms">I Agree to Dirto's <Link to="#" className="color-text">Terms of Services</Link>
+                                        <label htmlFor="terms">Estoy de acuerdo <Link to="#" className="color-text">Terminos y condiciones</Link>
                                         </label>
                                     </div>
                                     <div className="btn-box mt-4">
-                                        <button type="submit" className="theme-btn border-0">submit listing</button>
+                                        <button type="submit" className="theme-btn border-0">Publicar</button>
                                     </div>
                                 </div>
                             </div>

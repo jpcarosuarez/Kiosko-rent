@@ -32,7 +32,7 @@ function UserProfile() {
                         </div>
 
                         <div className="col-lg-8">
-                            <h3 className="widget-title">{sectiondata.userprofile.sidebar.name}'s Listings</h3>
+                            <h3 className="widget-title">Listados de {sectiondata.userprofile.sidebar.name}</h3>
                             <div className="title-shape"></div>
                             <div className="row two-clmn margin-top-35px">
                                 <PlaceGrid griditems={sectiondata.placesgrid} />

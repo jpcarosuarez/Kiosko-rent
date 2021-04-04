@@ -39,12 +39,12 @@ function ListingDetailsComments({commentlists}) {
                                                 <i className="la d-inline-block">{item.replyBtnIcon}</i> {item.replyBtn}
                                             </Link>
                                             <p className="feedback-box">
-                                                Was this review?
+                                                Como te fue con este comentario?
                                                 <button type="button" className="theme-btn">
-                                                    <i className="la d-inline-block"><FiThumbsUp /></i> Helpful
+                                                    <i className="la d-inline-block"><FiThumbsUp /></i> Útil
                                                 </button>
                                                 <button type="button" className="theme-btn">
-                                                    <i className="la d-inline-block"><FaRegSmile /></i> Funny
+                                                    <i className="la d-inline-block"><FaRegSmile /></i> Lo tomare en cuenta
                                                 </button>
                                             </p>
                                         </div>
@@ -81,12 +81,12 @@ function ListingDetailsComments({commentlists}) {
                                                                     <i className="la d-inline-block">{item2.replyBtnIcon}</i> {item2.replyBtn}
                                                                 </Link>
                                                                 <p className="feedback-box">
-                                                                    Was this review?
+                                                                Como te fue con este comentario?
                                                                     <button type="button" className="theme-btn">
-                                                                        <i className="la d-inline-block"><FiThumbsUp /></i> Helpful
+                                                                        <i className="la d-inline-block"><FiThumbsUp /></i> Útil
                                                                     </button>
                                                                     <button type="button" className="theme-btn">
-                                                                        <i className="la d-inline-block"><FaRegSmile /></i> Funny
+                                                                        <i className="la d-inline-block"><FaRegSmile /></i> Lo tomare en cuenta
                                                                     </button>
                                                                 </p>
                                                             </div>

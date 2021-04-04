@@ -13,7 +13,7 @@ function UserSidebar({usercontent}) {
                 <div className="d-flex align-items-center">
                     <img src={usercontent.img} alt="author" />
                     <div className="author-inner-bio">
-                        <h4 className="author__title font-weight-bold pb-0 mb-1">{usercontent.name} <i className="la tip tip-verified" data-toggle="tooltip" data-placement="top" title="Verified Account"><FiCheck /></i></h4>
+                        <h4 className="author__title font-weight-bold pb-0 mb-1">{usercontent.name} <i className="la tip tip-verified" data-toggle="tooltip" data-placement="top" title="Cuenta Verificada"><FiCheck /></i></h4>
                         <p className="author__meta">
                             {usercontent.date}
                         </p>
@@ -29,17 +29,17 @@ function UserSidebar({usercontent}) {
                         <span className="la"><MdStar /></span>
                         <span className="la"><MdStar /></span>
                         <span className="la"><MdStarHalf /></span>
-                        <span className="rating-count">56(Reviews)</span>
+                        <span className="rating-count">56(Reseñas)</span>
                     </div>
                 </div>
                 <div className="user-item author-listing">
-                    <h4 className="user__label">Listings</h4>
+                    <h4 className="user__label">Listados</h4>
                     <p className="userlist__number">12</p>
                 </div>
             </div>
             <div className="section-block-2"></div>
             <div className="user-contact padding-top-30px">
-                <h3 className="widget-title pb-0 margin-bottom-20px">Contact Details</h3>
+                <h3 className="widget-title pb-0 margin-bottom-20px">Detalles de contacto </h3>
                 <ul className="info-list padding-bottom-30px">
                     <li><span className="la"><GiPositionMarker /></span> {usercontent.address}</li>
                     <li><span className="la"><FiPhone /></span> {usercontent.number}</li>
@@ -52,7 +52,7 @@ function UserSidebar({usercontent}) {
             </div>
             <div className="modal-wrapper">
                 <button type="button" className="theme-btn border-0" data-toggle="modal" data-target=".bs-example-modal-lg">
-                    <i className="la"><FaRegEnvelope /></i> send message
+                    <i className="la"><FaRegEnvelope /></i> Enviar Mensaje
                 </button>
             </div>
         </>

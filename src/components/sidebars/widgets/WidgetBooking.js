@@ -4,11 +4,11 @@ import Button from "../../common/Button";
 import Select from "react-select";
 const state = {
     selectedCatOp: null,
-    title: 'Booking',
+    title: 'Reservas',
     timeSlots: [
         {
             value: 0,
-            label: 'Time Slots'
+            label: 'Reserva por tiempo'
         },
         {
             value: 1,

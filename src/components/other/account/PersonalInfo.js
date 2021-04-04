@@ -16,7 +16,7 @@ function PersonalInfo() {
         <>
             <div className="billing-form-item">
                 <div className="billing-title-wrap">
-                    <h3 className="widget-title pb-0">Personal Information</h3>
+                    <h3 className="widget-title pb-0">Datos Personales</h3>
                     <div className="title-shape margin-top-10px"></div>
                 </div>
                 <div className="billing-content">
@@ -25,37 +25,37 @@ function PersonalInfo() {
                             <div className="row">
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text">First Name</label>
+                                        <label className="label-text">Nombres</label>
                                         <div className="form-group">
                                             <span className="la form-icon"><AiOutlineUser /></span>
-                                            <input className="form-control" type="text" name="text" placeholder="First Name" />
+                                            <input className="form-control" type="text" name="text" placeholder="Nombres" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text">Last Name</label>
+                                        <label className="label-text">Apellidos</label>
                                         <div className="form-group">
                                             <span className="la form-icon"><AiOutlineUser /></span>
-                                            <input className="form-control" type="text" name="text" placeholder="Last Name" />
+                                            <input className="form-control" type="text" name="text" placeholder="Apellidos" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text">Email</label>
+                                        <label className="label-text">Correo</label>
                                         <div className="form-group mb-0">
                                             <span className="la form-icon"><FaRegEnvelope /></span>
-                                            <input className="form-control" type="email" name="text" placeholder="Enter email address" />
+                                            <input className="form-control" type="email" name="text" placeholder="Ingresar correo electrónico" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text">Phone</label>
+                                        <label className="label-text">Teléfono</label>
                                         <div className="form-group mb-0">
                                             <span className="la form-icon"><FiPhone /></span>
-                                            <input className="form-control" type="text" name="text" placeholder="Number" />
+                                            <input className="form-control" type="tel" name="text" placeholder="Ingresar número de contacto" />
                                         </div>
                                     </div>
                                 </div>
@@ -65,7 +65,7 @@ function PersonalInfo() {
                 </div>
                 <div className="payment-option">
                     <div className="billing-title-wrap pt-0">
-                        <h3 className="widget-title pb-0">Payment Method</h3>
+                        <h3 className="widget-title pb-0">Formas de Pago</h3>
                         <div className="title-shape margin-top-10px"></div>
                     </div>
                     <div className="payment-method-wrap p-4">
@@ -74,7 +74,7 @@ function PersonalInfo() {
                                 <label className="payment-radio">
                                     <input type="radio" name="radio" />
                                     <span className="checkmark"></span>
-                                    <span>Direct Bank Transfer</span>
+                                    <span>Transferencia Bancaria</span>
                                     <div className="payment-content payment-active mt-2">
                                         <div className="section-heading">
                                             <p className="sec__desc font-size-15 line-height-24">

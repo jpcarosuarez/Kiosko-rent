@@ -21,7 +21,7 @@ const GeneralMap = compose(
 )(props =>
     <GoogleMap
         defaultZoom={13}
-        defaultCenter={{ lat: 40.712776, lng: -74.005974 }}
+        defaultCenter={{ lat: 4.650417, lng: -74.061654 }}
         defaultOptions={{
             disableDefaultUI: false, // disable default map UI
             draggable: true, // make map draggable

@@ -52,8 +52,8 @@ class WidgetFilterPrice extends Component {
     }
 
     Filterstate = {
-        title: 'Filter by Price',
-        stitle: 'Price:',
+        title: 'Filtrar por precio',
+        stitle: 'Precio:',
     }
     render() {
         return (
@@ -72,7 +72,7 @@ class WidgetFilterPrice extends Component {
                         </label>
                         <div className="price-wrap d-flex">
                             <div className="price text-violet">
-                                <span id="from">$0</span><span> - </span><span id="to">$272</span>
+                                <span id="from">$0</span><span> - </span><span id="to">$30.000.000</span>
                             </div>
                         </div>
                     </div>

@@ -6,7 +6,7 @@ import NewsLetter from "../../components/other/cta/NewsLetter";
 import Footer from "../../components/common/footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import PopularCategoriesMore from "../../components/other/categories/PopularCategoriesMore";
-import breadcrumbimg from '../../assets/images/bread-bg.jpg'
+import breadcrumbimg from '../../assets/images/bogotaAndes.jpg'
 import sectiondata from "../../store/store";
 
 const state = {
@@ -19,7 +19,7 @@ function AllCategories() {
             <GeneralHeader />
 
             {/* Breadcrumb */}
-            <Breadcrumb CurrentPgTitle="All Categories" MenuPgTitle="Categories" img={state.breadcrumbImg} />
+            <Breadcrumb CurrentPgTitle="Encuentra Arriendos ¡Sin Tanto Papel!" MenuPgTitle="Todas las Categorias" img={state.breadcrumbImg} />
 
             <section className="cat-area padding-top-40px padding-bottom-80px">
                 <div className="container">

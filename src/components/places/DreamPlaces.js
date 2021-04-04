@@ -18,8 +18,8 @@ function DreamPlaces({places}) {
                                                     {item.country}
                                                 </h4>
                                                 <ul className="cat__place-list">
-                                                    <li><span>{item.placeNum}</span> Cities</li>
-                                                    <li><span>{item.listingNum}</span> Listing</li>
+                                                    <li><span>{item.placeNum}</span> Ciudades</li>
+                                                    <li><span>{item.listingNum}</span> Publicaciones</li>
                                                 </ul>
                                                 <span className="badge">
                                                     {item.badge}

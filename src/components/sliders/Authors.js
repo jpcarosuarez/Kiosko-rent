@@ -82,9 +82,9 @@ function Authors({authoritems}) {
                                     </div>
                                     <div className="author-action">
                                         <ul className="author__list">
-                                            <li><span>Listings</span>{item.listingNum}</li>
-                                            <li><span>Followers</span>{item.followers}</li>
-                                            <li><span>Following</span>{item.following}</li>
+                                            <li><span>Listados</span>{item.listingNum}</li>
+                                            <li><span>Seguidores</span>{item.followers}</li>
+                                            <li><span>Seguidos</span>{item.following}</li>
                                         </ul>
                                     </div>
                                     <div className="author-btn">

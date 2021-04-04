@@ -1,5 +1,5 @@
 import React from 'react'
-import {RiBuilding4Line, RiHotelBedLine, RiPlaneLine, RiReplyLine} from 'react-icons/ri';
+import {RiBuilding4Line, RiHotelBedLine, RiPlaneLine, RiReplyLine, RiBuilding3Line, RiStoreLine, RiGovernmentLine} from 'react-icons/ri';
 import {GiChickenOven, GiPineTree, GiPositionMarker, GiWineGlass} from 'react-icons/gi';
 import {
     BsBookmark,
@@ -13,7 +13,10 @@ import {
     BsPencil
 } from 'react-icons/bs';
 import {MdClose, MdFitnessCenter, MdStar, MdStarBorder, MdStarHalf} from 'react-icons/md';
-import bannerbg1 from '../assets/images/hero-bg.jpg';
+import {HiOutlineHome} from 'react-icons/hi';
+import {ImOffice} from 'react-icons/im';
+
+import bannerbg1 from '../assets/images/bogotacasas.jpg';
 import img1 from "../assets/images/img1.jpg"; // 263*175
 import img2 from "../assets/images/img7.jpg"; // 362*242
 import authorimg from "../assets/images/small-team1.jpg"; // 67*60
@@ -101,264 +104,124 @@ import mainimage from "../assets/images/video-img.jpg"; // 750*500
 const sectiondata = {
     headermenu: [
         {
-            title: 'Home',
+            title: 'Arrienda Fácil',
             path: '/',
             dropdown: [
                 {
-                    title: 'Home One',
-                    path: '/'
-                },
-                {
-                    title: 'Home Two',
-                    path: '/index2'
-                },
-                {
-                    title: 'Home Three',
-                    path: '/index3'
-                },
-                {
-                    title: 'Home Four',
-                    path: '/index4'
-                },
-                {
-                    title: 'Home Five',
-                    path: '/index5'
-                }
-            ]
-        },
-        {
-            title: 'categories',
-            path: '/all-categories',
-            dropdown: [
-                {
-                    title: 'all categories',
+                    title: 'Arriendos Mensuales',
                     path: '/all-categories'
                 },
                 {
-                    title: 'all locations',
-                    path: '/all-locations'
+                    title: 'Arriendos diarios',
+                    path: '/all-categories'
                 },
                 {
-                    title: 'top places',
-                    path: '/top-place'
-                }
-            ]
-        },
-        {
-            title: 'listings',
-            path: '/listing-grid',
-            dropdown: [
-                {
-                    title: 'listing grid',
-                    path: '/listing-grid'
+                    title: 'Arriendos de espacios por horas',
+                    path: '/all-categories'
                 },
                 {
-                    title: 'map view',
-                    path: '/list-map-view'
+                    title: 'Todas las Categorias',
+                    path: '/all-categories'
                 },
                 {
-                    title: 'map view 2',
-                    path: '/list-map-view2'
-                },
-                {
-                    title: 'listing list',
-                    path: '/listing-list'
-                },
-                {
-                    title: 'left sidebar',
-                    path: '/list-left-sidebar'
-                },
-                {
-                    title: 'right sidebar',
-                    path: '/list-right-sidebar'
-                },
-                {
-                    title: 'listing details',
-                    path: '/listing-details'
-                },
-                {
-                    title: 'add listing',
+                    title: 'Publicar un Arriendo',
                     path: '/add-listing/new'
                 }
             ]
         },
         {
-            title: 'pages',
-            path: '/user-profile',
+            title: 'Requisitos de Arriendos',
+            path: '/all-categories',
             dropdown: [
                 {
-                    title: 'user profile',
-                    path: '/user-profile'
+                    title: 'Hasta 3 meses',
+                    path: '/all-categories'
                 },
                 {
-                    title: 'top authors',
-                    path: '/top-author'
+                    title: '3 meses o más ',
+                    path: '/all-locations'
                 },
-                {
-                    title: 'dashboard',
-                    path: '/dashboard'
-                },
-                {
-                    title: 'booking',
-                    path: '/booking'
-                },
-                {
-                    title: 'booking confirmation',
-                    path: '/booking-confirmation'
-                },
-                {
-                    title: 'invoice',
-                    path: '/invoice'
-                },
-                {
-                    title: 'pricing',
-                    path: '/pricing'
-                },
-                {
-                    title: 'about',
-                    path: '/about'
-                },
-                {
-                    title: 'faq',
-                    path: '/faq'
-                },
-                {
-                    title: 'contact',
-                    path: '/contact'
-                },
-                {
-                    title: '404 page',
-                    path: '/page-404'
-                },
-                {
-                    title: 'recover pass',
-                    path: '/recover'
-                }
             ]
         },
         {
-            title: 'blog',
-            path: '/blog-full-width',
+            title: 'Agentes',
+            path: '/listing-grid',
             dropdown: [
                 {
-                    title: 'full width',
-                    path: '/blog-full-width'
+                    title: 'Agentes de Bienes Raices',
+                    path: '/listing-grid'
                 },
                 {
-                    title: 'blog grid',
-                    path: '/blog-grid'
+                    title: 'Administracion de Propiedades',
+                    path: '/list-map-view'
                 },
                 {
-                    title: 'left sidebar',
-                    path: '/blog-left-sidebar'
+                    title: 'Seguros inmobiliarios',
+                    path: '/list-map-view2'
                 },
                 {
-                    title: 'right sidebar',
-                    path: '/blog-right-sidebar'
+                    title: 'Propiedad Horizontal',
+                    path: '/listing-list'
                 },
                 {
-                    title: 'blog detail',
-                    path: '/blog-single'
-                }
+                    title: 'Remodelaciones',
+                    path: '/list-left-sidebar'
+                },
+                {
+                    title: 'Crea una cuenta de agente gratis',
+                    path: '/list-right-sidebar'
+                },
             ]
         },
+        
     ],
     herobanners: {
-        banner1: {
-            title: 'What are you interested in ',
-            titleHighlight: [
-                {
-                    active: true,
-                    text: 'Hotels'
-                },
-                {
-                    active: false,
-                    text: 'Restaurants'
-                },
-                {
-                    active: false,
-                    text: 'Shops'
-                },
-                {
-                    active: false,
-                    text: 'Salons'
-                },
-                {
-                    active: false,
-                    text: 'Apartments'
-                },
-                {
-                    active: false,
-                    text: 'Travels'
-                },
-                {
-                    active: false,
-                    text: 'Business'
-                },
-                {
-                    active: false,
-                    text: 'Fitness'
-                }
-            ],
-            content: 'Discover the best places to stay, eat, shop & visit the city nearest to you.',
-            bgimage: bannerbg1,
-        },
         banner2: {
-            title: 'Find The Best Place in your city',
-            content: 'Dirto helps you find out whats happening in your city, Let\'s explore.',
+            title: 'Arrienda facil y seguro',
+            content: 'Encuentra arriendos por horas y estadias largas por mas de 6 meses',
             categories: [
                 {
                     path: '#',
-                    text: 'apartments',
+                    text: 'apartamentos',
                     icon: <RiBuilding4Line />
                 },
                 {
                     path: '#',
-                    text: 'Restaurants',
-                    icon: <GiChickenOven />
+                    text: 'casas',
+                    icon: <HiOutlineHome />
                 },
                 {
                     path: '#',
-                    text: 'travel',
-                    icon: <RiPlaneLine />
+                    text: 'oficinas',
+                    icon: <ImOffice />
                 },
                 {
                     path: '#',
-                    text: 'Events',
-                    icon: <BsMusicNoteBeamed />
+                    text: 'bodegas',
+                    icon: <RiBuilding3Line />
                 },
                 {
                     path: '#',
-                    text: 'Fitness',
-                    icon: <IoMdFitness />
+                    text: 'Locales',
+                    icon: <RiStoreLine />
                 },
                 {
                     path: '#',
-                    text: 'Hotels',
-                    icon: <RiHotelBedLine />
+                    text: 'Terrazas | Salones',
+                    icon: <RiGovernmentLine />
                 }
             ],
             bgimage: bannerbg1
         },
-        banner3: {
-            title: 'What\'s Your Plan Today?',
-            content: 'All the top locations – from restaurants and clubs, to galleries, famous places and more...',
-            bgimage: bannerbg1
-        },
-        banner4: {
-            sectitle: 'Find The Best Places To Be',
-            seccontent: 'Discover the best places to stay, eat, shop & visit the city nearest to you.',
-            videobgsrc: slicevideo,
-        },
     },
     categories: {
         featuredcategories: {
-            connector: 'or',
-            title: 'browse featured categories:',
+            connector: 'o',
+            title: 'Busca las principales categorias',
             items: [
                 {
                     path: "#",
-                    title: "Apartments",
+                    title: "Apartmentos",
                     icon: <RiBuilding4Line />
                 },
                 {
@@ -368,8 +231,8 @@ const sectiondata = {
                 },
                 {
                     path: "#",
-                    title: "Travel",
-                    icon: <RiPlaneLine />
+                    title: "Casas",
+                    icon: <HiOutlineHome />
                 },
                 {
                     path: "#",
@@ -3868,30 +3731,30 @@ const sectiondata = {
             },
         ],
         footerquicklinks: {
-            title: 'Quick Links',
+            title: 'Link Rapidos',
             links: [
                 {
                     path: '/about',
-                    text: 'about us'
+                    text: 'Nosotros'
                 },
                 {
                     path: '/sign-up',
-                    text: 'sign up'
+                    text: 'Registrar'
                 },
                 {
                     path: '/login',
-                    text: 'log in'
+                    text: 'Ingresar'
                 },
                 {
                     path: '/add-listing/new',
-                    text: 'add listing'
+                    text: 'Publicar'
                 },
                 {
-                    path: '/contact',
+                    path: '/Contacto',
                     text: 'contact us'
                 },
                 {
-                    path: '/pricing',
+                    path: '/Precios',
                     text: 'pricing'
                 }
             ]

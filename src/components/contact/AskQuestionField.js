@@ -19,29 +19,29 @@ function AskQuestionField({title}) {
                         <div className="contact-form-action">
                             <form method="post">
                                 <div className="input-box">
-                                    <label className="label-text">Your name</label>
+                                    <label className="label-text">Nombre</label>
                                     <div className="form-group">
                                         <span className="form-icon"><AiOutlineUser /></span>
-                                        <input className="form-control" type="text" name="text" placeholder="Your name" />
+                                        <input className="form-control" type="text" name="text" placeholder="Nombre Completo" />
                                     </div>
                                 </div>
                                 <div className="input-box">
-                                    <label className="label-text">Your email</label>
+                                    <label className="label-text">Correo</label>
                                     <div className="form-group">
                                         <span className="form-icon"><FaRegEnvelope /></span>
-                                        <input className="form-control" type="text" name="name" placeholder="Email address" />
+                                        <input className="form-control" type="text" name="name" placeholder="Correo Electronico" />
                                     </div>
                                 </div>
                                 <div className="input-box">
-                                    <label className="label-text">message</label>
+                                    <label className="label-text">Mensaje</label>
                                     <div className="form-group">
                                         <span className="form-icon"><BsPencil /></span>
-                                        <textarea className="message-control form-control" name="message" placeholder="Write message"></textarea>
+                                        <textarea className="message-control form-control" name="message" placeholder="Escriba su mensaje"></textarea>
                                     </div>
                                 </div>
                                 <div className="btn-box">
                                     <button type="button" className="theme-btn border-0">
-                                        <i><RiSendPlane2Line /></i> send message
+                                        <i><RiSendPlane2Line /></i> Enviar Mensaje
                                     </button>
                                 </div>
                             </form>

@@ -4,55 +4,55 @@ const state = {
     items: [
         {
             id: 1,
-            title: 'Security Cameras'
+            title: 'Totalmente Amoblado'
         },
         {
             id: 2,
-            title: 'Elevator in Building'
+            title: 'Ascensor'
         },
         {
             id: 3,
-            title: 'Wireless Internet'
+            title: 'Internet Wifi'
         },
         {
             id: 4,
-            title: 'Wheelchair Accessible'
+            title: 'Rampa Discapacitados'
         },
         {
             id: 5,
-            title: 'Laundry Room in Building'
+            title: 'Lavadora y/o Lavanderia'
         },
         {
             id: 6,
-            title: 'Alarm System'
+            title: 'Alarmas'
         },
         {
             id: 7,
-            title: 'Smoking Allowed'
+            title: 'Permitido Fumar'
         },
         {
             id: 8,
-            title: 'Free Parking on Street'
+            title: 'Parqueadero gratuito'
         },
         {
             id: 9,
-            title: 'Friendly Workspace'
+            title: 'Homeoffice-Friendly'
         },
         {
             id: 10,
-            title: 'Electricity'
+            title: 'Cocina'
         },
         {
             id: 11,
-            title: 'Attached Garage'
+            title: 'Netflix'
         },
         {
             id: 12,
-            title: 'Bike Parking'
+            title: 'Bicicletero'
         },
         {
             id: 13,
-            title: 'Telephone'
+            title: 'Teléfono'
         },
     ]
 }
@@ -61,7 +61,7 @@ function Amenities() {
         <>
             <div className="billing-form-item">
                 <div className="billing-title-wrap">
-                    <h3 className="widget-title pb-0">Amenities</h3>
+                    <h3 className="widget-title pb-0">Servicios</h3>
                     <div className="title-shape margin-top-10px"></div>
                 </div>
                 <div className="billing-content">

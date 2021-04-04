@@ -15,16 +15,16 @@ function WidgetBookingSummary({title, date, hour, adults, children, total}) {
                     <div className="booking-summary">
                         <ul className="booking-list">
                             {date ? (
-                                <li className="d-flex align-items-center justify-content-between">Date: <span>{date}</span></li>
+                                <li className="d-flex align-items-center justify-content-between">Fecha: <span>{date}</span></li>
                             ) : ''}
                             {hour ? (
-                                <li className="d-flex align-items-center justify-content-between">Hour: <span>{hour}</span></li>
+                                <li className="d-flex align-items-center justify-content-between">Hora: <span>{hour}</span></li>
                             ) : ''}
                             {adults ? (
-                                <li className="d-flex align-items-center justify-content-between">Adults: <span>{adults}</span></li>
+                                <li className="d-flex align-items-center justify-content-between">Adultos: <span>{adults}</span></li>
                             ) : ''}
                             {children ? (
-                                <li className="d-flex align-items-center justify-content-between">Children: <span>{children}</span></li>
+                                <li className="d-flex align-items-center justify-content-between">Niños: <span>{children}</span></li>
                             ) : ''}
                         </ul>
                         <div className="section-block-2 mt-4"></div>
@@ -47,7 +47,7 @@ function WidgetBookingSummary({title, date, hour, adults, children, total}) {
                                         </div>
                                         <div className="col-lg-4">
                                             <div className="btn-box">
-                                                <button className="theme-btn border-0" type="submit">apply</button>
+                                                <button className="theme-btn border-0" type="submit">Aplicar</button>
                                             </div>
                                         </div>
                                     </div>

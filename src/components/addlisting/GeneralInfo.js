@@ -4,44 +4,44 @@ import { AiOutlineTags } from 'react-icons/ai'
 import Select from "react-select";
 
 const state = {
-    title: 'General Information',
+    title: 'Información general',
     selectedCatOp: null,
     categories: [
         {
             value: 0,
-            label: 'Select a category'
+            label: 'Categoria'
         },
         {
             value: 2,
-            label: 'Shops'
+            label: 'Apartamento'
         },
         {
             value: 3,
-            label: 'Hotels'
+            label: 'Apartaestudio'
         },
         {
             value: 4,
-            label: 'Restaurants'
+            label: 'Casa'
         },
         {
             value: 5,
-            label: 'Fitness'
+            label: 'Finca'
         },
         {
             value: 6,
-            label: 'Travel'
+            label: 'Oficina'
         },
         {
             value: 7,
-            label: 'Salons'
+            label: 'Salón o terraza '
         },
         {
             value: 8,
-            label: 'Event'
+            label: 'Bodega'
         },
         {
             value: 9,
-            label: 'Business'
+            label: 'Local Comercial'
         },
     ]
 }
@@ -59,19 +59,19 @@ function GeneralInfo() {
                             <div className="row">
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text">Listing Title</label>
+                                        <label className="label-text">Titulo de la Publicación</label>
                                         <div className="form-group">
                                             <span className="la form-icon">
                                                 <BsPencilSquare />
                                             </span>
-                                            <input className="form-control" type="text" name="name" placeholder="Enter your listing title" />
+                                            <input className="form-control" type="text" name="name" placeholder="Ingresa el titulo" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text d-flex align-items-center ">Keywords
-                                            <i className="la tip ml-1" data-toggle="tooltip" data-placement="top" title="Maximum of 15 keywords related with your business">
+                                        <label className="label-text d-flex align-items-center ">Hashtags - Palabras relacionadas con su negocio
+                                            <i className="la tip ml-1" data-toggle="tooltip" data-placement="top" title="Máximo de 15 palabras clave relacionadas con su negocio">
                                                 <BsQuestion />
                                             </i>
                                         </label>
@@ -79,27 +79,27 @@ function GeneralInfo() {
                                             <span className="la form-icon">
                                                 <AiOutlineTags />
                                             </span>
-                                            <input className="form-control" type="text" name="name" placeholder="Keywords should be separated by commas" />
+                                            <input className="form-control" type="text" name="name" placeholder="Las palabras clave deben estar separadas por comas." />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="input-box">
-                                        <label className="label-text">Description</label>
+                                        <label className="label-text">Descripción</label>
                                         <div className="form-group">
                                             <span className="la form-icon">
                                                 <BsPencil />
                                             </span>
-                                            <textarea className="message-control form-control" name="message" placeholder="Write your listing description"></textarea>
+                                            <textarea className="message-control form-control" name="message" placeholder="Escriba la descripción de su publicación"></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="input-box">
-                                        <label className="label-text">Category</label>
+                                        <label className="label-text">Categoria</label>
                                         <div className="form-group mb-0">
                                             <Select
-                                                placeholder="Select a Category"
+                                                placeholder="Selecciona una Categoria"
                                                 options={state.categories}
                                             />
                                         </div>

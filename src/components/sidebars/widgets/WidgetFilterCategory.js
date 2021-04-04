@@ -28,9 +28,9 @@ function WidgetFilterCategory({catitems, title}) {
                     className="showmore-btn font-weight-semi-bold text-capitalize d-block ml-auto mr-auto text-center radius-rounded p-0">
                     {
                         isOpenCat ?
-                        <span className="lessmore-txt">Show Less</span>
+                        <span className="lessmore-txt">Mostrar menos</span>
                         :
-                        <span className="showmore-txt ">Show More</span>
+                        <span className="showmore-txt ">Mostrar más</span>
                     }
                 </div>
             </div>

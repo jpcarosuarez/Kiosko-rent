@@ -21,7 +21,7 @@ function HighlightedCategory({categories}) {
                 </div>
 
                 <div className="highlight-btn mt-4">
-                    <Button text="view more categories" className="radius-rounded" url="/all-categories">
+                    <Button text="ver más categorias" className="radius-rounded" url="/all-categories">
                         <span className="la la-eye">
                             <BsEye />
                         </span>

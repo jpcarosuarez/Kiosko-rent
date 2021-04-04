@@ -20,7 +20,7 @@ function TopPlaces() {
             <GeneralHeader />
 
             {/* Breadcrumb */}
-            <Breadcrumb CurrentPgTitle="Top Places" MenuPgTitle="Categories" img={state.breadcrumbImg} />
+            <Breadcrumb CurrentPgTitle="Lugares mas buscados" MenuPgTitle="Categorias" img={state.breadcrumbImg} />
 
             {/* Top Places */}
             <section className="cat-area destination-area padding-top-40px padding-bottom-100px">
@@ -31,7 +31,7 @@ function TopPlaces() {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="button-shared mt-4 text-center">
-                                <Button text="Load More" url="#">
+                                <Button text="Cargar más" url="#">
                                     <span className="la">
                                         <FiRefreshCw />
                                     </span>

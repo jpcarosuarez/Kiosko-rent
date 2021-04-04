@@ -65,7 +65,7 @@ function Dashboard() {
             <GeneralHeader />
 
             {/* Breadcrumb */}
-            <Breadcrumb CurrentPgTitle="Dashboard" MenuPgTitle="pages" img={sectiondata.dashboard.breadcrumbimg} />
+            <Breadcrumb CurrentPgTitle="Dashboard" MenuPgTitle="paginas" img={sectiondata.dashboard.breadcrumbimg} />
 
             {/*<TestVanillaJs />*/}
 
@@ -78,23 +78,23 @@ function Dashboard() {
                                     <TabList className="nav nav-tabs border-0" id="nav-tab">
                                         <Tab>
                                             <div className="nav-item nav-link theme-btn pt-0 pb-0 mr-1">
-                                                <span className="la"><BsListCheck /></span> Listings
+                                                <span className="la"><BsListCheck /></span> Publicaciones
                                             </div>
                                         </Tab>
                                         <Tab>
                                             <div className="nav-item nav-link theme-btn pt-0 pb-0 mr-1">
-                                                <span className="la"><AiOutlineUser /></span> Profile
+                                                <span className="la"><AiOutlineUser /></span> Perfil
                                             </div>
                                         </Tab>
                                         <Tab>
                                             <div className="nav-item nav-link theme-btn pt-0 pb-0 mr-1">
-                                                <span className="la"><BsBookmark /></span> Bookmark
+                                                <span className="la"><BsBookmark /></span> Reservas
                                             </div>
                                         </Tab>
                                     </TabList>
                                     <div className="btn-box">
-                                        <Link to="/add-listing/new" className="theme-btn"><span className="la"><AiOutlinePlusCircle /></span> create listing</Link>
-                                        <Link to="/" className="theme-btn ml-1"><span className="la"><AiOutlinePoweroff /></span> sign out</Link>
+                                        <Link to="/add-listing/new" className="theme-btn"><span className="la"><AiOutlinePlusCircle /></span> crear publicacion</Link>
+                                        <Link to="/" className="theme-btn ml-1"><span className="la"><AiOutlinePoweroff /></span> salir</Link>
                                     </div>
                                 </div>
                             </div>
@@ -194,22 +194,22 @@ function Dashboard() {
                                                                     className="theme-btn edit-form-btn shadow-none w-100 dropdown-toggle after-none"
                                                                     type="button"
                                                                     onClick={() => setIsOpenForm(!isOpenForm)}>
-                                                                    <i className="la"><FiEdit /></i> Edit
+                                                                    <i className="la"><FiEdit /></i> Editar
                                                                 </button>
                                                                 <div className={isOpenForm ? 'dropdown-menu show' : 'dropdown-menu'}>
                                                                     <div className="contact-form-action">
                                                                         <div className="input-box">
-                                                                            <label className="label-text">Name</label>
+                                                                            <label className="label-text">Nombre</label>
                                                                             <div className="form-group">
                                                                                 <span className="la form-icon"><AiOutlineUser /></span>
-                                                                                <input className="form-control" type="text" name="name" placeholder="Enter your name" />
+                                                                                <input className="form-control" type="text" name="nombre" placeholder="Ingresa tu nombre" />
                                                                             </div>
                                                                         </div>
                                                                         <div className="input-box">
-                                                                            <label className="label-text">Bio Data</label>
+                                                                            <label className="label-text">Experiencia Inmobiliaria</label>
                                                                             <div className="form-group">
                                                                                 <span className="la form-icon"><BsPencil /></span>
-                                                                                <textarea className="message-control form-control" name="message" placeholder="Add a bio"></textarea>
+                                                                                <textarea className="message-control form-control" name="message" placeholder="Agrega tu Experiencia Inmobiliaria"></textarea>
                                                                             </div>
                                                                         </div>
                                                                         <div className="input-box">

@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 
 
 body {
     font-size: 16px;
     line-height: 24px;
-    font-family: "Work Sans", sans-serif;
+    font-family: 'Yusei Magic', sans-serif;
     color: #808996;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

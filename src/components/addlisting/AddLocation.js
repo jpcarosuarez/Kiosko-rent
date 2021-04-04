@@ -8,100 +8,66 @@ import SelectCountry from "../common/SelectCountry";
 const cities = [
     {
         value: 0,
-        label: 'Select a City'
+        label: 'Seleccionar una Ciudad'
     },
     {
         value: 1,
-        label: 'New York'
+        label: 'Bogotá'
     },
     {
         value: 2,
-        label: 'Los Angeles'
+        label: 'Medellín'
     },
     {
         value: 3,
-        label: 'Chicago'
+        label: 'Cali'
     },
     {
         value: 4,
-        label: 'Phoenix'
-    },
-    {
-        value: 5,
-        label: 'Washington'
-    },
-    {
-        value: 6,
-        label: 'Boston'
-    },
-    {
-        value: 7,
-        label: 'Philadelphia'
-    },
-    {
-        value: 8,
-        label: 'Baltimore'
-    },
-    {
-        value: 9,
-        label: 'Seattle'
-    },
-    {
-        value: 10,
-        label: 'San Francisco'
+        label: 'Otra Ubicación'
     },
 ];
+
 const states = [
     {
         value: 0,
-        label: 'Select a State'
+        label: 'Selecciona una Localidad'
     },
     {
         value: 1,
-        label: 'California'
+        label: 'Chapinero'
     },
     {
         value: 2,
-        label: 'Florida'
+        label: 'Usaquén'
     },
     {
         value: 3,
-        label: 'Texas'
+        label: 'El Poblado'
     },
     {
         value: 4,
-        label: 'Hawaii'
+        label: 'Engativa'
     },
     {
         value: 5,
-        label: 'Arizona'
+        label: 'Cedritos'
     },
     {
         value: 6,
-        label: 'Michigan'
+        label: 'Centro Medellín'
     },
     {
         value: 7,
-        label: 'New Jersey'
+        label: 'Centro Cali'
     },
-    {
-        value: 8,
-        label: 'Georgia'
-    },
-    {
-        value: 9,
-        label: 'South Carolina'
-    },
-    {
-        value: 10,
-        label: 'Montana'
-    },
+
 ];
 class AddLocation extends Component {
     states = {
         selectedCity: null,
         selectedState: null,
-        title: 'Add Location'
+        title: 'Agregar Ubicación'
     }
 
     handleChangeCity = () => {
@@ -132,34 +98,34 @@ class AddLocation extends Component {
                                 <div className="row">
                                     <div className="col-lg-6">
                                         <div className="input-box">
-                                            <label className="label-text">Address</label>
+                                            <label className="label-text">Dirección</label>
                                             <div className="form-group">
                                                 <span className="la form-icon">
                                                     <FiMap />
                                                 </span>
-                                                <input className="form-control" type="text" name="name" placeholder="Your address" />
+                                                <input className="form-control" type="text" name="name" placeholder="Ingresar dirección" />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-lg-6">
                                         <div className="input-box">
-                                            <label className="label-text">Temporary Address</label>
+                                            <label className="label-text">Información Complementaria </label>
                                             <div className="form-group">
                                                 <span className="la form-icon">
                                                     <FaMapSigns />
                                                 </span>
-                                                <input className="form-control" type="text" name="name" placeholder="Temporary address" />
+                                                <input className="form-control" type="text" name="name" placeholder="Información Complementaria " />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-lg-6">
                                         <div className="input-box">
-                                            <label className="label-text">City</label>
+                                            <label className="label-text">Departamento</label>
                                             <div className="form-group">
                                                 <Select
                                                     value={this.selectedCity}
                                                     onChange={this.handleChangeCity}
-                                                    placeholder="Select a City"
+                                                    placeholder="Selecciona un departamento"
                                                     options={cities}
                                                 />
                                             </div>
@@ -167,19 +133,19 @@ class AddLocation extends Component {
                                     </div>
                                     <div className="col-lg-6">
                                         <div className="input-box">
-                                            <label className="label-text">State</label>
+                                            <label className="label-text">Localidad</label>
                                             <div className="form-group">
                                                 <Select
                                                     value={this.selectedState}
                                                     onChange={this.handleChangeState}
-                                                    placeholder="Select a State"
+                                                    placeholder="Selecciona una Localidad"
                                                     options={states}
                                                 />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-lg-6">
-                                        <label className="label-text">Country</label>
+                                        <label className="label-text">Ciudad</label>
                                         <div className="form-group">
                                             <SelectCountry />
                                         </div>
@@ -187,13 +153,13 @@ class AddLocation extends Component {
                                     <div className="col-lg-6">
                                         <div className="input-box">
                                             <label className="label-text">
-                                                Zip-Code
+                                                Codigo Postal
                                             </label>
                                             <div className="form-group">
                                                 <span className="la form-icon">
                                                     <BsFileCode />
                                                 </span>
-                                                <input className="form-control" type="text" name="text" placeholder="Zip-Code" />
+                                                <input className="form-control" type="text" name="text" placeholder="Codigo Postal" />
                                             </div>
                                         </div>
                                     </div>

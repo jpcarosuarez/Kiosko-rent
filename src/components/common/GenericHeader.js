@@ -5,7 +5,7 @@ import Select from "react-select";
 
 const state = {
     selectedCatOp: null,
-    title: 'Showing 1 to 6 of 30 entries',
+    title: 'Mostrando X propiedades',
     navs: [
         {
             path: '/listing-list',
@@ -21,48 +21,41 @@ const state = {
     shortby: [
         {
             value: 0,
-            label: 'Short by'
+            label: 'Filtrar por'
         },
         {
             value: 1,
-            label: 'Short by default'
+            label: 'Default'
         },
         {
             value: 2,
-            label: 'High Rated'
+            label: 'Mejor evaluados'
         },
         {
             value: 3,
-            label: 'Most Reviewed'
+            label: 'Más vistos'
         },
         {
             value: 4,
-            label: 'Popular Listing'
+            label: 'Por orden de visitas'
         },
         {
             value: 5,
-            label: 'Newest Listing'
+            label: 'Publicaciones recientes'
         },
         {
             value: 6,
-            label: 'Older Listing'
+            label: 'Mas antiguas'
         },
         {
             value: 7,
-            label: 'Price: low to high'
+            label: 'Precio: Ascendente'
         },
         {
             value: 8,
-            label: 'Price: high to low'
+            label: 'Precio: Descendente'
         },
-        {
-            value: 9,
-            label: 'Price: high to low'
-        },
-        {
-            value: 10,
-            label: 'Random listing'
-        }
+
     ]
 }
 
@@ -75,7 +68,7 @@ function GenericHeader() {
                 </p>
                 <div className="short-option mr-3">
                     <Select
-                        placeholder="Short by"
+                        placeholder="Filtrar por "
                         options={state.shortby}
                     />
                 </div>

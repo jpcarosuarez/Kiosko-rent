@@ -22,13 +22,13 @@ function Contact() {
             <GeneralHeader />
 
             {/* Breadcrumb */}
-            <Breadcrumb CurrentPgTitle="Contact Us" MenuPgTitle="pages" img={state.breadcrumbimg} />
+            <Breadcrumb CurrentPgTitle="Contáctanos" MenuPgTitle="pages" img={state.breadcrumbimg} />
 
             <section className="contact-area padding-top-40px padding-bottom-80px">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-7">
-                            <AskQuestionField title="Get in touch" />
+                            <AskQuestionField title="Estemos en contacto" />
                         </div>
 
                         <div className="col-lg-5">
@@ -44,20 +44,19 @@ function Contact() {
                     <ul className="map-address">
                         <li>
                             <span className="la"><GoLocation /></span>
-                            <h5 className="map__title">address</h5>
+                            <h5 className="map__title">Dirección</h5>
                             <p className="map__desc">
                                 {sectiondata.contactdata.mapoverlay.address} <br /> {sectiondata.contactdata.mapoverlay.city}
                             </p>
                         </li>
                         <li>
                             <span className="la"><FiPhone /></span>
-                            <h5 className="map__title">phone</h5>
+                            <h5 className="map__title">teléfono</h5>
                             <p className="map__desc">Local: {sectiondata.contactdata.mapoverlay.number}</p>
-                            <p className="map__desc">Local: {sectiondata.contactdata.mapoverlay.number2}</p>
                         </li>
                         <li>
                             <span className="la"><FaRegEnvelope /></span>
-                            <h5 className="map__title">email</h5>
+                            <h5 className="map__title">Correo</h5>
                             <p className="map__desc">{sectiondata.contactdata.mapoverlay.email1}</p>
                             <p className="map__desc">{sectiondata.contactdata.mapoverlay.email2}</p>
                         </li>

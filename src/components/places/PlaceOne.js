@@ -103,7 +103,7 @@ function PlaceOne({places}) {
                                             <ul>
                                                 <li><span className="info__count"><AiOutlineEye /></span> {item.view}</li>
                                                 <li>
-                                                    <span className="info__save" data-toggle="tooltip" data-placement="top" title="Bookmark">
+                                                    <span className="info__save" data-toggle="tooltip" data-placement="top" title="Marcador">
                                                         <FiHeart />
                                                     </span>
                                                 </li>

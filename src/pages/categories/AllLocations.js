@@ -18,7 +18,7 @@ function AllLocations() {
             <GeneralHeader />
 
             {/* Breadcrumb */}
-            <Breadcrumb CurrentPgTitle="All Locations" MenuPgTitle="Categories" img={state.breadcrumbImg} />
+            <Breadcrumb CurrentPgTitle="Todas las Ubicaciones" MenuPgTitle="Categorias " img={state.breadcrumbImg} />
 
             {/* Locations */}
             <section className="location-area padding-top-50px padding-bottom-50px">

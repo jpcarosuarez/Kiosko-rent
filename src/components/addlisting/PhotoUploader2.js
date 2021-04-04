@@ -71,7 +71,7 @@ function PhotoUploader2(props) {
                 <div className="drag-and-drop-file">
                     <div {...getRootProps({className: 'dropzone'})}>
                         <input {...getInputProps()} />
-                        <Link to="#" className="drag-drop-btn"><AiOutlinePicture /> Upload a Photo</Link>
+                        <Link to="#" className="drag-drop-btn"><AiOutlinePicture /> Sube una foto </Link>
                     </div>
                     <aside style={thumbsContainer}>
                         {thumbs}

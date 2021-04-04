@@ -6,8 +6,8 @@ import { BsPencil } from 'react-icons/bs'
 import PhotoUploader2 from "../addlisting/PhotoUploader2";
 
 const states = {
-    title: 'Add a Review',
-    subtitle: 'Your email address will not be published. Required fields are marked *'
+    title: 'Dejar una Reseña',
+    subtitle: 'Su dirección de correo electrónico no será publicada. Los campos obligatorios están marcados *'
 }
 function ReviewFields() {
     return (
@@ -104,28 +104,28 @@ function ReviewFields() {
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="input-box">
-                                    <label className="label-text">Name</label>
+                                    <label className="label-text">Nombre</label>
                                     <div className="form-group">
                                         <span className="la form-icon"><AiOutlineUser /></span>
-                                        <input className="form-control" type="text" name="name" placeholder="Your Name" />
+                                        <input className="form-control" type="text" name="name" placeholder="Su nombre" />
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-6">
                                 <div className="input-box">
-                                    <label className="label-text">Email</label>
+                                    <label className="label-text">Correo</label>
                                     <div className="form-group">
                                         <span className="la form-icon"><FaRegEnvelope /></span>
-                                        <input className="form-control" type="email" name="email" placeholder="Email Address" />
+                                        <input className="form-control" type="email" name="email" placeholder="Correo electrónico" />
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-12">
                                 <div className="input-box">
-                                    <label className="label-text">Review</label>
+                                    <label className="label-text">Reseña / Comentario</label>
                                     <div className="form-group">
                                         <span className="la form-icon"><BsPencil /></span>
-                                        <textarea className="message-control form-control" name="message" placeholder="Write Message">
+                                        <textarea className="message-control form-control" name="message" placeholder="Escriba su mensaje">
 
                                         </textarea>
                                     </div>
@@ -138,7 +138,7 @@ function ReviewFields() {
                                         <PhotoUploader2 />
 
                                         <button className="theme-btn border-0 margin-top-20px" type="submit" value="submit">
-                                            Submit review
+                                            Enviar Comentario
                                         </button>
                                     </form>
                                 </div>

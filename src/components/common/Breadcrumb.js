@@ -14,7 +14,7 @@ function Breadcrumb ({CurrentPgTitle, MenuPgTitle, img}) {
                                         {CurrentPgTitle}
                                     </h2>
                                     <ul className="breadcrumb__list">
-                                        <li className="active__list-item"><Link to="/">home</Link></li>
+                                        <li className="active__list-item"><Link to="/">Inicio</Link></li>
                                         {MenuPgTitle? (
                                             <li className="active__list-item">{MenuPgTitle}</li>
                                         ) : ''}

@@ -86,7 +86,7 @@ class ListingDetails extends Component {
                                             <div className="video__box-content">
                                                 <span className="mfp-iframe video-popup-btn video-play-btn"
                                                    onClick={this.openModal}
-                                                   title="Play Video">
+                                                   title="Reproducir">
                                                     <span className="d-inline-block">
                                                         <AiOutlinePlayCircle />
                                                     </span>
@@ -112,7 +112,7 @@ class ListingDetails extends Component {
 
                                     <div className="comments-wrap">
                                         <h2 className="widget-title">
-                                            3 Reviews
+                                            3 Vistas
                                         </h2>
                                         <div className="title-shape"></div>
                                         <ListingDetailsComments commentlists={sectiondata.listingDetails.comments} />

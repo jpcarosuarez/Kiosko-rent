@@ -3,7 +3,7 @@ import Select from "react-select";
 
 const state = {
     selectedHours: null,
-    title: 'Opening Hours',
+    title: 'Horarios permitidos para visitar y mostrar el apartamento ',
     shortby:[
         {
             value: 2,
@@ -117,13 +117,13 @@ function OpeningHours() {
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="input-box">
-                                        <label className="label-text">Monday</label>
+                                        <label className="label-text">Lunes</label>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="form-group">
                                         <Select
-                                            placeholder="Opening Time"
+                                            placeholder="Disponible desde"
                                             options={state.shortby}
                                         />
                                     </div>
@@ -131,41 +131,20 @@ function OpeningHours() {
                                 <div className="col-lg-6">
                                     <div className="form-group">
                                         <Select
-                                            placeholder="Closing Time"
-                                            options={state.shortby}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="col-lg-12">
-                                    <div className="input-box">
-                                        <label className="label-text">Tuesday</label>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="form-group">
-                                        <Select
-                                            placeholder="Opening Time"
-                                            options={state.shortby}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="form-group">
-                                        <Select
-                                            placeholder="Closing Time"
+                                            placeholder="Hasta"
                                             options={state.shortby}
                                         />
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="input-box">
-                                        <label className="label-text">Wednesday</label>
+                                        <label className="label-text">Martes</label>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="form-group">
                                         <Select
-                                            placeholder="Opening Time"
+                                            placeholder="Disponible desde"
                                             options={state.shortby}
                                         />
                                     </div>
@@ -173,41 +152,20 @@ function OpeningHours() {
                                 <div className="col-lg-6">
                                     <div className="form-group">
                                         <Select
-                                            placeholder="Closing Time"
-                                            options={state.shortby}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="col-lg-12">
-                                    <div className="input-box">
-                                        <label className="label-text">Thursday</label>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="form-group">
-                                        <Select
-                                            placeholder="Opening Time"
-                                            options={state.shortby}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="form-group">
-                                        <Select
-                                            placeholder="Closing Time"
+                                            placeholder="hasta"
                                             options={state.shortby}
                                         />
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="input-box">
-                                        <label className="label-text">Friday</label>
+                                        <label className="label-text">Miercoles</label>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="form-group">
                                         <Select
-                                            placeholder="Opening Time"
+                                            placeholder="Disponible desde"
                                             options={state.shortby}
                                         />
                                     </div>
@@ -215,41 +173,20 @@ function OpeningHours() {
                                 <div className="col-lg-6">
                                     <div className="form-group">
                                         <Select
-                                            placeholder="Closing Time"
-                                            options={state.shortby}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="col-lg-12">
-                                    <div className="input-box">
-                                        <label className="label-text">Saturday</label>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="form-group">
-                                        <Select
-                                            placeholder="Opening Time"
-                                            options={state.shortby}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="form-group">
-                                        <Select
-                                            placeholder="Closing Time"
+                                            placeholder="Hasta"
                                             options={state.shortby}
                                         />
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="input-box">
-                                        <label className="label-text">Sunday</label>
+                                        <label className="label-text">Jueves</label>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="form-group">
                                         <Select
-                                            placeholder="Opening Time"
+                                            placeholder="Disponible desde"
                                             options={state.shortby}
                                         />
                                     </div>
@@ -257,7 +194,70 @@ function OpeningHours() {
                                 <div className="col-lg-6">
                                     <div className="form-group">
                                         <Select
-                                            placeholder="Closing Time"
+                                            placeholder="Hasta"
+                                            options={state.shortby}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="col-lg-12">
+                                    <div className="input-box">
+                                        <label className="label-text">Viernes</label>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="form-group">
+                                        <Select
+                                            placeholder="Disponible desde"
+                                            options={state.shortby}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="form-group">
+                                        <Select
+                                            placeholder="Hasta"
+                                            options={state.shortby}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="col-lg-12">
+                                    <div className="input-box">
+                                        <label className="label-text">Sábado</label>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="form-group">
+                                        <Select
+                                            placeholder="Disponible desde"
+                                            options={state.shortby}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="form-group">
+                                        <Select
+                                            placeholder="Hasta"
+                                            options={state.shortby}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="col-lg-12">
+                                    <div className="input-box">
+                                        <label className="label-text">Domingo</label>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="form-group">
+                                        <Select
+                                            placeholder="Disponible desde"
+                                            options={state.shortby}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="form-group">
+                                        <Select
+                                            placeholder="Hasta"
                                             options={state.shortby}
                                         />
                                     </div>

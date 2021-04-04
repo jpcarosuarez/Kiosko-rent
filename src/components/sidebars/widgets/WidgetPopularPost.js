@@ -25,7 +25,7 @@ function WidgetPopularPost({ppitems}) {
                                     <h4 className="recent__link">
                                         <Link to={item.titleLink}>{item.title}</Link>
                                     </h4>
-                                    <p className="recent__meta">{item.date} by <a href={item.authorUrl}>{item.author}</a></p>
+                                    <p className="recent__meta">{item.date} por <a href={item.authorUrl}>{item.author}</a></p>
                                 </div>
                             </div>
                         )

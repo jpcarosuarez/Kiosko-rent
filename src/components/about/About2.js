@@ -17,7 +17,7 @@ function About2({aboutcontent}) {
                                 {aboutcontent.content2}
                             </p>
                             <div className="btn-box padding-top-30px">
-                                <Button text="find out more" url="#" />
+                                <Button text="Más información" url="#" />
                             </div>
                         </SectionsHeading>
                     </div>

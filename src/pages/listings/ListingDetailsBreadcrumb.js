@@ -3,7 +3,7 @@ import { GiPositionMarker, GiChickenOven } from 'react-icons/gi'
 import { MdStar, MdStarBorder, MdClose } from 'react-icons/md'
 import { BsPencil } from 'react-icons/bs'
 import { AiOutlineFlag } from 'react-icons/ai'
-import { FaRegMoneyBillAlt, FaFacebookF, FaTwitter, FaInstagram, FaTumblr, FaSnapchatGhost, FaGooglePlusG, FaPinterest, FaVk, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
+import { FaRegMoneyBillAlt, FaFacebookF, FaTwitter, FaInstagram, FaTumblr, FaSnapchatGhost, FaGooglePlusG, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
 import { RiBookmarkLine, RiExternalLinkLine, RiSendPlane2Line } from 'react-icons/ri'
 
 import { Dropdown } from "react-bootstrap";
@@ -18,49 +18,9 @@ const state = {
             url: 'https://facebook.com'
         },
         {
-            icon: <FaTwitter />,
-            title: 'twitter',
-            url: 'https://twitter.com'
-        },
-        {
-            icon: <FaInstagram />,
-            title: 'twitter',
-            url: 'https://instagram.com'
-        },
-        {
-            icon: <FaTumblr />,
-            title: 'tumblr',
-            url: 'https://tumblr.com'
-        },
-        {
-            icon: <FaSnapchatGhost />,
-            title: 'snapchat',
-            url: 'https://snapchat.com'
-        },
-        {
-            icon: <FaGooglePlusG />,
-            title: 'google plus',
-            url: 'https://plus.google.com'
-        },
-        {
-            icon: <FaPinterest />,
-            title: 'pinterest',
-            url: 'https://pinterest.com'
-        },
-        {
-            icon: <FaVk />,
-            title: 'vkontakte',
-            url: 'https://vkontakte.com'
-        },
-        {
             icon: <FaLinkedinIn />,
             title: 'linkedin',
             url: 'https://linkedin.com'
-        },
-        {
-            icon: <FaYoutube />,
-            title: 'youtube',
-            url: 'https://youtube.com'
         }
     ]
 }

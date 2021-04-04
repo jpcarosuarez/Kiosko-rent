@@ -69,7 +69,7 @@ function PhotoUploader(props) {
         <>
             <div className="billing-form-item">
                 <div className="billing-title-wrap">
-                    <h3 className="widget-title pb-0">Photo</h3>
+                    <h3 className="widget-title pb-0">Imagenes</h3>
                     <div className="title-shape margin-top-10px"></div>
                 </div>
                 <div className="billing-content">
@@ -82,8 +82,8 @@ function PhotoUploader(props) {
                                         <span className="drag-drop-icon">
                                             <BsCloudUpload />
                                         </span>
-                                        <h3>Drag & Drop Files Here to Upload</h3>
-                                        <Link to="#" className="drag-drop-btn">Browse Files</Link>
+                                        <h3>Arrastra y suelta archivos aquí para subirlos</h3>
+                                        <Link to="#" className="drag-drop-btn">Búsqueda de archivos</Link>
                                     </div>
                                     <aside style={thumbsContainer}>
                                         {thumbs}

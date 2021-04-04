@@ -17,7 +17,7 @@ function BrowseCategories({categories}) {
                                         {item.title}
                                     </p>
                                     <p className="cat__meta">
-                                        {item.listingsNum} Listings
+                                        {item.listingsNum} Publicaciones
                                     </p>
                                 </Link>
                             </div>

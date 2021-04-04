@@ -35,7 +35,7 @@ function RecommendedPlace({recommendplaces}) {
                                             </p>
                                         </a>
                                         <a href={item.authorUrl} className="author-img">
-                                            <img src={item.author} alt="author-img" />
+                                            <img src={item.author} alt="img-agente" />
                                         </a>
                                         <ul className="info-list padding-top-20px">
                                             <li><span className="la d-inline-block"><FiPhone /></span> {item.number}</li>
@@ -61,7 +61,7 @@ function RecommendedPlace({recommendplaces}) {
                                             <ul>
                                                 <li><span className="info__count"><AiOutlineEye /></span> {item.view}</li>
                                                 <li>
-                                                    <span className="info__save" data-toggle="tooltip" data-placement="top" title="Bookmark">
+                                                    <span className="info__save" data-toggle="tooltip" data-placement="top" title="Marcador">
                                                         <FiHeart />
                                                     </span>
                                                 </li>

@@ -46,7 +46,7 @@ function About() {
                         <div className="col-lg-3 column-td-6 mx-auto">
                             <div className="cta-text-box mt-4">
                                 <Link to="/add-listing/new" className="d-flex justify-content-center align-items-center">
-                                    <i className="la"><FiPlus /></i> Add Your Business
+                                    <i className="la"><FiPlus /></i> Agrega tu negocio
                                 </Link>
                             </div>
                         </div>
@@ -58,7 +58,7 @@ function About() {
             <section className="testimonial-area padding-top-100px padding-bottom-100px text-center">
                 {sectiondata.testimonialdata.tmimage.map((tmimg, index) => {
                     return (
-                        <img key={index} src={tmimg.tmimg} alt="testimonial" className="random-img" />
+                        <img key={index} src={tmimg.tmimg} alt="testimonios" className="random-img" />
                     )
                 })}
                 <div className="container">

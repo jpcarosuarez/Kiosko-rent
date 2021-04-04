@@ -2,7 +2,7 @@ import React from 'react';
 import { MdStar } from 'react-icons/md'
 
 const state = {
-    title: 'Filter by Ratings',
+    title: 'Filtrar por Calificaciones',
     ratings: [
         {
             active: true,

@@ -9,47 +9,47 @@ const state = {
     categories: [
         {
             value: 0,
-            label: 'Select a category'
+            label: 'Todos los espacios'
         },
         {
             value: 1,
-            label: 'All Category'
+            label: 'Apartamentos'
         },
         {
             value: 2,
-            label: 'Shops'
+            label: 'Apartaestudios'
         },
         {
             value: 3,
-            label: 'Hotels'
+            label: 'Casas'
         },
         {
             value: 4,
-            label: 'Foods & Restaurants'
+            label: 'Oficinas'
         },
         {
             value: 5,
-            label: 'Fitness'
+            label: 'Locales'
         },
         {
             value: 6,
-            label: 'Travel'
+            label: 'Fincas'
         },
         {
             value: 7,
-            label: 'Salons'
+            label: 'Bodegas'
         },
         {
             value: 8,
-            label: 'Event'
+            label: 'Lotes'
         },
         {
             value: 9,
-            label: 'Business'
+            label: 'Parqueaderos'
         },
         {
             value: 10,
-            label: 'Jobs'
+            label: 'Terrazas'
         }
     ]
 }
@@ -66,7 +66,7 @@ export default function BannerOneSearchInput() {
                                 <FiSearch/>
                             </span>
                                 <input className="form-control" type="text"
-                                       placeholder="What are you looking for?"/>
+                                       placeholder="Apartamento en Chapinero"/>
                             </div>
                         </form>
                     </div>
@@ -78,13 +78,13 @@ export default function BannerOneSearchInput() {
 
                 <div className="main-search-input-item category">
                     <Select
-                        placeholder="Select a Category"
+                        placeholder="Apartamento"
                         options={state.categories}
                     />
                 </div>
 
                 <div className="main-search-input-btn">
-                    <button className="button theme-btn" type="submit">Search</button>
+                    <button className="button theme-btn" type="submit">Buscar</button>
                 </div>
 
             </div>

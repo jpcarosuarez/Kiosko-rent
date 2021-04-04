@@ -14,12 +14,12 @@ export default function HeaderAuthorAccess() {
             <div className="logo-right-content">
                 <ul className="author-access-list">
                     <li>
-                        <Link to="/login">login</Link>
-                        <span className="or-text">or</span>
-                        <Link to="/sign-up">Sign up</Link>
+                        <Link to="/login">Ingresar</Link>
+                        <span className="or-text">0</span>
+                        <Link to="/sign-up">Registrar</Link>
                     </li>
                     <li>
-                        <Button text="add listing" url="/add-listing/new" >
+                        <Button text="Agregar Inmueble" url="/add-listing/new" >
                             <FiPlusCircle />
                         </Button>
                     </li>
@@ -38,31 +38,31 @@ export default function HeaderAuthorAccess() {
 
                     <div className="side-user-img">
                         <img src={userimg} alt="User" />
-                        <h4 className="su__name">Mark Williamson</h4>
-                        <span className="su__meta">Joined 3 years ago</span>
+                        <h4 className="su__name">Usuario</h4>
+                        <span className="su__meta">Registrado hace 1 año</span>
                         <div className="avatar-icon">
                             <Link to="/dashboard" data-toggle="tooltip" data-placement="top" title="Change Avatar"> <FiPlus /></Link>
                         </div>
                     </div>
 
                     <ul className="side-menu-ul">
-                        <li><Link to="/dashboard"><AiOutlineUser className="user-icon" /> My Profile</Link></li>
-                        <li><Link to="/dashboard"><BsListCheck className="user-icon" /> My Listings</Link></li>
-                        <li><Link to="/dashboard"><FiBookmark className="user-icon" /> My Bookmarks</Link></li>
-                        <li><Link to="/dashboard"><FiPlusCircle className="user-icon" /> add listing</Link></li>
+                        <li><Link to="/dashboard"><AiOutlineUser className="user-icon" /> Mi Perfil</Link></li>
+                        <li><Link to="/dashboard"><BsListCheck className="user-icon" /> Mis Publicaciones</Link></li>
+                        <li><Link to="/dashboard"><FiBookmark className="user-icon" /> Mis Marcadores</Link></li>
+                        <li><Link to="/add-listing/new"><FiPlusCircle className="user-icon" /> Publicar Nueva</Link></li>
                         <li><div className="dropdown-divider"></div></li>
-                        <li><Link to="#"><BsQuestion className="user-icon" /> help</Link></li>
-                        <li><Link to="#"><BsGear className="user-icon" /> Settings</Link></li>
-                        <li><Link to="#"><BsPower className="user-icon" /> Sign Out</Link></li>
+                        <li><Link to="#"><BsQuestion className="user-icon" /> Ayuda</Link></li>
+                        <li><Link to="#"><BsGear className="user-icon" /> Configuración</Link></li>
+                        <li><Link to="#"><BsPower className="user-icon" /> Salir</Link></li>
                     </ul>
                     <div className="side-user-search contact-form-action">
                         <form method="post">
                             <div className="form-group mb-0">
                                 <FiSearch className="form-icon" />
-                                <input className="form-control" type="search" name="search-field" placeholder="Search by keywords" />
+                                <input className="form-control" type="search" name="search-field" placeholder="Buscar por Palabras Claves" />
                             </div>
                             <button type="button" className="theme-btn border-0">
-                                Search
+                                Buscar
                             </button>
                         </form>
                     </div>

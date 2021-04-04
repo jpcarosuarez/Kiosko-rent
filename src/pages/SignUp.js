@@ -18,13 +18,13 @@ function SignUp() {
             <GeneralHeader />
 
             {/* Breadcrumb */}
-            <Breadcrumb CurrentPgTitle="Sign Up" img={state.breadcrumbimg} />
+            <Breadcrumb CurrentPgTitle="Ingresar" img={state.breadcrumbimg} />
 
             <section className="form-shared padding-top-40px padding-bottom-100px">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 mx-auto">
-                            <SignUpBox title="Create an account!" subtitle="with your social network" />
+                            <SignUpBox title="Crea tu cuenta" subtitle="con tu red social" />
                         </div>
                     </div>
                 </div>

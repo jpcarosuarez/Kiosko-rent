@@ -118,7 +118,7 @@ function FaqCategories() {
                             </g>
                         </g>
                     </svg>
-                            <span className="d-block font-size-18 font-weight-semi-bold mt-3">pricing plans</span>
+                            <span className="d-block font-size-18 font-weight-semi-bold mt-3">Planes y precios</span>
                         </Link>
                     </div>
                 </div>
@@ -211,7 +211,7 @@ function FaqCategories() {
                             </g>
                         </g>
                     </svg>
-                            <span className="d-block font-size-18 font-weight-semi-bold mt-3">sales question</span>
+                            <span className="d-block font-size-18 font-weight-semi-bold mt-3">Preguntas generales</span>
                         </Link>
                     </div>
                 </div>
@@ -237,7 +237,7 @@ function FaqCategories() {
                             </g>
                         </g>
                       </svg>
-                            <span className="d-block font-size-18 font-weight-semi-bold mt-3">usage guides</span>
+                            <span className="d-block font-size-18 font-weight-semi-bold mt-3">Guias de uso</span>
                         </Link>
                     </div>
                 </div>
@@ -254,7 +254,7 @@ function FaqCategories() {
                                     </g>
                                 </g>
                             </svg>
-                            <span className="d-block font-size-18 font-weight-semi-bold mt-3">information</span>
+                            <span className="d-block font-size-18 font-weight-semi-bold mt-3">informacion</span>
                         </Link>
                     </div>
                 </div>
@@ -298,7 +298,7 @@ function FaqCategories() {
                                 </g>
                             </g>
                             </svg>
-                            <span className="d-block font-size-18 font-weight-semi-bold mt-3">Transactions</span>
+                            <span className="d-block font-size-18 font-weight-semi-bold mt-3">Transacciones</span>
                         </Link>
                     </div>
                 </div>
@@ -357,7 +357,7 @@ function FaqCategories() {
                             </g>
                         </g>
                     </svg>
-                            <span className="d-block font-size-18 font-weight-semi-bold mt-3">card</span>
+                            <span className="d-block font-size-18 font-weight-semi-bold mt-3">tarjeta</span>
                         </Link>
                     </div>
                 </div>
@@ -445,7 +445,7 @@ function FaqCategories() {
                             </g>
                         </g>
                      </svg>
-                            <span className="d-block font-size-18 font-weight-semi-bold mt-3">account</span>
+                            <span className="d-block font-size-18 font-weight-semi-bold mt-3">cuenta</span>
                         </Link>
                     </div>
                 </div>

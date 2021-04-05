@@ -78,10 +78,9 @@ function PersonalInfo() {
                                     <div className="payment-content payment-active mt-2">
                                         <div className="section-heading">
                                             <p className="sec__desc font-size-15 line-height-24">
-                                                Make your payment directly into our bank account.
-                                                Please use your Order ID as the payment reference.
-                                                Your order won’t be shipped until the funds have cleared in our
-                                                account.
+                                                Realice su pago directamente en la cuenta de nuestro banco.
+                                                Favor usar el numero de orden o ID de la referencia de pago.
+                                                Su orden no será confirmada hasta que se confirme el pago en nuestra cuenta.                                     account.
                                             </p>
                                         </div>
                                     </div>
@@ -93,7 +92,7 @@ function PersonalInfo() {
                                 <label className="payment-radio">
                                     <input type="radio" name="radio" />
                                     <span className="checkmark"></span>
-                                    <span>Credit / Debit Card</span>
+                                    <span>Tarjeta de Credito o Debito</span>
                                     <span className="card-icon float-right">
                                         <img src={state.paymentImg} alt="Payment" />
                                     </span>
@@ -103,7 +102,7 @@ function PersonalInfo() {
                                                 <div className="row">
                                                     <div className="col-lg-6">
                                                         <div className="input-box">
-                                                            <label className="label-text">Name on Card</label>
+                                                            <label className="label-text">Nombre que aparece en la tarjeta</label>
                                                             <div className="form-group">
                                                                 <span className="la form-icon"><BsPencil /></span>
                                                                 <input className="form-control" placeholder="Card Name" type="text" name="text" required="" />
@@ -112,7 +111,7 @@ function PersonalInfo() {
                                                     </div>
                                                     <div className="col-lg-6">
                                                         <div className="input-box">
-                                                            <label className="label-text">Card Number</label>
+                                                            <label className="label-text">Número de tarjeta</label>
                                                             <div className="form-group">
                                                                 <span className="la form-icon"><BsPencil /></span>
                                                                 <input className="form-control" name="text" placeholder="1234  5678  9876  5432" required="" type="text" />
@@ -121,7 +120,7 @@ function PersonalInfo() {
                                                     </div>
                                                     <div className="col-lg-4">
                                                         <div className="input-box">
-                                                            <label className="label-text">Expiry Month</label>
+                                                            <label className="label-text">Mes del vencimiento</label>
                                                             <div className="form-group">
                                                                 <span className="la form-icon"><BsPencil /></span>
                                                                 <input className="form-control" placeholder="MM" required="" name="text" type="text" />
@@ -130,16 +129,16 @@ function PersonalInfo() {
                                                     </div>
                                                     <div className="col-lg-4">
                                                         <div className="input-box">
-                                                            <label className="label-text">Expiry Year</label>
+                                                            <label className="label-text">Año del vencimiento </label>
                                                             <div className="form-group">
                                                                 <span className="la form-icon"><BsPencil /></span>
-                                                                <input className="form-control" placeholder="YY" required="" name="text" type="text" />
+                                                                <input className="form-control" placeholder="AA" required="" name="text" type="text" />
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-4">
                                                         <div className="input-box">
-                                                            <label className="label-text">CVV</label>
+                                                            <label className="label-text">Codigo de Seguridad (CVV)</label>
                                                             <div className="form-group">
                                                                 <span className="la form-icon"><BsPencil /></span>
                                                                 <input className="form-control" placeholder="CVV" required="" name="text" type="text" />
@@ -165,7 +164,7 @@ function PersonalInfo() {
                                     <div className="payment-content payment-active mt-2">
                                         <div className="section-heading">
                                             <p className="sec__desc font-size-15 line-height-24">
-                                                You will be redirected to PayPal to complete payment.
+                                                Será redirigido a Paypal para finalizar el pago.
                                             </p>
                                         </div>
                                     </div>
@@ -177,11 +176,11 @@ function PersonalInfo() {
                             <div className="custom-checkbox">
                                 <input type="checkbox" id="chb1" />
                                 <label htmlFor="chb1">
-                                    I've Read And Accept <Link to="#" className="color-text">Terms & Conditions</Link>
+                                    He leido y aceptado los  <Link to="#" className="color-text">Terminos & Condiciones</Link>
                                 </label>
                             </div>
                             <button type="submit" className="theme-btn border-0 mt-3">
-                                confirm Order
+                                confirmar Orden
                             </button>
                         </div>
                     </div>

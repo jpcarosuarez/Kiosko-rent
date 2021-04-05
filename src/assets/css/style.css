@@ -1088,7 +1088,7 @@ body {
       font-size: 30px; } }
   .section-heading .sec__title:before {
     position: absolute;
-    content: "\f165";
+    /*content: "\f165";*/
     font-family: 'Yusei Magic', sans-serif;
     top: 0;
     left: 0;

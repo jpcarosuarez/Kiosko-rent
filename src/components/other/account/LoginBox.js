@@ -25,28 +25,28 @@ function LoginBox({title, subtitle}) {
 
                                 <div className="col-lg-12">
                                     <div className="account-assist mt-4 mb-4 text-center">
-                                        <p className="account__desc">or</p>
+                                        <p className="account__desc">o</p>
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="input-box">
-                                        <label className="label-text">Username, or email</label>
+                                        <label className="label-text">Usuario o correo</label>
                                         <div className="form-group">
                                                 <span className="form-icon">
                                                     <AiOutlineUser />
                                                 </span>
-                                            <input className="form-control" type="email" name="text" placeholder="Username, or email" />
+                                            <input className="form-control" type="email" name="text" placeholder="Usuario o correo" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="input-box">
-                                        <label className="label-text">Password</label>
+                                        <label className="label-text">Contraseña</label>
                                         <div className="form-group">
                                                 <span className="form-icon">
                                                     <FiLock />
                                                 </span>
-                                            <input className="form-control" type="text" name="text" placeholder="Password" />
+                                            <input className="form-control" type="text" name="text" placeholder="Contraseña" />
                                         </div>
                                     </div>
                                 </div>
@@ -55,11 +55,11 @@ function LoginBox({title, subtitle}) {
                                         <div className="custom-checkbox mr-0 d-flex align-items-center justify-content-between">
                                             <div>
                                                 <input type="checkbox" id="chb1" />
-                                                <label htmlFor="chb1">Remember Me</label>
+                                                <label htmlFor="chb1">Recordar</label>
                                             </div>
                                             <div>
                                                 <Link to="/recover" className="color-text font-weight-medium">
-                                                    Forgot password?
+                                                    ¿Recordar Contraseña?
                                                 </Link>
                                             </div>
                                         </div>
@@ -68,12 +68,12 @@ function LoginBox({title, subtitle}) {
                                 <div className="col-lg-12">
                                     <div className="btn-box margin-top-20px margin-bottom-20px">
                                         <button className="theme-btn border-0" type="submit">
-                                            Login now
+                                            Ingresar Ahora
                                         </button>
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
-                                    <p className="font-weight-medium">Not a member? <Link to="/sign-up" className="color-text"> Register</Link></p>
+                                    <p className="font-weight-medium">¿No eres miembro? <Link to="/sign-up" className="color-text"> Registro</Link></p>
                                 </div>
                             </div>
                         </form>

@@ -6,7 +6,6 @@ import {
     BsBriefcase,
     BsCheckCircle, BsEye,
     BsGear,
-    BsHouseDoor,
     BsListCheck,
     BsMap,
     BsMusicNoteBeamed,
@@ -28,7 +27,6 @@ import {TiArrowUnsorted, TiBrush, TiPlane} from "react-icons/ti";
 import {
     IoIosCheckmarkCircle,
     IoIosFitness, IoIosRocket, IoMdCut,
-    IoMdFitness,
     IoMdMusicalNotes, IoMdPaperPlane,
     IoMdStar,
     IoMdStarHalf
@@ -79,7 +77,6 @@ import hiw3videoimg from "../assets/images/video-img2.jpg";
 import {FcLineChart} from "react-icons/fc";
 import dreamimg from "../assets/images/img6.jpg"; // 263*165
 import hiw5videoimg from "../assets/images/video-img3.jpg";
-import slicevideo from "../assets/video/slice-video.m4v";
 import flag10 from "../assets/images/flag10.png";
 import flag11 from "../assets/images/flag11.png";
 import flag12 from "../assets/images/flag12.jpg";
@@ -178,13 +175,14 @@ const sectiondata = {
     herobanners: {
         banner2: {
             title: 'Arrienda facil y seguro',
-            content: 'Encuentra arriendos por horas y estadias largas por mas de 6 meses',
+            content: 'Encuentra arriendos por horas y estadias largas por mas de 3 meses',
             categories: [
                 {
                     path: '#',
                     text: 'apartamentos',
                     icon: <RiBuilding4Line />
                 },
+            
                 {
                     path: '#',
                     text: 'casas',
@@ -221,12 +219,12 @@ const sectiondata = {
             items: [
                 {
                     path: "#",
-                    title: "Apartmentos",
+                    title: "Apartamentos",
                     icon: <RiBuilding4Line />
                 },
                 {
                     path: "#",
-                    title: "Restaurants",
+                    title: "Apartaestudios",
                     icon: <GiChickenOven />
                 },
                 {
@@ -236,109 +234,74 @@ const sectiondata = {
                 },
                 {
                     path: "#",
-                    title: "Events",
+                    title: "Oficinas",
                     icon: <BsMusicNoteBeamed />
                 },
                 {
                     path: "#",
-                    title: "Fitness",
+                    title: "Fincas",
                     icon: <MdFitnessCenter />
                 },
                 {
                     path: "#",
-                    title: "Hotels",
+                    title: "Bodegas",
                     icon: <RiHotelBedLine />
                 }
             ]
         },
         browsecategories: {
-            sectitle: 'What do you need to find?',
-            seccontent: 'Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortors.',
+            sectitle: '¿Que es lo que necesitas arrendar ?',
+            seccontent: 'Descubre los mejores arriendos por categorias',
             items: [
                 {
                     id: 1,
                     icon: <GiChickenOven />,
-                    title: 'restaurants',
+                    title: 'Apartamentos',
                     listingsNum: 42,
                     cardLink: '#'
                 },
                 {
                     id: 2,
                     icon: <RiHotelBedLine />,
-                    title: 'hotels',
+                    title: 'Apartaestudios',
                     listingsNum: 22,
                     cardLink: '#'
                 },
                 {
                     id: 3,
                     icon: <FiShoppingCart />,
-                    title: 'shopping',
+                    title: 'Oficinas',
                     listingsNum: 7,
                     cardLink: '#'
                 },
                 {
                     id: 4,
                     icon: <IoMdCut />,
-                    title: 'beauty & Spa',
+                    title: 'Fincas',
                     listingsNum: 31,
                     cardLink: '#'
                 },
                 {
                     id: 5,
                     icon: <FaRegHospital />,
-                    title: 'Hospital',
+                    title: 'Bodegas',
                     listingsNum: 33,
                     cardLink: '#'
                 },
                 {
                     id: 6,
                     icon: <BsGear />,
-                    title: 'Services',
+                    title: 'Locales',
                     listingsNum: 33,
                     cardLink: '#'
                 },
                 {
                     id: 7,
                     icon: <TiBrush />,
-                    title: 'Arts & Design',
+                    title: 'Terrazas & Salones',
                     listingsNum: 31,
                     cardLink: '#'
                 },
-                {
-                    id: 8,
-                    icon: <BsHouseDoor />,
-                    title: 'Real State',
-                    listingsNum: 36,
-                    cardLink: '#'
-                },
-                {
-                    id: 9,
-                    icon: <FaStethoscope />,
-                    title: 'Health',
-                    listingsNum: 22,
-                    cardLink: '#'
-                },
-                {
-                    id: 10,
-                    icon: <FaSearchDollar />,
-                    title: 'Jobs',
-                    listingsNum: 40,
-                    cardLink: '#'
-                },
-                {
-                    id: 11,
-                    icon: <TiPlane />,
-                    title: 'Travels',
-                    listingsNum: 13,
-                    cardLink: '#'
-                },
-                {
-                    id: 12,
-                    icon: <FiMusic />,
-                    title: 'Events',
-                    listingsNum: 10,
-                    cardLink: '#'
-                }
             ]
         },
         browsecategories2: {
@@ -348,105 +311,94 @@ const sectiondata = {
                 {
                     img: img1,
                     icon: <GiChickenOven />,
-                    title: 'Restaurants',
+                    title: 'Apartamentos',
                     cardLink: '#'
                 },
                 {
                     img: img1,
                     icon: <TiPlane />,
-                    title: 'Travels',
+                    title: 'Apartaestudios',
                     cardLink: '#'
                 },
                 {
                     img: img1,
                     icon: <RiHotelBedLine />,
-                    title: 'Hotels',
+                    title: 'Oficinas',
                     cardLink: '#'
                 },
                 {
                     img: img1,
                     icon: <FiMusic />,
-                    title: 'Events',
+                    title: 'Casas',
                     cardLink: '#'
                 },
                 {
                     img: img1,
                     icon: <FiShoppingCart />,
-                    title: 'Shops',
+                    title: 'Fincas',
                     cardLink: '#'
                 },
                 {
                     img: img1,
                     icon: <IoIosFitness />,
-                    title: 'Fitness',
+                    title: 'Locales',
                     cardLink: '#'
                 },
                 {
                     img: img1,
                     icon: <GiWineGlass />,
-                    title: 'Food & Drink',
+                    title: 'Terrazas & Salones',
                     cardLink: '#'
                 },
                 {
                     img: img1,
                     icon: <TiBrush />,
-                    title: 'Art & Design',
+                    title: 'Lotes',
                     cardLink: '#'
                 },
                 {
                     img: img1,
                     icon: <TiBrush />,
-                    title: 'Salons',
+                    title: 'Parqueaderos',
                     cardLink: '#'
                 },
                 {
                     img: img1,
                     icon: <FaRegMoneyBillAlt />,
-                    title: 'Jobs',
+                    title: 'Bodegas',
                     cardLink: '#'
                 },
-                {
-                    img: img1,
-                    icon: <BsBriefcase />,
-                    title: 'Businesses',
-                    cardLink: '#'
-                },
-                {
-                    img: img1,
-                    icon: <FaRegHospital />,
-                    title: 'Hospital',
-                    cardLink: '#'
-                }
+
             ]
         },
         popularcategories: {
-            title: 'Popular:',
+            title: 'Más Buscados:',
             lists: [
                 {
                     url: '#',
-                    title: 'Travel'
+                    title: 'Apartamentos'
                 },
                 {
                     url: '#',
-                    title: 'Food'
+                    title: 'Apartaestudios'
                 },
                 {
                     url: '#',
-                    title: 'Business'
+                    title: 'Oficinas '
                 },
                 {
                     url: '#',
-                    title: 'Salon'
+                    title: 'Casas'
                 },
                 {
                     url: '#',
-                    title: 'Cleaning'
+                    title: 'Fincas'
                 }
             ]
         }
     },
     popularcategories: {
-        sectitle: 'Most Popular Categories',
+        sectitle: 'Categorias más visitadas',
         seccontent: 'Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortors.',
         categories: [
             {
@@ -566,13 +518,13 @@ const sectiondata = {
         ]
     },
     populardestination: {
-        sectitle: 'Discover Popular Destination',
-        seccontent: 'Explore most popular destination and places, Morbi convallis bibendum urna ut viverra. Maecenas,',
+        sectitle: 'Encuentra Arriendos por ubicaciones',
+        seccontent: 'Apartamentos, casas, oficinas o espacios libres para arrendar simple y fácil',
         destinations: [
             {
                 img: destinationimg1,
                 cityFlag: flag1,
-                cityName: 'Canada',
+                cityName: 'Candelaria',
                 listingTxt: '12 listings',
                 boxCol: '4',
                 cardUrl: '#'
@@ -580,7 +532,7 @@ const sectiondata = {
             {
                 img: img1,
                 cityFlag: flag2,
-                cityName: 'United States',
+                cityName: 'Centro Internacional',
                 listingTxt: '22 listings',
                 boxCol: '4',
                 cardUrl: '#'
@@ -588,7 +540,7 @@ const sectiondata = {
             {
                 img: img1,
                 cityFlag: flag3,
-                cityName: 'United Kingdom',
+                cityName: 'Bosque Izquierdo',
                 listingTxt: '32 listings',
                 boxCol: '4',
                 cardUrl: '#'
@@ -596,7 +548,7 @@ const sectiondata = {
             {
                 img: img1,
                 cityFlag: flag4,
-                cityName: 'Mexico',
+                cityName: 'Chapinero',
                 listingTxt: '44 listings',
                 boxCol: '3',
                 cardUrl: '#'
@@ -604,7 +556,7 @@ const sectiondata = {
             {
                 img: img1,
                 cityFlag: flag5,
-                cityName: 'Costa Rica',
+                cityName: 'Cedritos',
                 listingTxt: '48 listings',
                 boxCol: '3',
                 cardUrl: '#'
@@ -612,7 +564,7 @@ const sectiondata = {
             {
                 img: destinationimg6,
                 cityFlag: flag6,
-                cityName: 'Australia',
+                cityName: 'Usaquén',
                 listingTxt: '50 listings',
                 boxCol: '3',
                 cardUrl: '#'
@@ -620,7 +572,7 @@ const sectiondata = {
             {
                 img: destinationimg6,
                 cityFlag: flag7,
-                cityName: 'New Zealand ',
+                cityName: 'Suba',
                 listingTxt: '14 listings',
                 boxCol: '3',
                 cardUrl: '#'
@@ -628,7 +580,7 @@ const sectiondata = {
             {
                 img: destinationimg6,
                 cityFlag: flag8,
-                cityName: 'France',
+                cityName: 'Medellín',
                 listingTxt: '20 listings',
                 boxCol: '6',
                 cardUrl: '#'
@@ -636,13 +588,13 @@ const sectiondata = {
             {
                 img: destinationimg6,
                 cityFlag: flag9,
-                cityName: 'Italy',
+                cityName: 'Cali',
                 listingTxt: '14 listings',
                 boxCol: '6',
                 cardUrl: '#'
             }
         ],
-        viewmorebtn: 'View All Destination',
+        viewmorebtn: 'Ver todas las ubicaciones',
         viewmorebtnurl: '/all-locations'
     },
     locations: [
@@ -803,34 +755,40 @@ const sectiondata = {
             ]
         },
         hiw3: {
-            sectitle: 'How Can I Earn Money with Dirto?',
-            seccontent: 'Dirto provides the various ways that help you can earn money from your site. Morbi convallis bibendum urna ut viverra.',
-            videobtn: 'watch how it works',
+            sectitle: '¿Cómo puedes ganar dinero con Kiosko?',
+            seccontent: 'Te invitamos a ser parte de esta gran comunidad inmobiliaria',
+            videobtn: 'Mira Como Funciona',
             videoid: 'R2kiP9Qu7Pc',
             videoImg: hiw3videoimg,
             items: [
                 {
                     id: 1,
                     icon: <FaRegMoneyBillAlt />,
-                    title: 'Paid Listings',
-                    desc: 'Proin dapibus nisl ornare diam varius ecos tempus. Aenean a quam luctus, finibus tellus ut, convallis eros.'
+                    title: 'Agentes Inmobiliarios',
+                    desc: 'Agentes capacitados y certificados por Kiosko pueden ayudarle a administrar su inmueble integramente.'
                 },
                 {
                     id: 2,
                     icon: <FcLineChart />,
-                    title: 'Promoted Listings',
-                    desc: 'Proin dapibus nisl ornare diam varius ecos tempus. Aenean a quam luctus, finibus tellus ut, convallis eros.'
+                    title: 'Administracion de inmuebles',
+                    desc: 'Servicios de limpieza que pueden ayudarle a tener un inmueble siempre listo para el proximo arriendo.'
                 },
                 {
                     id: 3,
                     icon: <FaRegHeart />,
-                    title: 'Paid Claim Listings',
-                    desc: 'Proin dapibus nisl ornare diam varius ecos tempus. Aenean a quam luctus, finibus tellus ut, convallis eros.'
+                    title: 'Servicio de Mudanza',
+                    desc: 'Trasteos, mudanzas o como le llames, ellos son los encargados de llevar tus cosas de un lugar a otro en las mejores condiciones.'
+                },
+                {
+                    id: 4,
+                    icon: <FaRegHeart />,
+                    title: 'Servicios de Limpieza',
+                    desc: 'Trasteos, mudanzas o como le llames, ellos son los encargados de llevar tus cosas de un lugar a otro en las mejores condiciones.'
                 }
             ]
         },
         hiw4: {
-            sectitle: 'Why Choose Us',
+            sectitle: '¿Porque escoger Kiosko?',
             seccontent: 'Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortors.',
             items: [
                 {
@@ -2664,17 +2622,17 @@ const sectiondata = {
         ]
     },
     recommendedplaces: {
-        sectitle: 'Places We Recommend You Visit',
-        seccontent: 'Handpicked places by our team,Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero,',
+        sectitle: 'Servicios Recomendados',
+        seccontent: 'Contrata servicios especializados para tu hogar',
         items: [
             {
-                bedge: 'New Open',
-                title: 'Favorite Place Food Bank',
+                bedge: 'Certificado',
+                title: 'Servicio de Limpieza para alojamientos',
                 titleIcon: <IoIosCheckmarkCircle />,
-                titleUrl: '/listing-details',
-                stitle: 'Bishop Avenue, New York',
+                titleUrl: '/Limpieza 4 hrs',
+                stitle: 'Bogotá, Cedritos',
                 image: destinationimg6,
-                cardType: 'Restaurant',
+                cardType: 'Aseo',
                 cardTypeIcon: <GiChickenOven />,
                 author: authorimg,
                 authorUrl: '#',
@@ -2693,10 +2651,10 @@ const sectiondata = {
             },
             {
                 bedge: 'Closed',
-                title: 'beach blue boardwalk',
+                title: 'Servicio de mudanzas',
                 titleIcon: '',
                 titleUrl: '/listing-details',
-                stitle: 'Bishop Avenue, New York',
+                stitle: 'Bogotá, Chapinero',
                 image: destinationimg6,
                 cardType: 'Travel',
                 cardTypeIcon: <RiPlaneLine />,
@@ -2717,7 +2675,7 @@ const sectiondata = {
             },
             {
                 bedge: 'New Open',
-                title: 'Hotel Govendor',
+                title: 'Seguros para Arriendos',
                 titleIcon: <IoIosCheckmarkCircle />,
                 titleUrl: '/listing-details',
                 stitle: 'Bishop Avenue, New York',

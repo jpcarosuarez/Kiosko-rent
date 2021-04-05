@@ -103,7 +103,7 @@ function SignUpBox({title, subtitle}) {
                                         </div>
                                         <div className="custom-checkbox d-block mr-0">
                                             <input type="checkbox" id="chb14" />
-                                            <label htmlFor="chb14">Estoy de acuerdo con las <Link to="#" className="color-text">TTerminos y condiciones</Link></label>
+                                            <label htmlFor="chb14">Estoy de acuerdo con los <Link to="#" className="color-text">Terminos y condiciones</Link></label>
                                         </div>
                                     </div>
                                 </div>

@@ -59,8 +59,7 @@ import {
     FaFacebookF, FaInstagram,
     FaLinkedinIn, FaMinus, FaPlus, FaQuoteRight, FaRegComment, FaRegEdit,
     FaRegEnvelope, FaRegHeart, FaRegHospital, FaRegMap,
-    FaRegMoneyBillAlt, FaRegTrashAlt, FaSearchDollar, FaSearchPlus, FaSort, FaStethoscope,
-    FaTwitter, FaYoutube
+    FaRegMoneyBillAlt, FaRegTrashAlt, FaSearchPlus, FaSort, FaTwitter, FaYoutube
 } from "react-icons/fa";
 import destinationimg1 from "../assets/images/img5.jpg";
 import flag1 from "../assets/images/flag14.png";

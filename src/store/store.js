@@ -458,19 +458,20 @@ const sectiondata = {
                 img: img1
             },
             {
+                icon: <FaRegHospital />,
+                title: 'Habitaciones | Hoteles',
+                stitle: '20 Listings',
+                url: '#',
+                img: img1
+            },
+            {
                 icon: <GiWineGlass />,
                 title: 'Bodegas',
                 stitle: '14 Listings',
                 url: '#',
                 img: img1
-            },
-            {
-                icon: <TiBrush />,
-                title: 'Lotes',
-                stitle: '20 Listings',
-                url: '#',
-                img: img1
             }
+
         ],
         morecats: [
             {
@@ -486,14 +487,16 @@ const sectiondata = {
                 stitle: '20 Listings',
                 url: '#',
                 img: img1
-            }/*,
+            },
             {
-                icon: <FaRegHospital />,
-                title: 'hospitals',
+                icon: <TiBrush />,
+                title: 'Lotes',
                 stitle: '20 Listings',
                 url: '#',
                 img: img1
             },
+
+            /*
             {
                 icon: <GiPineTree />,
                 title: 'adventure',

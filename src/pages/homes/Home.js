@@ -70,8 +70,8 @@ function Home2() {
                     <RecommendedPlace recommendplaces={sectiondata.recommendedplaces.items} />
                 </div>
             </section>
-
-            {/* FunFacts */}
+            
+            {/* FunFacts 
             <section className="funfact-area section-bg-2 padding-top-100px padding-bottom-50px text-center">
                 <div className="container">
                     <div className="row section-title-width text-center">
@@ -81,8 +81,9 @@ function Home2() {
                     <FunFactsTwo funfactitems={sectiondata.funfacts.funfact2.counteritems} />
                 </div>
             </section>
-
-            {/* How It Work */}
+            */}
+            
+            {/* How It Work
             <section className="hiw-area padding-top-100px padding-bottom-80px after-none text-center">
                 <div className="container">
                     <div className="row section-title-width text-center">
@@ -92,8 +93,9 @@ function Home2() {
                     <InfoBox3 infoitems={sectiondata.howitworks.hiw2.items} isbtnshow={true} />
                 </div>
             </section>
+             */}
 
-            {/* Authors */}
+            {/* Authors
             <section className="author-area padding-top-100px padding-bottom-100px">
                 <div className="container-fluid">
                     <div className="row section-title-width text-center">
@@ -103,8 +105,8 @@ function Home2() {
                     <Authors authoritems={sectiondata.authors.sliders} />
                 </div>
             </section>
-
-            {/* Testimonial */}
+             */}
+            {/* Testimonial
             <section className="testimonial-area padding-top-100px padding-bottom-100px text-center">
                 <div className="container">
                     <div className="row section-title-width text-center">
@@ -117,10 +119,11 @@ function Home2() {
                     </div>
                 </div>
             </section>
+             */}
 
-            <SectionDivider />
+            {/* <SectionDivider />*/}
 
-            {/* Blog */}
+            {/* Blog 
             <section className="blog-area padding-top-100px padding-bottom-80px">
                 <div className="container">
                     <div className="row section-title-width section-title-ml-mr-0">
@@ -137,15 +140,18 @@ function Home2() {
                     <LatestBlog latestarticles={sectiondata.latestarticles.items} />
                 </div>
             </section>
+            */}
 
-            {/* CTA 2 */}
+            {/* CTA 2 
             <section className="cta-area cta-area3 padding-top-100px padding-bottom-100px section-bg">
                 <CtaOne />
             </section>
+            */}
 
-            {/* Client Logo */}
+            {/* Client Logo
             <ClientLogo logos={sectiondata.clientlogos} />
-
+            */}
+            
             {/* NewsLetter */}
             <NewsLetter newsLetterContent={sectiondata.calltoactions.newsletters} />
 

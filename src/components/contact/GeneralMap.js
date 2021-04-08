@@ -21,7 +21,7 @@ const GeneralMap = compose(
 )(props =>
     <GoogleMap
         defaultZoom={13}
-        defaultCenter={{ lat: 4.650417, lng: -74.061654 }}
+        defaultCenter={{ lat: 4.655870, lng: -74.051470 }}
         defaultOptions={{
             disableDefaultUI: false, // disable default map UI
             draggable: true, // make map draggable
@@ -73,8 +73,8 @@ const GeneralMap = compose(
             animation={1}
 
             position={{
-                lat: 40.712776, // latitude to position the marker
-                lng: -74.005974 // longitude to position the marker
+                lat: 4.655870, // latitude to position the marker
+                lng: -74.051470 // longitude to position the marker
             }}
         />
         <BicyclingLayer autoUpdate />

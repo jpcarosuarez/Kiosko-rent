@@ -10,7 +10,7 @@ function Copyright() {
                 <div className="col-lg-12">
                     <div className="copy-right margin-top-50px padding-top-60px">
                         <p className="copy__desc">
-                            &copy; Copyright Kiosko Inmobiliario 2021. Creado con<span className="la"><FiHeart /></span> por <a href="#">Juan Pablo Caro</a>
+                            &copy; Kiosko 2021. Creado con<span className="la"> <FiHeart /></span>
                         </p>
 
                         <CopyrightMenu copyrightright={sectiondata.footerdata.copyright} />

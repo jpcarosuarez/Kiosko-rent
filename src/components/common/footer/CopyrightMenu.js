@@ -15,7 +15,7 @@ function CopyrightMenu({copyrightright}) {
                 </ul>
                 <div className="select-field">
                     <select name="language" id="language-switch">
-                        {copyrightright.languages.map((items, i) => {
+                        {copyrightright.usersite.map((items, i) => {
                             return (
                                 <option value={i} key={i}>{items}</option>
                             )

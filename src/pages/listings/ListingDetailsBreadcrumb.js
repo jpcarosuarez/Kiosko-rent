@@ -3,7 +3,7 @@ import { GiPositionMarker, GiChickenOven } from 'react-icons/gi'
 import { MdStar, MdStarBorder, MdClose } from 'react-icons/md'
 import { BsPencil } from 'react-icons/bs'
 import { AiOutlineFlag } from 'react-icons/ai'
-import { FaRegMoneyBillAlt, FaFacebookF, FaTwitter, FaInstagram, FaTumblr, FaSnapchatGhost, FaGooglePlusG, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
+import { FaRegMoneyBillAlt, FaFacebookF, FaLinkedinIn } from 'react-icons/fa'
 import { RiBookmarkLine, RiExternalLinkLine, RiSendPlane2Line } from 'react-icons/ri'
 
 import { Dropdown } from "react-bootstrap";
@@ -79,7 +79,7 @@ function ListingDetailsBreadcrumb({title}) {
                                     </p>
                                     <ul className="listing-info mt-3 mb-3">
                                         <li>
-                                            <div className="theme-btn average-symble" data-toggle="tooltip" data-placement="top" title="Pricey">
+                                            <div className="theme-btn average-symble" data-toggle="tooltip" data-placement="top" title="Precio">
                                                 <span className="average-active">$$$</span>$$
                                             </div>
                                         </li>
@@ -93,20 +93,20 @@ function ListingDetailsBreadcrumb({title}) {
                                         </li>
                                         <li>
                                             <span className="theme-btn listing-tag">
-                                                <i className="d-inline-block"><GiChickenOven /></i> Eat & Drink
+                                                <i className="d-inline-block"><GiChickenOven /></i> Comer y Beber
                                             </span>
                                         </li>
                                     </ul>
                                     <ul className="listing-info">
                                         <li>
                                             <button type="button" className="theme-btn border-0">
-                                                <i className="d-inline-block"><RiBookmarkLine /></i> save
+                                                <i className="d-inline-block"><RiBookmarkLine /></i> guardar
                                             </button>
                                         </li>
                                         <li>
                                             <Dropdown className="dropdown share-dropmenu">
                                                 <Dropdown.Toggle className="theme-btn dropdown-toggle border-0 after-none" id="dropdown-basic">
-                                                    <i className="d-inline-block"><RiExternalLinkLine /></i> share
+                                                    <i className="d-inline-block"><RiExternalLinkLine /></i> compartir
                                                 </Dropdown.Toggle>
                                                 <Dropdown.Menu className="dropdown-menu">
                                                     {state.shareLinks.map((item, index) => {
@@ -121,7 +121,7 @@ function ListingDetailsBreadcrumb({title}) {
                                         </li>
                                         <li>
                                             <Link to="#" className="theme-btn">
-                                                <span className="d-inline-block"><FaRegMoneyBillAlt /></span> reserve a seat
+                                                <span className="d-inline-block"><FaRegMoneyBillAlt /></span> Reservar un asiento
                                             </Link>
                                         </li>
                                     </ul>
@@ -130,12 +130,12 @@ function ListingDetailsBreadcrumb({title}) {
                                     <ul className="listing-info">
                                         <li>
                                             <a href="#review" className="theme-btn">
-                                                <i className="d-inline-block"><MdStarBorder /></i> write a review
+                                                <i className="d-inline-block"><MdStarBorder /></i> Escribe un Comentario
                                             </a>
                                         </li>
                                         <li>
                                             <span className="theme-btn report-modal-btn">
-                                                <i className="d-inline-block"><AiOutlineFlag /></i> report
+                                                <i className="d-inline-block"><AiOutlineFlag /></i> Reportar
                                             </span>
                                         </li>
                                     </ul>
@@ -160,19 +160,19 @@ function ListingDetailsBreadcrumb({title}) {
                                 <button type="button" className="close close-arrow" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true" className="mb-0"><MdClose /></span>
                                 </button>
-                                <h4 className="modal-title"><span className="mb-0"><AiOutlineFlag /></span> Report this Listing</h4>
+                                <h4 className="modal-title"><span className="mb-0"><AiOutlineFlag /></span> Reportar / Denunciar</h4>
                             </div>
                             <div className="contact-form-action">
                                 <form method="post">
                                     <div className="msg-box">
-                                        <label className="label-text">Write Message</label>
+                                        <label className="label-text">Escribir Mensaje</label>
                                         <div className="form-group">
                                             <i className="form-icon"><BsPencil /></i>
-                                            <textarea className="message-control form-control" name="message" placeholder="What's wrong with this listing?" required></textarea>
+                                            <textarea className="message-control form-control" name="message" placeholder="¿Que sucede con esta publicación?" required></textarea>
                                         </div>
                                     </div>
                                     <div className="btn-box text-right">
-                                        <button type="submit" className="theme-btn button-success border-0"><i><RiSendPlane2Line /></i> Send message
+                                        <button type="submit" className="theme-btn button-success border-0"><i><RiSendPlane2Line /></i> Enviar mensaje
                                         </button>
                                     </div>
                                 </form>

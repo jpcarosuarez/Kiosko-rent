@@ -1,6 +1,6 @@
 import React from 'react'
 import {RiBuilding4Line, RiHotelBedLine, RiPlaneLine, RiReplyLine, RiBuilding3Line, RiStoreLine, RiGovernmentLine} from 'react-icons/ri';
-import {GiChickenOven, GiPineTree, GiPositionMarker, GiWineGlass} from 'react-icons/gi';
+import {GiChickenOven, GiPositionMarker, GiWineGlass} from 'react-icons/gi';
 import {
     BsBookmark,
     BsBriefcase,
@@ -18,6 +18,21 @@ import {ImOffice} from 'react-icons/im';
 import bannerbg1 from '../assets/images/bogotacasas.jpg';
 import img1 from "../assets/images/img1.jpg"; // 263*175
 import img2 from "../assets/images/img7.jpg"; // 362*242
+
+import apartamentos from "../assets/images/apartamentos.jpg"; // 263*175
+import casas from "../assets/images/bogotacasas.jpg"; // 263*175
+
+
+//Imagenes de las Categorias//
+/*
+import img1 from "../assets/images/img1.jpg"; // 263*175
+import img1 from "../assets/images/img1.jpg"; // 263*175
+import img1 from "../assets/images/img1.jpg"; // 263*175
+import img1 from "../assets/images/img1.jpg"; // 263*175
+import img1 from "../assets/images/img1.jpg"; // 263*175
+import img1 from "../assets/images/img1.jpg"; // 263*175
+*/
+
 import authorimg from "../assets/images/small-team1.jpg"; // 67*60
 import symble1 from "../assets/images/symble1.png";
 import symble2 from "../assets/images/symble2.png";
@@ -304,8 +319,8 @@ const sectiondata = {
             ]
         },
         browsecategories2: {
-            sectitle: 'Browse by Categories',
-            seccontent: 'Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortors.',
+            sectitle: 'Buscar por Categorias',
+            seccontent: '¿Que buscar? Encuentra Apartamentos, apartaestudios, oficinas, casas, locales comerciales o hasta una terraza comunal.',
             categories: [
                 {
                     img: img1,
@@ -397,61 +412,61 @@ const sectiondata = {
         }
     },
     popularcategories: {
-        sectitle: 'Categorias más visitadas',
-        seccontent: 'Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortors.',
+        sectitle: 'Arriendos Y Servicios Asociados ¡Sin Tanto Papel!',
+        seccontent: 'Encuentra arriendos desde una oficina por 3 horas hasta un apartamento por un año.',
         categories: [
             {
                 icon: <GiChickenOven />,
-                title: 'Restaurants',
+                title: 'Apartamentos',
                 stitle: '12 Listings',
                 url: '#',
-                img: img1
+                img: apartamentos
             },
             {
                 icon: <TiPlane />,
-                title: 'Travels',
+                title: 'Apartaestudios',
                 stitle: '22 Listings',
                 url: '#',
                 img: img1
             },
             {
                 icon: <RiHotelBedLine />,
-                title: 'Hotels',
+                title: 'Casas',
                 stitle: '33 Listings',
                 url: '#',
-                img: img1
+                img: casas
             },
             {
                 icon: <IoMdMusicalNotes />,
-                title: 'Events',
+                title: 'Oficinas',
                 stitle: '44 Listings',
                 url: '#',
                 img: img1
             },
             {
                 icon: <FiShoppingCart />,
-                title: 'Shops',
+                title: 'Fincas',
                 stitle: '48 Listings',
                 url: '#',
                 img: img1
             },
             {
                 icon: <IoIosFitness />,
-                title: 'Fitness',
+                title: 'Locales Comerciales',
                 stitle: '50 Listings',
                 url: '#',
                 img: img1
             },
             {
                 icon: <GiWineGlass />,
-                title: 'Food & Drink',
+                title: 'Bodegas',
                 stitle: '14 Listings',
                 url: '#',
                 img: img1
             },
             {
                 icon: <TiBrush />,
-                title: 'Art & Design',
+                title: 'Lotes',
                 stitle: '20 Listings',
                 url: '#',
                 img: img1
@@ -460,18 +475,18 @@ const sectiondata = {
         morecats: [
             {
                 icon: <TiBrush />,
-                title: 'outdo0rs',
+                title: 'Parqueaderos',
                 stitle: '20 Listings',
                 url: '#',
                 img: img1
             },
             {
                 icon: <TiBrush />,
-                title: 'nightlife',
+                title: 'Terrazas | Salones',
                 stitle: '20 Listings',
                 url: '#',
                 img: img1
-            },
+            }/*,
             {
                 icon: <FaRegHospital />,
                 title: 'hospitals',
@@ -513,7 +528,7 @@ const sectiondata = {
                 stitle: '20 Listings',
                 url: '#',
                 img: img1
-            }
+            }*/
         ]
     },
     populardestination: {
@@ -792,12 +807,12 @@ const sectiondata = {
             items: [
                 {
                     icon: <FiCheck />,
-                    title: 'We Are Professional',
-                    desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,'
+                    title: 'Transparencia',
+                    desc: 'Siempre tendrás la información detallada y actualizada'
                 },
                 {
                     icon: <FiCheck />,
-                    title: 'Best Service Guarantee',
+                    title: 'Garantía',
                     desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,'
                 },
                 {
@@ -2621,12 +2636,12 @@ const sectiondata = {
         ]
     },
     recommendedplaces: {
-        sectitle: 'Servicios Recomendados',
-        seccontent: 'Contrata servicios especializados para tu hogar',
+        sectitle: 'Partners Certificados',
+        seccontent: 'Contrata servicios especializados para tu hogar certificados integramente por Kiosko ',
         items: [
             {
                 bedge: 'Certificado',
-                title: 'Servicio de Limpieza para alojamientos',
+                title: 'Servicio de Limpieza',
                 titleIcon: <IoIosCheckmarkCircle />,
                 titleUrl: '/Limpieza 4 hrs',
                 stitle: 'Bogotá, Cedritos',
@@ -2636,7 +2651,7 @@ const sectiondata = {
                 author: authorimg,
                 authorUrl: '#',
                 number: '(492) 492-4828',
-                website: 'www.mysitelink.com',
+                website: 'www.jelpit.com',
                 date: 'Posted 1 month ago',
                 view: '204',
                 ratings: [
@@ -2649,7 +2664,7 @@ const sectiondata = {
                 ratingNum: '4.5'
             },
             {
-                bedge: 'Closed',
+                bedge: 'Recomendado',
                 title: 'Servicio de mudanzas',
                 titleIcon: '',
                 titleUrl: '/listing-details',
@@ -2673,7 +2688,7 @@ const sectiondata = {
                 ratingNum: '4.6'
             },
             {
-                bedge: 'New Open',
+                bedge: 'Promoción',
                 title: 'Seguros para Arriendos',
                 titleIcon: <IoIosCheckmarkCircle />,
                 titleUrl: '/listing-details',
@@ -3057,10 +3072,10 @@ const sectiondata = {
             btnurl: '#'
         },
         newsletters: {
-            title: 'Subscribe to Newsletter!',
-            content: 'Subscribe to get latest updates and information.',
-            btntext: 'Subscribe',
-            inputplaceholder: 'Enter your email'
+            title: 'Suscribete a nuestras novedades',
+            content: 'Suscribete y obtén las ultimas novedades y ofertas',
+            btntext: 'Suscribirse',
+            inputplaceholder: 'Ingresa tu Correo'
         }
     },
     contactdata: {
@@ -3664,31 +3679,20 @@ const sectiondata = {
     ],
     footerdata: {
         footerlogo: darklogo,
-        footerdesc: 'Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros',
+        footerdesc: 'Agencia inmobiliaria autorizada M.A. 2018122, Tu partner perfecto para el arriendo de tu espacio',
         sociallinks: [
             {
                 icon: <FaFacebookF />,
-                url: 'https://facebook.com'
+                url: 'https://facebook.com/kioskoinmo'
             },
             {
-                icon: <FaTwitter />,
-                url: 'https://twitter.com'
+                icon: <FaInstagram />,
+                url: 'https://www.instagram.com/kioskoinmobiliario/'
             },
-            {
-                icon: <FaLinkedinIn />,
-                url: 'https://linkedin.com'
-            },
-            {
-                icon: <FaDribbble />,
-                url: 'https://dribbble.com'
-            },
-            {
-                icon: <FaBehance />,
-                url: 'https://behance.com'
-            },
+
         ],
         footerquicklinks: {
-            title: 'Link Rapidos',
+            title: 'Kiosko',
             links: [
                 {
                     path: '/about',
@@ -3696,7 +3700,7 @@ const sectiondata = {
                 },
                 {
                     path: '/sign-up',
-                    text: 'Registrar'
+                    text: 'Registro'
                 },
                 {
                     path: '/login',
@@ -3704,61 +3708,79 @@ const sectiondata = {
                 },
                 {
                     path: '/add-listing/new',
-                    text: 'Publicar'
+                    text: 'Publicar mi espacio'
                 },
                 {
                     path: '/Contacto',
-                    text: 'contact us'
+                    text: 'Contacto'
                 },
                 {
                     path: '/Precios',
-                    text: 'pricing'
+                    text: 'Precios y Tarifas'
                 }
             ]
         },
         footercategories: {
-            title: 'Categories',
+            title: 'Arriendos por horas y más',
             links: [
                 {
                     path: '#',
-                    text: 'Shops'
+                    text: 'Apartamentos'
                 },
                 {
                     path: '#',
-                    text: 'Hotels'
+                    text: 'Apartaestudios'
                 },
                 {
                     path: '#',
-                    text: 'Restaurants'
+                    text: 'Casas'
                 },
                 {
                     path: '#',
-                    text: 'Bars'
+                    text: 'Oficinas'
                 },
                 {
                     path: '#',
-                    text: 'Events'
+                    text: 'Fincas'
                 },
                 {
                     path: '#',
-                    text: 'Fitness'
+                    text: 'Locales Comerciales'
+                },
+                {
+                    path: '#',
+                    text: 'Bodegas'
+                },
+                {
+                    path: '#',
+                    text: 'Lotes'
+                },
+                {
+                    path: '#',
+                    text: 'Parqueaderos'
+                },
+                {
+                    path: '#',
+                    text: 'Terrazas | Salones'
                 }
+                
+                
             ]
         },
         footercontact: {
-            title: 'Contact With Us',
+            title: 'Contacto',
             lists: [
                 {
                     icon: <AiOutlineHome />,
-                    text: '12345 Little Baker St, Melbourne'
+                    text: 'Carrera 10 # 64 - 45, Oficina Kiosko'
                 },
                 {
                     icon: <FiHeadphones />,
-                    text: '+ 61 23 8093 3400'
+                    text: '+ 57 302 423 6366'
                 },
                 {
                     icon: <FaRegEnvelope />,
-                    text: 'dirto@gmail.com'
+                    text: 'contacto@kioskoinmobiliario.com'
                 }
             ]
         },
@@ -3766,15 +3788,15 @@ const sectiondata = {
             menus: [
                 {
                     path: '#',
-                    title: 'Terms & Conditions'
+                    title: 'Terminos y condiciones'
                 },
                 {
                     path: '#',
-                    title: 'Privacy Policy'
+                    title: 'Politicas de privacidad'
                 },
                 {
                     path: '#',
-                    title: 'Help Center'
+                    title: 'Ayuda'
                 }
             ],
             languages: [
@@ -3784,6 +3806,13 @@ const sectiondata = {
                 'America',
                 'Arabic',
                 'England',
+            ],
+            usersite: [
+                'Agentes',
+                'Propietarios',
+                'Inquilinos',
+                'Partners',
+
             ]
         }
     }

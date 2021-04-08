@@ -27,9 +27,9 @@ function Invoice() {
                                         </div>
                                         <div className="col-lg-6">
                                             <ul className="invoice-details text-right">
-                                                <li><strong>Order:</strong> #00124</li>
-                                                <li><strong>Date:</strong> 20/07/2019</li>
-                                                <li>Due 7 days from date of issue</li>
+                                                <li><strong>Recibo N°:</strong> #00124</li>
+                                                <li><strong>Fecha:</strong> 20/07/2019</li>
+                                                <li>Kiosko Inmobiliario</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -38,22 +38,22 @@ function Invoice() {
                                     <div className="row">
                                         <div className="col-lg-12">
                                             <div className="invoice-title padding-top-40px padding-bottom-40px">
-                                                <h2 className="widget-title">Invoice</h2>
+                                                <h2 className="widget-title">Recibo</h2>
                                             </div>
                                         </div>
                                         <div className="col-lg-6">
                                             <div className="invoice-info">
-                                                <strong className="widget-title d-block pb-1">Author:</strong>
+                                                <strong className="widget-title d-block pb-1">Kiosko Inmobiliario</strong>
                                                 <ul className="invoice-details">
-                                                    <li>Dirto Ltd.</li>
-                                                    <li>36 Edgewater Street, Melbourne, AU</li>
+                                                    <li>Carrera 10 # 64 - 45</li>
+                                                    <li>Bogotá, Colombia</li>
                                                     <li>Australia, CF44 6ZL, AU</li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div className="col-lg-6">
                                             <div className="invoice-info">
-                                                <strong className="widget-title d-block pb-1">To:</strong>
+                                                <strong className="widget-title d-block pb-1">Para:</strong>
                                                 <ul className="invoice-details">
                                                     <li>Mark Wins</li>
                                                     <li>21 St Andrews Lane, London, UK</li>
@@ -70,9 +70,9 @@ function Invoice() {
                                                 <table className="table-bordered w-100">
                                                     <thead>
                                                     <tr>
-                                                        <th>Description</th>
-                                                        <th>Quantity</th>
-                                                        <th>VAT</th>
+                                                        <th>Descripcion</th>
+                                                        <th>Cantidad</th>
+                                                        <th>Comision</th>
                                                         <th>Total</th>
                                                     </tr>
                                                     </thead>
@@ -99,16 +99,16 @@ function Invoice() {
                                                     <tbody>
                                                     <tr>
                                                         <th className="pt-1 pb-0">Subtotal:</th>
-                                                        <td className="pt-1 pr-0 text-right"><span>$16.00</span>
+                                                        <td className="pt-1 pr-0 text-right"><span>$150.000</span>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th className="pt-1 pb-0">Discount:</th>
+                                                        <th className="pt-1 pb-0">Descuentos:</th>
                                                         <td className="pt-1 pr-0 text-right"><span>-2%</span></td>
                                                     </tr>
                                                     <tr>
-                                                        <th className="pt-1 pb-0">Total Amount:</th>
-                                                        <td className="pt-1 pr-0 text-right"><span>$14.00</span>
+                                                        <th className="pt-1 pb-0">Monto Total:</th>
+                                                        <td className="pt-1 pr-0 text-right"><span>$170.000</span>
                                                         </td>
                                                     </tr>
                                                     </tbody>

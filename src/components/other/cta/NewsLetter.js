@@ -21,7 +21,7 @@ function NewsLetter({newsLetterContent}) {
                                                     <FaRegEnvelope />
                                                 </span>
                                                 <input className="form-control" type="email" placeholder={newsLetterContent.inputplaceholder} />
-                                                <button className="theme-btn" type="Enviar">
+                                                <button className="theme-btn" type="submit">
                                                     {newsLetterContent.btntext}
                                                 </button>
                                             </div>

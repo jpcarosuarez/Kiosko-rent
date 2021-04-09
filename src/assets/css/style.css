@@ -5117,8 +5117,8 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
-      opacity: 0.8;
-      background-color: #333f57;
+      opacity: 0.4;
+      background-color: #203A43;
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
       border-radius: 4px;
@@ -5138,12 +5138,12 @@ body {
     -moz-box-shadow: 0 10px 40px rgba(82, 85, 90, 0.4);
     box-shadow: 0 10px 40px rgba(82, 85, 90, 0.4); }
     .category-fig:hover .fig-caption:after {
-      opacity: 0.9; }
+      opacity: 0.2; }
     .category-fig:hover .fig-caption .cat-fig-box .cat__icon {
-      background-color: #1f2833;
+      background-color: #203A43;
       color: #fff; }
     .category-fig:hover .fig-caption .cat-fig-box .cat-content .badge {
-      background-color: #1f2833; }
+      background-color: #203A43; }
 
 /*====================================================
     faq-cat-item

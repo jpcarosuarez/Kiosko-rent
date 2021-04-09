@@ -22,6 +22,10 @@ import img2 from "../assets/images/img7.jpg"; // 362*242
 import apartamentos from "../assets/images/apartamentos.jpg"; // 263*175
 import casas from "../assets/images/bogotacasas.jpg"; // 263*175
 
+import candelaria from "../assets/images/candelaria.jfif";
+import centrointernacional from "../assets/images/Centro_internacional.jfif";
+
+import sign2 from "../assets/images/sign2.svg";
 
 //Imagenes de las Categorias//
 /*
@@ -32,7 +36,6 @@ import img1 from "../assets/images/img1.jpg"; // 263*175
 import img1 from "../assets/images/img1.jpg"; // 263*175
 import img1 from "../assets/images/img1.jpg"; // 263*175
 */
-
 import authorimg from "../assets/images/small-team1.jpg"; // 67*60
 import symble1 from "../assets/images/symble1.png";
 import symble2 from "../assets/images/symble2.png";
@@ -76,6 +79,8 @@ import {
     FaRegEnvelope, FaRegHeart, FaRegHospital, FaRegMap,
     FaRegMoneyBillAlt, FaRegTrashAlt, FaSearchPlus, FaSort, FaTwitter, FaYoutube
 } from "react-icons/fa";
+
+import { BiCaretRightCircle } from "react-icons/bi";
 import destinationimg1 from "../assets/images/img5.jpg";
 import flag1 from "../assets/images/flag14.png";
 import flag2 from "../assets/images/flag1.jpg";
@@ -539,76 +544,78 @@ const sectiondata = {
         seccontent: 'Apartamentos, casas, oficinas o espacios libres para arrendar simple y fácil',
         destinations: [
             {
-                img: destinationimg1,
-                cityFlag: flag1,
-                cityName: 'Candelaria',
-                listingTxt: '12 listings',
-                boxCol: '4',
-                cardUrl: '#'
-            },
-            {
                 img: img1,
-                cityFlag: flag2,
-                cityName: 'Centro Internacional',
-                listingTxt: '22 listings',
-                boxCol: '4',
-                cardUrl: '#'
-            },
-            {
-                img: img1,
-                cityFlag: flag3,
-                cityName: 'Bosque Izquierdo',
-                listingTxt: '32 listings',
-                boxCol: '4',
-                cardUrl: '#'
-            },
-            {
-                img: img1,
-                cityFlag: flag4,
+                cityFlag: sign2,
                 cityName: 'Chapinero',
                 listingTxt: '44 listings',
                 boxCol: '3',
-                cardUrl: '#'
+                cardUrl: '/listing-grid'
             },
             {
+                img: candelaria,
+                cityFlag: sign2,
+                cityName: 'Candelaria',
+                listingTxt: '12 listings',
+                boxCol: '4',
+                cardUrl: '/listing-grid'
+            },
+            {
+                img: centrointernacional,
+                cityFlag: sign2,
+                cityName: 'Centro Internacional',
+                listingTxt: '22 listings',
+                boxCol: '4',
+                cardUrl: '/listing-grid'
+            },
+
+
+            {
                 img: img1,
-                cityFlag: flag5,
+                cityFlag: sign2,
                 cityName: 'Cedritos',
                 listingTxt: '48 listings',
                 boxCol: '3',
-                cardUrl: '#'
+                cardUrl: '/listing-grid'
             },
             {
                 img: destinationimg6,
-                cityFlag: flag6,
+                cityFlag: sign2,
                 cityName: 'Usaquén',
                 listingTxt: '50 listings',
                 boxCol: '3',
-                cardUrl: '#'
+                cardUrl: '/listing-grid'
             },
             {
                 img: destinationimg6,
-                cityFlag: flag7,
+                cityFlag: sign2,
                 cityName: 'Suba',
                 listingTxt: '14 listings',
                 boxCol: '3',
-                cardUrl: '#'
+                cardUrl: '/listing-grid'
+            },
+            {
+                img: img1,
+                cityFlag: sign2,
+                cityName: 'Bosque Izquierdo',
+                listingTxt: '32 listings',
+                boxCol: '4',
+                cardUrl: '/listing-grid'
             },
             {
                 img: destinationimg6,
-                cityFlag: flag8,
+                cityFlag: sign2,
                 cityName: 'Medellín',
                 listingTxt: '20 listings',
                 boxCol: '6',
-                cardUrl: '#'
+                cardUrl: '/listing-grid'
             },
             {
                 img: destinationimg6,
-                cityFlag: flag9,
+                cityFlag: sign2,
                 cityName: 'Cali',
                 listingTxt: '14 listings',
                 boxCol: '6',
-                cardUrl: '#'
+                cardUrl: '/listing-grid'
             }
         ],
         viewmorebtn: 'Ver todas las ubicaciones',

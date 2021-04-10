@@ -19,15 +19,26 @@ import bannerbg1 from '../assets/images/bogotacasas.jpg';
 import img1 from "../assets/images/img1.jpg"; // 263*175
 import img2 from "../assets/images/img7.jpg"; // 362*242
 
+//Imagenes de las Categorias//
+
 import apartamentos from "../assets/images/apartamentos.jpg"; // 263*175
 import casas from "../assets/images/bogotacasas.jpg"; // 263*175
 
-import candelaria from "../assets/images/candelaria.jfif";
-import centrointernacional from "../assets/images/Centro_internacional.jfif";
+/*------------Imagenes por ubicaciones */
+
+import chapinero from "../assets/images/chapinero.jpeg";
+import candelaria from "../assets/images/bogotacasas.jpg";
+import centrointernacional from "../assets/images/centrointernacional.jpg";
+import cedritos from "../assets/images/cedritos.jpg";
+import usaquen from "../assets/images/usaquen.jfif";
+import suba from "../assets/images/suba.jpg";
+import teusaquillo from "../assets/images/teusaquillo.jpg";
+import medellin from "../assets/images/medellin.jpg";
+import cali from "../assets/images/cali.jpg";
+
 
 import sign2 from "../assets/images/sign2.svg";
 
-//Imagenes de las Categorias//
 /*
 import img1 from "../assets/images/img1.jpg"; // 263*175
 import img1 from "../assets/images/img1.jpg"; // 263*175
@@ -544,11 +555,11 @@ const sectiondata = {
         seccontent: 'Apartamentos, casas, oficinas o espacios libres para arrendar simple y fácil',
         destinations: [
             {
-                img: img1,
+                img: chapinero,
                 cityFlag: sign2,
                 cityName: 'Chapinero',
                 listingTxt: '44 listings',
-                boxCol: '3',
+                boxCol: '4',
                 cardUrl: '/listing-grid'
             },
             {
@@ -570,7 +581,7 @@ const sectiondata = {
 
 
             {
-                img: img1,
+                img: cedritos,
                 cityFlag: sign2,
                 cityName: 'Cedritos',
                 listingTxt: '48 listings',
@@ -578,7 +589,7 @@ const sectiondata = {
                 cardUrl: '/listing-grid'
             },
             {
-                img: destinationimg6,
+                img: usaquen,
                 cityFlag: sign2,
                 cityName: 'Usaquén',
                 listingTxt: '50 listings',
@@ -586,7 +597,7 @@ const sectiondata = {
                 cardUrl: '/listing-grid'
             },
             {
-                img: destinationimg6,
+                img: suba,
                 cityFlag: sign2,
                 cityName: 'Suba',
                 listingTxt: '14 listings',
@@ -594,15 +605,15 @@ const sectiondata = {
                 cardUrl: '/listing-grid'
             },
             {
-                img: img1,
+                img: teusaquillo,
                 cityFlag: sign2,
-                cityName: 'Bosque Izquierdo',
+                cityName: 'Teusaquillo',
                 listingTxt: '32 listings',
-                boxCol: '4',
+                boxCol: '3',
                 cardUrl: '/listing-grid'
             },
             {
-                img: destinationimg6,
+                img: medellin,
                 cityFlag: sign2,
                 cityName: 'Medellín',
                 listingTxt: '20 listings',
@@ -610,7 +621,7 @@ const sectiondata = {
                 cardUrl: '/listing-grid'
             },
             {
-                img: destinationimg6,
+                img: cali,
                 cityFlag: sign2,
                 cityName: 'Cali',
                 listingTxt: '14 listings',

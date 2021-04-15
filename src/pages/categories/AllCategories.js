@@ -19,7 +19,7 @@ function AllCategories() {
             <GeneralHeader />
 
             {/* Breadcrumb */}
-            <Breadcrumb CurrentPgTitle="Arriendos Y Servicios Asociados ¡Sin Tanto Papel!" MenuPgTitle="Todas las Categorias" img={state.breadcrumbImg} />
+            <Breadcrumb CurrentPgTitle="Espacios en arriendo" MenuPgTitle="Todas las Categorias" img={state.breadcrumbImg} />
 
             <section className="cat-area padding-top-40px padding-bottom-80px">
                 <div className="container">

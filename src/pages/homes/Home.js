@@ -56,8 +56,8 @@ function Home2() {
 
             <SectionDivider />
 
-            {/* How it Work */}
-            <HowItWorkTwo />
+            {/* How it Work */}          
+            {/* <HowItWorkTwo />*/}
 
             <SectionDivider />
 
@@ -67,7 +67,9 @@ function Home2() {
                     <div className="row section-title-width text-center">
                         <SectionsHeading title={sectiondata.recommendedplaces.sectitle} desc={sectiondata.recommendedplaces.seccontent} />
                     </div>
-                    <RecommendedPlace recommendplaces={sectiondata.recommendedplaces.items} />
+                    
+                                       
+                    {/*   <RecommendedPlace recommendplaces={sectiondata.recommendedplaces.items} />   */}
                 </div>
             </section>
             

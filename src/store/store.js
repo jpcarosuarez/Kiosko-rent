@@ -3,8 +3,8 @@ import {RiBuilding4Line, RiHotelBedLine, RiPlaneLine, RiReplyLine, RiBuilding3Li
 import {GiChickenOven, GiPositionMarker, GiWineGlass} from 'react-icons/gi';
 import {
     BsBookmark,
-    BsBriefcase,
-    BsCheckCircle, BsEye,
+    BsCheckCircle, 
+    BsEye,
     BsGear,
     BsListCheck,
     BsMap,
@@ -15,7 +15,7 @@ import {MdClose, MdFitnessCenter, MdStar, MdStarBorder, MdStarHalf} from 'react-
 import {HiOutlineHome} from 'react-icons/hi';
 import {ImOffice} from 'react-icons/im';
 
-import bannerbg1 from '../assets/images/bogotacasas.jpg';
+import bannerbg1 from '../assets/images/bogota.jpg';
 import img1 from "../assets/images/img1.jpg"; // 263*175
 import img2 from "../assets/images/img7.jpg"; // 362*242
 
@@ -30,11 +30,18 @@ import chapinero from "../assets/images/chapinero.jpeg";
 import candelaria from "../assets/images/bogotacasas.jpg";
 import centrointernacional from "../assets/images/centrointernacional.jpg";
 import cedritos from "../assets/images/cedritos.jpg";
-import usaquen from "../assets/images/usaquen.jfif";
+import usaquen from "../assets/images/usaquen.jpg";
 import suba from "../assets/images/suba.jpg";
 import teusaquillo from "../assets/images/teusaquillo.jpg";
 import medellin from "../assets/images/medellin.jpg";
 import cali from "../assets/images/cali.jpg";
+
+//Imagenes de las paginas//
+
+//Imagenes de Contacto//
+
+import fachada from "../assets/images/fachada.jpg";
+
 
 
 import sign2 from "../assets/images/sign2.svg";
@@ -72,7 +79,7 @@ import {
     FiPlus,
     FiShoppingCart, FiThumbsUp, FiUsers
 } from "react-icons/fi";
-import {AiOutlineCar, AiOutlineEllipsis, AiOutlineHome, AiOutlineQuestionCircle, AiOutlineUser} from "react-icons/ai";
+import { AiOutlineEllipsis, AiOutlineHome, AiOutlineQuestionCircle, AiOutlineUser} from "react-icons/ai";
 import team1 from "../assets/images/team2.jpg"; // 111*100
 import team2 from "../assets/images/testi-img1.jpg"; // 106*95
 import team3 from "../assets/images/testi-img2.jpg"; // 95*85
@@ -91,8 +98,7 @@ import {
     FaRegMoneyBillAlt, FaRegTrashAlt, FaSearchPlus, FaSort, FaTwitter, FaYoutube
 } from "react-icons/fa";
 
-import { BiCaretRightCircle } from "react-icons/bi";
-import destinationimg1 from "../assets/images/img5.jpg";
+//import destinationimg1 from "../assets/images/img5.jpg";
 import flag1 from "../assets/images/flag14.png";
 import flag2 from "../assets/images/flag1.jpg";
 import flag3 from "../assets/images/flag2.jpg";
@@ -131,20 +137,50 @@ import mainimage from "../assets/images/video-img.jpg"; // 750*500
 const sectiondata = {
     headermenu: [
         {
-            title: 'Arrienda Fácil',
+            title: 'Espacios en arriendo',
+            path: '/',
+            dropdown: [
+                {
+                    title: 'Apartamentos',
+                    path: '/list-map-view2'
+                },
+                {
+                    title: 'Apartaestudios',
+                    path: '/list-map-view2'
+                },
+                {
+                    title: 'Oficinas',
+                    path: '/list-map-view2'
+                },
+                {
+                    title: 'Casas',
+                    path: '/list-map-view2'
+                },
+                {
+                    title: 'Todos los espacios',
+                    path: '/all-categories'
+                },
+                {
+                    title: 'Publicar un Arriendo',
+                    path: '/add-listing/new'
+                }
+            ]
+        },
+        {
+            title: 'Tipos de arriendos',
             path: '/',
             dropdown: [
                 {
                     title: 'Arriendos Mensuales',
-                    path: '/all-categories'
+                    path: '/list-map-view2'
                 },
                 {
                     title: 'Arriendos diarios',
-                    path: '/all-categories'
+                    path: '/list-map-view2'
                 },
                 {
-                    title: 'Arriendos de espacios por horas',
-                    path: '/all-categories'
+                    title: 'Arriendo por horas',
+                    path: '/list-map-view2'
                 },
                 {
                     title: 'Todas las Categorias',
@@ -157,84 +193,70 @@ const sectiondata = {
             ]
         },
         {
-            title: 'Requisitos de Arriendos',
-            path: '/all-categories',
+            title: 'Contáctanos',
+            path: '/contact',
+        }
+
+        /*,
+        {
+            title: 'Inmobiliarias',
+            path: '#',
             dropdown: [
                 {
-                    title: 'Hasta 3 meses',
-                    path: '/all-categories'
-                },
-                {
-                    title: '3 meses o más ',
-                    path: '/all-locations'
+                    title: 'Inmobiliarias',
+                    path: '/list-map-view'
                 },
             ]
         },
         {
             title: 'Agentes',
-            path: '/listing-grid',
+            path: '/agentes',
             dropdown: [
                 {
-                    title: 'Agentes de Bienes Raices',
-                    path: '/listing-grid'
-                },
-                {
-                    title: 'Administracion de Propiedades',
-                    path: '/list-map-view'
-                },
-                {
-                    title: 'Seguros inmobiliarios',
-                    path: '/list-map-view2'
-                },
-                {
-                    title: 'Propiedad Horizontal',
-                    path: '/listing-list'
-                },
-                {
-                    title: 'Remodelaciones',
-                    path: '/list-left-sidebar'
+                    title: 'Agentes Inmobiliarios',
+                    path: '/agentes'
                 },
                 {
                     title: 'Crea una cuenta de agente gratis',
-                    path: '/list-right-sidebar'
+                    path: '/sign-up'
                 },
             ]
-        },
+        },*/
         
     ],
     herobanners: {
         banner2: {
-            title: 'Arrienda facil y seguro',
-            content: 'Encuentra arriendos por horas y estadias largas por mas de 3 meses',
+            title: 'La nueva forma de arrendar',
+            content: 'Encuentra arriendos mensuales, diarios o por 3 horas o más',
             categories: [
                 {
-                    path: '#',
+                    path: '/listing-grid',
                     text: 'apartamentos',
                     icon: <RiBuilding4Line />
                 },
             
                 {
-                    path: '#',
+                    path: '/listing-grid',
                     text: 'casas',
                     icon: <HiOutlineHome />
                 },
                 {
-                    path: '#',
+                    path: '/listing-grid',
                     text: 'oficinas',
                     icon: <ImOffice />
                 },
                 {
-                    path: '#',
+                    path: '/listing-grid',
                     text: 'bodegas',
                     icon: <RiBuilding3Line />
                 },
                 {
-                    path: '#',
+                    path: '/listing-grid',
                     text: 'Locales',
                     icon: <RiStoreLine />
                 },
                 {
-                    path: '#',
+                    path: '/listing-grid',
                     text: 'Terrazas | Salones',
                     icon: <RiGovernmentLine />
                 }
@@ -428,7 +450,7 @@ const sectiondata = {
         }
     },
     popularcategories: {
-        sectitle: 'Arriendos Y Servicios Asociados ¡Sin Tanto Papel!',
+        sectitle: 'Tipos de espacios en arriendo',
         seccontent: 'Encuentra arriendos desde una oficina por 3 horas hasta un apartamento por un año.',
         categories: [
             {
@@ -632,7 +654,7 @@ const sectiondata = {
         viewmorebtn: 'Ver todas las ubicaciones',
         viewmorebtnurl: '/all-locations'
     },
-    locations: [
+    ubicaciones: [
         {
             img: flag1,
             title: 'United states (2)',
@@ -3100,22 +3122,21 @@ const sectiondata = {
         }
     },
     contactdata: {
-        title: 'Our Office',
-        img: destinationimg1,
-        desc: 'Mauris aliquet eu quam id ornare. Morbi ac quam enim. Cras vitae nulla condimentum, semper dolor non, faucibus dolor. Praesent eros turpis, commodo vel justo at',
-        address: 'USA 27TH Brooklyn NY',
-        phoneNum: '+7(111)123456789',
-        email: 'contact@dirto.com',
-        opendays: 'Monday To Friday',
-        opendaytime: '9am - 7pm',
-        closeday: 'Saturday To Sunday',
+        title: 'Nuestra oficina',
+        img: fachada,
+        desc: 'En el corazón de Chapinero',
+        address: 'Carrera 10 # 64 - 45 Oficina Kiosko',
+        phoneNum: '+57 302 423 6366',
+        email: 'contacto@kioskoinmobiliario.com',
+        opendays: 'Lunes a Sábados',
+        opendaytime: 'Previo agendamiento por pandemia',
+        closeday: 'Domingos',
         mapoverlay: {
-            address: 'Melbourne, Australia, 105 South',
-            city: 'Park Avenue',
-            number: '2800 256 508',
-            number2: '666 777 888',
-            email1: 'needhelp@dirto.com',
-            email2: 'inquiry@dirto.com'
+            address: 'Carrera 10 # 64-45 Oficina Kiosko, Chapinero, Bogotá.',
+            city: 'Chapinero, Bogotá.',
+            number: '(031) 3936524',
+            number2: '302 423 6366',
+            email1: 'contacto@kioskoinmobiliario.com',
         }
     },
     testimonialdata: {
@@ -3600,20 +3621,21 @@ const sectiondata = {
         ]
     },
     authors: {
-        sectitle: 'Meet Top Authors',
-        seccontent: 'Top 700+ famous authors on the Dirto. consectetur adipisicing elit Adipisci culpa possimus quis voluptatibus!',
+        sectitle: 'Expertos aliados dispuestos a ayudar íntegramente su propiedad o si se encuentra en búsqueda de alguna',
+        seccontent: 'Agentes Aliados y Certificados',
         sliders: [
             {
                 authorImg: team2,
-                authorName: 'Steven Harvey',
-                city: 'Australia',
-                authorStatus: 'Power Author',
+                authorName: 'Juan Pablo Caro',
+                city: 'Bogotá',
+                authorStatus: 'Agente Inmobiliario',
                 powerauthor: true,
                 listingNum: '120',
                 followers: '49',
                 following: '49',
-                buttonTxt: 'Follow',
-                buttonIcon: <FiPlus />
+                buttonTxt: 'Ver Perfil',
+                buttonIcon: <FiPlus />,
+                buttonUrl: '/user-profile'
             },
             {
                 authorImg: team2,
@@ -3808,6 +3830,14 @@ const sectiondata = {
         copyright: {
             menus: [
                 {
+                    path: '/contact',
+                    title: 'Contacto'
+                },
+                {
+                    path: '/pricing',
+                    title: 'Tarifas'
+                },
+                {
                     path: '#',
                     title: 'Terminos y condiciones'
                 },
@@ -3816,7 +3846,7 @@ const sectiondata = {
                     title: 'Politicas de privacidad'
                 },
                 {
-                    path: '#',
+                    path: '/faq',
                     title: 'Ayuda'
                 }
             ],

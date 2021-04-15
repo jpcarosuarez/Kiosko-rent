@@ -9,7 +9,7 @@ import { FaRegEnvelope } from 'react-icons/fa'
 import { GoLocation } from 'react-icons/go'
 import Footer from "../components/common/footer/Footer";
 import ScrollTopBtn from "../components/common/ScrollTopBtn";
-import breadcrumbimg from '../assets/images/bread-bg.jpg'
+import breadcrumbimg from '../assets/images/contacto-bg.jpg'
 import sectiondata from "../store/store";
 
 const state = {

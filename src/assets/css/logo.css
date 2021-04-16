@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 
 
 h1 {
-    color: #2193b0; 
+    color: #66fcf1; 
     font-size: 1.5rem;
     font-weight: 900;
-    font-family: 'Yusei Magic', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: -4px 0 #0b0c10, 0 1px #0b0c10, 1px 0 #0b0c10, 0 -1.5px #0b0c10;
+    letter-spacing: 0.1rem;
+
 }

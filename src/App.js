@@ -8,7 +8,7 @@ import LayoutDefault from './layouts/LayoutDefault';
 
 // Paginas
 import Home from "./pages/homes/Home";
-
+import Apartaestudios from "./pages/listings/categoriesListings/Apartaestudios";
 
 import AllCategories from './pages/categories/AllCategories';
 import AllLocations from './pages/categories/AllLocations';
@@ -60,6 +60,8 @@ const App = () => {
           <Switch>
             <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
               <AppRoute path="#" component={Home} />
+              <AppRoute path="/apartaestudios" component={Apartaestudios} />
+
               <AppRoute path="/all-categories" component={AllCategories} />
               <AppRoute path="/all-locations" component={AllLocations} />
               <AppRoute path="/top-place" component={TopPlaces} />

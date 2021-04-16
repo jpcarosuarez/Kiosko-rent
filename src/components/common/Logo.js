@@ -6,7 +6,7 @@ export default function Logo({url, className}) {
     return (
         <>
             <Link to="/" className={className}>
-                <h1> KiosKo</h1>
+                <h1> <b>kiosko</b> </h1>
             </Link>
         </>
     )

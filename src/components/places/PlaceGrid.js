@@ -16,7 +16,7 @@ function PlaceGrid({griditems}) {
                         <div className="card-item">
                             <Link to={item.titleUrl} className="card-image-wrap">
                                 <div className="card-image">
-                                    <Imagen src={item.image} alt="" className=""></Imagen> 
+                                    <Imagen src={item.image} alt="" className="card__img" width="370" height="242"></Imagen> 
                                     {/* <img src={item.image} className="card__img" alt="Place" /> */}
                                     <span className={item.titleIcon ? 'badge': 'badge badge-closed' }>{item.bedge}</span>
                                     <span className="badge-toggle" data-toggle="tooltip" data-placement="bottom" title="22 Likes">

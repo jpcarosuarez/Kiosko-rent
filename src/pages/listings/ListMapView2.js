@@ -26,48 +26,54 @@ import {useState, useEffect} from 'react';
 
 function ListMapView2() {
 
-    const db = getFirestore();
+    
     const [arriendos,setArriendos] = useState([]);
     
-
     useEffect(() => {
-            db.collection('inmuebles').get()
-            .then(response => {
-                let array=[];
-                response.forEach(doc => {
-                    array.push(
-                        {
-                        id: doc.id, 
-                        bedge: doc.data().titulo ?? '',
-                        title: 'Favorite Place Food Bank',
-                        titleIcon: <IoIosCheckmarkCircle />,
-                        titleUrl: '/listing-details',
-                        stitle: doc.data().ciudad ?? '',
-                        image: img2,
-                        cardType: 'Restaurant',
-                        cardTypeIcon: <GiChickenOven />,
-                        author: authorimg,
-                        authorUrl: '#',
-                        number: '(492) 492-4828',
-                        website: 'www.mysitelink.com',
-                        date: 'Posted 1 month ago',
-                        view: '204',
-                        ratings: [
-                            <IoMdStar />,
-                            <IoMdStar />,
-                            <IoMdStar />,
-                            <IoMdStarHalf />,
-                            <IoMdStar className="last-star" />,
-                        ],
-                        ratingNum: '4.5'
-                    })
+        const fetchBusinesses = () => {
+           return getFirestore().collection('inmuebles').get()
+           .then(response => {
+            let array=[];
+            response.forEach(doc => {
+                array.push(
+                    {
+                    id: doc.id, 
+                    bedge: doc.data().titulo ?? '',
+                    title: 'Favorite Place Food Bank',
+                    titleIcon: <IoIosCheckmarkCircle />,
+                    titleUrl: '/listing-details',
+                    stitle: doc.data().ciudad ?? '',
+                    image: doc.data().img ?? img2,
+                    cardType: 'Restaurant',
+                    cardTypeIcon: <GiChickenOven />,
+                    author: authorimg,
+                    authorUrl: '#',
+                    number: '(492) 492-4828',
+                    website: 'www.mysitelink.com',
+                    date: 'Posted 1 month ago',
+                    view: '204',
+                    ratings: [
+                        <IoMdStar />,
+                        <IoMdStar />,
+                        <IoMdStar />,
+                        <IoMdStarHalf />,
+                        <IoMdStar className="last-star" />,
+                    ],
+                    ratingNum: '4.5'
                 })
-                setArriendos(array);
-
-                
             })
+            setArriendos(array);
 
-    },[]);
+            
+        })
+          .catch(err => {
+            // some error handling
+          });
+      };
+      fetchBusinesses();
+    }, []);
+    
+
 
     return (
         <main className="List-map-view2">

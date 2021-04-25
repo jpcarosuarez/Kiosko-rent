@@ -10,9 +10,65 @@ import PlaceGrid from "../../components/places/PlaceGrid";
 import MapViewCluster from "../../components/contact/MapViewCluster";
 import GenericHeader from "../../components/common/GenericHeader";
 import sectiondata from "../../store/store";
+import {GiChickenOven, GiPositionMarker, GiWineGlass} from 'react-icons/gi';
+import authorimg from "../../assets/images/small-team1.jpg"; // 67*60
+import {
+    IoIosCheckmarkCircle,
+    IoIosFitness, IoIosRocket, IoMdCut,
+    IoMdMusicalNotes, IoMdPaperPlane,
+    IoMdStar,
+    IoMdStarHalf
+} from "react-icons/io";
+import img2 from "../../assets/images/img7.jpg";
+import {getFirestore} from '../../db';
+import {useState, useEffect} from 'react';
 
 
 function ListMapView2() {
+
+    const db = getFirestore();
+    const [arriendos,setArriendos] = useState([]);
+    
+
+    useEffect(() => {
+            db.collection('inmuebles').get()
+            .then(response => {
+                let array=[];
+                response.forEach(doc => {
+                    array.push(
+                        {
+                        id: doc.id, 
+                        bedge: doc.data().titulo ?? '',
+                        title: 'Favorite Place Food Bank',
+                        titleIcon: <IoIosCheckmarkCircle />,
+                        titleUrl: '/listing-details',
+                        stitle: doc.data().ciudad ?? '',
+                        image: img2,
+                        cardType: 'Restaurant',
+                        cardTypeIcon: <GiChickenOven />,
+                        author: authorimg,
+                        authorUrl: '#',
+                        number: '(492) 492-4828',
+                        website: 'www.mysitelink.com',
+                        date: 'Posted 1 month ago',
+                        view: '204',
+                        ratings: [
+                            <IoMdStar />,
+                            <IoMdStar />,
+                            <IoMdStar />,
+                            <IoMdStarHalf />,
+                            <IoMdStar className="last-star" />,
+                        ],
+                        ratingNum: '4.5'
+                    })
+                })
+                setArriendos(array);
+
+                
+            })
+
+    },[]);
+
     return (
         <main className="List-map-view2">
             {/* Header */}
@@ -33,7 +89,7 @@ function ListMapView2() {
                                 <GenericHeader />
                             </div>
                             <div className="row twocol align-items-start justify-content-start">
-                                <PlaceGrid griditems={sectiondata.placesgrid} />
+                                <PlaceGrid griditems={arriendos} />
                             </div>
                         </div>
 

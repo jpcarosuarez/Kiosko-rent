@@ -4,8 +4,10 @@ import {FiHeart, FiPhone} from "react-icons/fi";
 import {FaRegCalendarCheck} from "react-icons/fa";
 import {AiOutlineEye} from "react-icons/ai";
 import {Link} from "react-router-dom";
+import Imagen from "../../imagen/imagen";
 
 function PlaceGrid({griditems}) {
+    
     return (
         <>
             {griditems.map((item, index) => {
@@ -14,7 +16,8 @@ function PlaceGrid({griditems}) {
                         <div className="card-item">
                             <Link to={item.titleUrl} className="card-image-wrap">
                                 <div className="card-image">
-                                    <img src={item.image} className="card__img" alt="Place" />
+                                    <Imagen src={item.image} alt="" className=""></Imagen> 
+                                    {/* <img src={item.image} className="card__img" alt="Place" /> */}
                                     <span className={item.titleIcon ? 'badge': 'badge badge-closed' }>{item.bedge}</span>
                                     <span className="badge-toggle" data-toggle="tooltip" data-placement="bottom" title="22 Likes">
                                         <FiHeart />

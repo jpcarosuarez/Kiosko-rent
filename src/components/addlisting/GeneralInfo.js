@@ -45,7 +45,7 @@ const state = {
         },
     ]
 }
-function GeneralInfo() {
+function GeneralInfo({handleChangeTitulo, handleChangeHashtags,handleChangeDescripcion}) {
     return (
         <>
             <div className="billing-form-item">
@@ -64,7 +64,7 @@ function GeneralInfo() {
                                             <span className="la form-icon">
                                                 <BsPencilSquare />
                                             </span>
-                                            <input className="form-control" type="text" name="name" placeholder="Ingresa el titulo" />
+                                            <input className="form-control" type="text" name="txtTitulo" placeholder="Ingresa el titulo" onChange={handleChangeTitulo}/>
                                         </div>
                                     </div>
                                 </div>
@@ -79,7 +79,7 @@ function GeneralInfo() {
                                             <span className="la form-icon">
                                                 <AiOutlineTags />
                                             </span>
-                                            <input className="form-control" type="text" name="name" placeholder="Las palabras clave deben estar separadas por comas." />
+                                            <input className="form-control" type="text" name="txtHashtags" placeholder="Las palabras clave deben estar separadas por comas." onChange={handleChangeHashtags} />
                                         </div>
                                     </div>
                                 </div>
@@ -90,7 +90,7 @@ function GeneralInfo() {
                                             <span className="la form-icon">
                                                 <BsPencil />
                                             </span>
-                                            <textarea className="message-control form-control" name="message" placeholder="Escriba la descripción de su publicación"></textarea>
+                                            <textarea className="message-control form-control" name="txtDescripcion" placeholder="Escriba la descripción de su publicación" onChange={handleChangeDescripcion}></textarea>
                                         </div>
                                     </div>
                                 </div>

@@ -14,7 +14,7 @@ import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import {Link} from "react-router-dom";
 import breadcrumbimg from '../../assets/images/bogotayAndes.jpg'
 import sectiondata from "../../store/store";
-import {getFirestore} from '../../db';
+import {getFirestore, getStorage} from '../../db';
 
 const states = {
     breadcrumbimg: breadcrumbimg
@@ -22,25 +22,45 @@ const states = {
 function AddListing() {
 
     const [inmueble,setInmueble] = useState({});
+    const [files, setFiles] = useState([]);
 
     const handleChangeTitulo = (e) => setInmueble({...inmueble,titulo: e.target.value});
     const handleChangeHashtags = (e) => setInmueble({...inmueble,hashtags: e.target.value});
     const handleChangeDescripcion = (e) => setInmueble({...inmueble, descripcion: e.target.value});
-
+    
     const grabarInmueble = () => {
             console.log("inmueble:", inmueble);
-            getFirestore().collection("inmuebles").add(inmueble).then(function(docRef) {
-                docRef.set({idFirebase: docRef.id}, {merge:true}).then(
-                  ()=> {
-                    console.log("Extra id created");
-                  }
-                );
-                console.log("Document written with ID: ", docRef.id);
-            })
-            .catch(function(error) {
-                console.error("Error adding document: ", error);
-            });
-
+            const ref = getStorage().ref();
+            const file = files[0];
+            const name = (+new Date()) + '-' + file.name;
+            const metadata = {
+            contentType: file.type
+            };
+            const task = ref.child(name).put(file, metadata);
+            task
+            .then(snapshot => snapshot.ref.getDownloadURL())
+            .then((url) => {
+                console.log(url);
+                setInmueble({...inmueble, imagen: url.toString()});
+                
+    
+            }).then(()=>
+            {
+                getFirestore().collection("inmuebles").add(inmueble).then(function(docRef) {
+                    docRef.set({idFirebase: docRef.id}, {merge:true}).then(
+                      ()=> {
+                        console.log("Extra id created");
+                      }
+                    );
+                    console.log("Document written with ID: ", docRef.id);
+                })
+                .catch(function(error) {
+                    console.error("Error adding document: ", error);
+                });
+            }
+            )
+            .catch(console.error);
+            
     };
 
 
@@ -64,7 +84,7 @@ function AddListing() {
 
                             <AddFullDetails />
 
-                            <PhotoUploader />
+                            <PhotoUploader files={files} setFiles={setFiles}/>
 
                             <Amenities />
 

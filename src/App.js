@@ -61,7 +61,6 @@ const App = () => {
             <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
               <AppRoute path="#" component={Home} />
               <AppRoute path="/apartaestudios" component={Apartaestudios} />
-
               <AppRoute path="/all-categories" component={AllCategories} />
               <AppRoute path="/all-locations" component={AllLocations} />
               <AppRoute path="/top-place" component={TopPlaces} />

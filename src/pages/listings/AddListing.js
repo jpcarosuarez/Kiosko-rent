@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import GeneralHeader from "../../components/common/GeneralHeader";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import GeneralInfo from "../../components/addlisting/GeneralInfo";
@@ -14,11 +14,57 @@ import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import {Link} from "react-router-dom";
 import breadcrumbimg from '../../assets/images/bogotayAndes.jpg'
 import sectiondata from "../../store/store";
+import {getFirestore, getStorage} from '../../db';
 
 const states = {
     breadcrumbimg: breadcrumbimg
 }
 function AddListing() {
+
+    const [inmueble,setInmueble] = useState({});
+    const [files, setFiles] = useState([]);
+
+    const handleChangeTitulo = (e) => setInmueble({...inmueble,titulo: e.target.value});
+    const handleChangeHashtags = (e) => setInmueble({...inmueble,hashtags: e.target.value});
+    const handleChangeDescripcion = (e) => setInmueble({...inmueble, descripcion: e.target.value});
+    
+    const grabarInmueble = () => {
+            console.log("inmueble:", inmueble);
+            const ref = getStorage().ref();
+            const file = files[0];
+            const name = (+new Date()) + '-' + file.name;
+            const metadata = {
+            contentType: file.type
+            };
+            const task = ref.child(name).put(file, metadata);
+            task
+            .then(snapshot => snapshot.ref.getDownloadURL())
+            .then((url) => {
+                console.log(url);
+                setInmueble({...inmueble, imagen: url.toString()});
+                
+    
+            }).then(()=>
+            {
+                getFirestore().collection("inmuebles").add(inmueble).then(function(docRef) {
+                    docRef.set({idFirebase: docRef.id}, {merge:true}).then(
+                      ()=> {
+                        console.log("Extra id created");
+                      }
+                    );
+                    console.log("Document written with ID: ", docRef.id);
+                })
+                .catch(function(error) {
+                    console.error("Error adding document: ", error);
+                });
+            }
+            )
+            .catch(console.error);
+            
+    };
+
+
+
     return (
         <main className="add-listing">
             {/* Header */}
@@ -32,13 +78,13 @@ function AddListing() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-9 mx-auto">
-                            <GeneralInfo />
+                            <GeneralInfo handleChangeTitulo={handleChangeTitulo} handleChangeHashtags={handleChangeHashtags} handleChangeDescripcion={handleChangeDescripcion}/>
 
                             <AddLocation />
 
                             <AddFullDetails />
 
-                            <PhotoUploader />
+                            <PhotoUploader files={files} setFiles={setFiles}/>
 
                             <Amenities />
 
@@ -58,7 +104,7 @@ function AddListing() {
                                         </label>
                                     </div>
                                     <div className="btn-box mt-4">
-                                        <button type="submit" className="theme-btn border-0">Publicar</button>
+                                        <button type="button" className="theme-btn border-0" onClick={()=>grabarInmueble()}>Publicar</button>
                                     </div>
                                 </div>
                             </div>

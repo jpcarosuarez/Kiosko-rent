@@ -4,9 +4,9 @@ import {FiHeart, FiPhone} from "react-icons/fi";
 import {FaRegCalendarCheck} from "react-icons/fa";
 import {AiOutlineEye} from "react-icons/ai";
 import {Link} from "react-router-dom";
+import Imagen from "../../imagen/imagen";
 
 function PlaceGrid({griditems}) {
-
     return (
         <>
             {griditems.map((item, index) => {

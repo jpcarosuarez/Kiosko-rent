@@ -33,7 +33,7 @@ function ListMapView2() {
                                 <GenericHeader />
                             </div>
                             <div className="row twocol align-items-start justify-content-start">
-                                <PlaceGrid griditems={sectiondata.placesgrid} />
+                                <PlaceGrid griditems={sectiondata.placesgrid}  />
                             </div>
                         </div>
 

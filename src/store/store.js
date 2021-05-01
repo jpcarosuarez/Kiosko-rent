@@ -3722,7 +3722,7 @@ const sectiondata = {
     ],
     footerdata: {
         footerlogo: darklogo,
-        footerdesc: 'Agencia inmobiliaria autorizada M.A. 2018122, Tu partner perfecto para el arriendo de tu espacio',
+        footerdesc: 'Tu partner perfecto para el arriendo de tu espacio, M.A. 2018122',
         sociallinks: [
             {
                 icon: <FaFacebookF />,

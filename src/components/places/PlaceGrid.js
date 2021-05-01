@@ -6,16 +6,17 @@ import {AiOutlineEye} from "react-icons/ai";
 import {Link} from "react-router-dom";
 
 function PlaceGrid({griditems}) {
+
     return (
         <>
             {griditems.map((item, index) => {
                 return (
                     <div className="col-lg-4 column-td-6" key={index}>
                         <div className="card-item">
-                            <Link to={item.titleUrl} className="card-image-wrap">
+                        <Link to={item.titleUrl} className="card-image-wrap">
                                 <div className="card-image">
-                                    <img src={item.image} className="card__img" alt="Place" />
-                                    <span className={item.titleIcon ? 'badge': 'badge badge-closed' }>{item.bedge}</span>
+                                <img src={item.image} className="card__img" alt="Place" />
+                                <span className={item.titleIcon ? 'badge': 'badge badge-closed' }>{item.bedge}</span>
                                     <span className="badge-toggle" data-toggle="tooltip" data-placement="bottom" title="22 Likes">
                                         <FiHeart />
                                     </span>

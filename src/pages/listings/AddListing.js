@@ -41,9 +41,8 @@ function AddListing() {
             .then(snapshot => snapshot.ref.getDownloadURL())
             .then((url) => {
                 console.log(url);
-                setInmueble({...inmueble, imagen: url.toString()});
-                
-    
+                const inmuebleWithUrl = {...inmueble, imagen: url.toString()};
+                setInmueble(inmuebleWithUrl);
             }).then(()=>
             {
                 getFirestore().collection("inmuebles").add(inmueble).then(function(docRef) {

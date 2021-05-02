@@ -43,7 +43,7 @@ function ListMapView2() {
                     titleIcon: <IoIosCheckmarkCircle />,
                     titleUrl: '/listing-details',
                     stitle: doc.data().ciudad ?? '',
-                    image: doc.data().img ?? img2,
+                    image: doc.data().imagen ?? img2,
                     cardType: 'Restaurant',
                     cardTypeIcon: <GiChickenOven />,
                     author: authorimg,

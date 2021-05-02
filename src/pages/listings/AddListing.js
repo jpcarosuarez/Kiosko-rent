@@ -37,16 +37,15 @@ function AddListing() {
             contentType: file.type
             };
             const task = ref.child(name).put(file, metadata);
+            let urlImagen = "";
             task
             .then(snapshot => snapshot.ref.getDownloadURL())
             .then((url) => {
-                console.log(url);
-                const inmuebleWithUrl = {...inmueble, imagen: url.toString()};
-                setInmueble(inmuebleWithUrl);
+                urlImagen = url;
             }).then(()=>
             {
                 getFirestore().collection("inmuebles").add(inmueble).then(function(docRef) {
-                    docRef.set({idFirebase: docRef.id}, {merge:true}).then(
+                    docRef.set({idFirebase: docRef.id, imagen:urlImagen}, {merge:true}).then(
                       ()=> {
                         console.log("Extra id created");
                       }

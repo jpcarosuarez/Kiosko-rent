@@ -16,7 +16,7 @@ function Invoice() {
                         <div className="col-lg-10 mx-auto">
                             <div className="invoice-content">
                                 <div className="invoice-title">
-                                    <h2 className="widget-title text-center mb-5">Muchas gracias!</h2>
+                                    <h2 className="widget-title text-center mb-5">Kiosko Inmobiliario</h2>
                                 </div>
                                 <div className="invoice-item">
                                     <div className="row">
@@ -72,7 +72,7 @@ function Invoice() {
                                                     <tr>
                                                         <th>Descripcion</th>
                                                         <th>Cantidad</th>
-                                                        <th>Comision</th>
+                                                        <th>Valor </th>
                                                         <th>Total</th>
                                                     </tr>
                                                     </thead>

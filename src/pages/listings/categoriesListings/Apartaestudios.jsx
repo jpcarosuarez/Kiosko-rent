@@ -17,10 +17,12 @@ import sectiondata from "../../../store/store";
 const state = {
     bdimg: breadcrumbimg,
 }
-function Apartaestudios() {
+
+const Apartaestudios = () => {
 
     const {category_name} = useParams();
     const [inmuebles, setInmuebles] = useState([]);
+    const [items, setItems] = useState([]);
     const db = getFirestore();
 
     useEffect(() => {
@@ -35,7 +37,6 @@ function Apartaestudios() {
                 setInmuebles(arr)
             })
             
-
         }
 
 
@@ -57,11 +58,25 @@ function Apartaestudios() {
                             <GenericHeader />
                         </div>
                     </div>
-
+                    
                     <div className="row">
-                        <PlaceGrid griditems={sectiondata.placesgrid} />
-                    </div>
+                        
 
+                        <ul>
+
+                        {
+                            items.map((item) => (
+                                <li key={item.id}>
+                                <PlaceGrid inmuebles={inmuebles} />
+                                </li>
+                            ))
+                        }
+                        </ul>
+
+                        
+
+                    </div>
+                    
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="button-shared mt-4 text-center">

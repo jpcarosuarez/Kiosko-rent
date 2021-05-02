@@ -7,18 +7,16 @@ import {Link} from "react-router-dom";
 import Imagen from "../../imagen/imagen";
 
 function PlaceGrid({griditems}) {
-    
     return (
         <>
             {griditems.map((item, index) => {
                 return (
                     <div className="col-lg-4 column-td-6" key={index}>
                         <div className="card-item">
-                            <Link to={item.titleUrl} className="card-image-wrap">
+                        <Link to={item.titleUrl} className="card-image-wrap">
                                 <div className="card-image">
-                                    <Imagen src={item.image} alt="" className="card__img" width="370" height="242"></Imagen> 
-                                    {/* <img src={item.image} className="card__img" alt="Place" /> */}
-                                    <span className={item.titleIcon ? 'badge': 'badge badge-closed' }>{item.bedge}</span>
+                                <img src={item.image} className="card__img" alt="Place" />
+                                <span className={item.titleIcon ? 'badge': 'badge badge-closed' }>{item.bedge}</span>
                                     <span className="badge-toggle" data-toggle="tooltip" data-placement="bottom" title="22 Likes">
                                         <FiHeart />
                                     </span>

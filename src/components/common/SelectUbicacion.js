@@ -5,35 +5,35 @@ const state = {
     selectedOption: null,
     countries: [
         {
-            value: 's',
+            value: '0',
             label: 'Ubicación'
         },
         {
-            value: 'BO',
+            value: '1',
             label: 'Bogotá'
         },
         {
-            value: 'ME',
+            value: '2',
             label: 'Medellín'
         },
         {
-            value: 'CA',
+            value: '3',
             label: 'Cali'
         },
 
     ]
 }
-class SelectCountry extends Component {
-    render() {
-        return (
+function SelectUbicacion({handleChangeUbicacion}){
+    return (
             <>
                 <Select
                     placeholder="Bogotá"
                     options={state.countries}
+                    onChange={handleChangeUbicacion}
                 />
             </>
         );
-    }
+    
 }
 
-export default SelectCountry;
+export default SelectUbicacion;

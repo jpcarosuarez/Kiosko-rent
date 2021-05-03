@@ -1,7 +1,7 @@
 import React from 'react';
 import  { FiSearch } from 'react-icons/fi'
 import  { FaDollarSign } from 'react-icons/fa'
-import SelectCountry from "../../common/SelectCountry";
+import SelectUbicacion from "../../common/SelectUbicacion";
 import Select from "react-select";
 
 
@@ -68,7 +68,7 @@ function BannerThreeSearchInput3() {
                     </div>
                 </div>
                 <div className="main-search-input-item location">
-                    <SelectCountry />
+                    <SelectUbicacion />
                 </div>
                 <div className="main-search-input-item category">
                     <Select
@@ -81,7 +81,7 @@ function BannerThreeSearchInput3() {
                         <form action="#">
                             <div className="form-group mb-0">
                                 <span className="form-icon">
-                                    <FaDollarSign />
+                                <FaDollarSign />
                                 </span>
                                 <input type="number" className="form-control" placeholder="Filter by price" />
                             </div>

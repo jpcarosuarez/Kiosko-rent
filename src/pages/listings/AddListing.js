@@ -26,8 +26,15 @@ function AddListing() {
 
     const handleChangeTitulo = (e) => setInmueble({...inmueble,titulo: e.target.value});
     const handleChangeHashtags = (e) => setInmueble({...inmueble,hashtags: e.target.value});
-    const handleChangeDescripcion = (e) => setInmueble({...inmueble, descripcion: e.target.value});
-    
+    const handleChangeDescripcion = (e) => setInmueble({...inmueble,descripcion: e.target.value});
+    const handleChangeCategoria = (e) => setInmueble({...inmueble,categoria: e.target.value});
+    const handleChangeDireccion = (e) => setInmueble({...inmueble,direccion: e.target.value});
+    const handleChangeComplementaria = (e) => setInmueble({...inmueble,complementaria: e.target.value});
+    const handleChangeUbicacion = (e) => setInmueble({...inmueble,ubicacion: e.target.value});
+    const handleChangeCiudad = (e) => setInmueble({...inmueble,ciudad: e.target.value});
+    const handleChangeLocalidad = (e) => setInmueble({...inmueble,localidad: e.target.value});
+    const handleChangePostal = (e) => setInmueble({...inmueble,codigoPostal: e.target.value});
+
     const grabarInmueble = () => {
             console.log("inmueble:", inmueble);
             const ref = getStorage().ref();
@@ -76,9 +83,28 @@ function AddListing() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-9 mx-auto">
-                            <GeneralInfo handleChangeTitulo={handleChangeTitulo} handleChangeHashtags={handleChangeHashtags} handleChangeDescripcion={handleChangeDescripcion}/>
+                            <GeneralInfo 
 
-                            <AddLocation />
+                            handleChangeTitulo={handleChangeTitulo} 
+                            handleChangeHashtags={handleChangeHashtags} 
+                            handleChangeDescripcion={handleChangeDescripcion}
+                            handleChangeCategoria={handleChangeCategoria}
+                           
+                            />
+
+                            <AddLocation 
+                            handleChangeDireccion={handleChangeDireccion}
+                            handleChangeComplementaria={handleChangeComplementaria}
+                            handleChangeUbicacion={handleChangeUbicacion}
+                            handleChangeCiudad={handleChangeCiudad}
+                            handleChangeLocalidad={handleChangeLocalidad}
+                            handleChangePostal={handleChangePostal}
+
+                            />
+
+
+
+
 
                             <AddFullDetails />
 

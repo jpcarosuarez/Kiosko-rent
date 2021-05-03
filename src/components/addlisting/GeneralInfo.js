@@ -45,7 +45,7 @@ const state = {
         },
     ]
 }
-function GeneralInfo({handleChangeTitulo, handleChangeHashtags,handleChangeDescripcion}) {
+function GeneralInfo({handleChangeTitulo, handleChangeHashtags, handleChangeDescripcion, handleChangeCategoria}) {
     return (
         <>
             <div className="billing-form-item">
@@ -64,7 +64,7 @@ function GeneralInfo({handleChangeTitulo, handleChangeHashtags,handleChangeDescr
                                             <span className="la form-icon">
                                                 <BsPencilSquare />
                                             </span>
-                                            <input className="form-control" type="text" name="txtTitulo" placeholder="Ingresa el titulo" onChange={handleChangeTitulo}/>
+                                            <input className="form-control" type="text" name="txtTitulo" placeholder="Ingresa el titulo de tu publicación" onChange={handleChangeTitulo}/>
                                         </div>
                                     </div>
                                 </div>
@@ -100,6 +100,7 @@ function GeneralInfo({handleChangeTitulo, handleChangeHashtags,handleChangeDescr
                                         <div className="form-group mb-0">
                                             <Select
                                                 placeholder="Selecciona una Categoria"
+                                                onChange={handleChangeCategoria}
                                                 options={state.categories}
                                             />
                                         </div>

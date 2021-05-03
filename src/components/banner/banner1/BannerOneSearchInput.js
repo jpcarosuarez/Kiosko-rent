@@ -1,6 +1,6 @@
 import React from 'react'
 import  { FiSearch } from 'react-icons/fi'
-import SelectCountry from "../../common/SelectCountry";
+import SelectUbicacion from "../../common/SelectUbicacion";
 import Select from "react-select";
 
 
@@ -73,7 +73,7 @@ export default function BannerOneSearchInput() {
                 </div>
 
                 <div className="main-search-input-item location">
-                    <SelectCountry />
+                    <SelectUbicacion />
                 </div>
 
                 <div className="main-search-input-item category">

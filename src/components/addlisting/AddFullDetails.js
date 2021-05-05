@@ -1,11 +1,10 @@
 import React from 'react';
-import { AiOutlineUser, AiOutlineFacebook, AiOutlineTwitter, AiOutlineLinkedin } from 'react-icons/ai'
+import { AiOutlineUser} from 'react-icons/ai'
 import { FaRegEnvelope } from 'react-icons/fa'
 import { FiPhone } from 'react-icons/fi'
-import { BsLink45Deg, BsPencil } from 'react-icons/bs'
-import { TiSocialGooglePlus } from 'react-icons/ti'
 
-function AddFullDetails() {
+
+function AddFullDetails({ handleChangeTelefonoContacto, handleChangeCorreoRepresentante, handleChangeRepresentante }) {
     return (
         <>
             <div className="billing-form-item">
@@ -19,23 +18,23 @@ function AddFullDetails() {
                             <div className="row">
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text">Responsable</label>
+                                        <label className="label-text"> Contacto del inmueble</label>
                                         <div className="form-group">
                                             <span className="la form-icon">
                                                 <AiOutlineUser />
                                             </span>
-                                            <input className="form-control" type="text" name="name" placeholder="Nombre" />
+                                            <input className="form-control" type="text" name="name" placeholder="Nombre Completo" onChange={handleChangeRepresentante}/>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text">Correo</label>
+                                        <label className="label-text">Correo electrónico</label>
                                         <div className="form-group">
                                             <span className="la form-icon">
                                                 <FaRegEnvelope />
                                             </span>
-                                            <input className="form-control" type="email" name="email" placeholder="Correo electrónico" />
+                                            <input className="form-control" type="email" name="email" placeholder="Correo electrónico" onChange={handleChangeCorreoRepresentante} />
                                         </div>
                                     </div>
                                 </div>
@@ -46,73 +45,7 @@ function AddFullDetails() {
                                             <span className="la form-icon">
                                                 <FiPhone />
                                             </span>
-                                            <input className="form-control" type="text" name="text" placeholder="Teléfono Contacto" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="input-box">
-                                        <label className="label-text">Sitio Web <span className="text-muted">(opcional)</span></label>
-                                        <div className="form-group">
-                                            <span className="la form-icon">
-                                                <BsLink45Deg />
-                                            </span>
-                                            <input className="form-control" type="text" name="text" placeholder="https://kioskoinmobiliario.com" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="input-box">
-                                        <label className="label-text">Facebook <span className="text-muted">(opcional)</span></label>
-                                        <div className="form-group">
-                                            <span className="la form-icon">
-                                                <AiOutlineFacebook />
-                                            </span>
-                                            <input className="form-control" type="text" name="text" placeholder="https://www.facebook.com/" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="input-box">
-                                        <label className="label-text">Twitter <span className="text-muted">(opcional)</span></label>
-                                        <div className="form-group">
-                                            <span className="la form-icon">
-                                                <AiOutlineTwitter />
-                                            </span>
-                                            <input className="form-control" type="text" name="text" placeholder="https://www.twitter.com/" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="input-box">
-                                        <label className="label-text">Google <span className="text-muted">(opcional)</span></label>
-                                        <div className="form-group">
-                                            <span className="la form-icon">
-                                                <TiSocialGooglePlus />
-                                            </span>
-                                            <input className="form-control" type="text" name="text" placeholder="https://plus.google.com" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="input-box">
-                                        <label className="label-text">Linkedin <span className="text-muted">(opcional)</span></label>
-                                        <div className="form-group">
-                                            <span className="la form-icon">
-                                                <AiOutlineLinkedin />
-                                            </span>
-                                            <input className="form-control" type="text" name="text" placeholder="https://linkedin.com" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-12">
-                                    <div className="input-box">
-                                        <label className="label-text">Descripción</label>
-                                        <div className="form-group mb-0">
-                                            <span className="la form-icon">
-                                                <BsPencil />
-                                            </span>
-                                            <textarea className="message-control form-control" name="message" placeholder="Escribe una breve descripción"></textarea>
+                                            <input className="form-control" type="text" name="text" placeholder="Teléfono Contacto" onChange={handleChangeTelefonoContacto}/>
                                         </div>
                                     </div>
                                 </div>

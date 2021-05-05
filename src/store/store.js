@@ -137,7 +137,7 @@ import mainimage from "../assets/images/video-img.jpg"; // 750*500
 const sectiondata = {
     headermenu: [
         {
-            title: 'Espacios en arriendo',
+            title: 'Espacios en arriendo o venta',
             path: '/',
             dropdown: [
                 {
@@ -450,7 +450,7 @@ const sectiondata = {
         }
     },
     popularcategories: {
-        sectitle: 'Tipos de espacios en arriendo',
+        sectitle: 'Tipos de espacios en arriendo o Venta',
         seccontent: 'Encuentra arriendos desde una oficina por 3 horas hasta un apartamento por un año.',
         categories: [
             {

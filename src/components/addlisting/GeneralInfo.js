@@ -1,51 +1,159 @@
 import React from 'react';
-import { BsPencilSquare, BsQuestion, BsPencil } from 'react-icons/bs'
-import { AiOutlineTags } from 'react-icons/ai'
+import { BsPencilSquare, BsPencil } from 'react-icons/bs'
 import Select from "react-select";
 
+
+
 const state = {
-    title: 'Información general',
-    selectedCatOp: null,
-    categories: [
+    title: 'Información general del inmueble',
+    categorias: [
         {
-            value: 0,
+            value: 'categoria',
             label: 'Categoria'
         },
         {
-            value: 2,
+            value: 'apartamento',
             label: 'Apartamento'
         },
         {
-            value: 3,
+            value: 'apartaestudio',
             label: 'Apartaestudio'
         },
         {
-            value: 4,
+            value: 'casa',
             label: 'Casa'
         },
         {
-            value: 5,
+            value: 'finca',
             label: 'Finca'
         },
         {
-            value: 6,
+            value: 'oficina',
             label: 'Oficina'
         },
         {
-            value: 7,
+            value: 'salon',
             label: 'Salón o terraza '
         },
         {
-            value: 8,
+            value: 'bodega',
             label: 'Bodega'
         },
         {
-            value: 9,
+            value: 'local',
             label: 'Local Comercial'
         },
     ]
 }
-function GeneralInfo({handleChangeTitulo, handleChangeHashtags, handleChangeDescripcion, handleChangeCategoria}) {
+
+
+const operacion = {
+    operaciones:[
+        {
+            value: 'porHoras',
+            label:'Alquiler de espacios por Horas ( Minimo 3 horas)'          
+        },
+        {
+            value: 'diario',
+            label:'Arriendo diario'   
+        },
+        {
+            value: 'mensual',
+            label:'Arriendo Mensual'   
+        },
+        {
+            value: 'venta',
+            label:'Venta'  
+        },
+        {
+            value: 'permuta',
+            label:'Permuta'  
+        }
+    ],
+}
+const habitaciones = {
+    
+    cantidad:[
+        {
+            value: 0,
+            label:'1'   
+        },
+        {
+            value: 1,
+            label:'2'   
+        },
+        {
+            value: 2,
+            label:'3'   
+        },
+        {
+            value: 3,
+            label:'4'   
+        },
+        {
+            value: 4,
+            label:'5+'   
+        },
+    ],  
+
+}
+
+const baños ={
+
+    cantidad:[
+        {
+            value: 0,
+            label:'1'   
+        },
+        {
+            value: 1,
+            label:'2'   
+        },
+        {
+            value: 2,
+            label:'3'   
+        },
+        {
+            value: 3,
+            label:'4'   
+        },
+        {
+            value: 4,
+            label:'5+'   
+        },
+    ],
+}
+const estratos = {
+    estrato:[
+        {
+            value: 0,
+            label:'1'
+        },
+        {
+            value: 1,
+            label:'2'
+        },
+        {
+            value: 2,
+            label:'3'
+        },
+        {
+            value: 3,
+            label:'4'
+        },
+        {
+            value: 4,
+            label:'5'
+        },
+        {
+            value: 5,
+            label:'6'
+        },
+
+    ],
+}
+
+function GeneralInfo({handleChangeTitulo, handleChangeOperacion, handleChangeAmbientes, handleChangeDescripcion, handleChangeCategorias, handleChangeAntiguedad, handleChangeHabitaciones, handleChangeBaños, handleChangeAreaTotal, handleChangeAreaConstruida, handleChangeEstrato}) {
     return (
         <>
             <div className="billing-form-item">
@@ -59,53 +167,132 @@ function GeneralInfo({handleChangeTitulo, handleChangeHashtags, handleChangeDesc
                             <div className="row">
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text">Titulo de la Publicación</label>
+                                        <label className="label-text">Título</label>
                                         <div className="form-group">
                                             <span className="la form-icon">
                                                 <BsPencilSquare />
                                             </span>
-                                            <input className="form-control" type="text" name="txtTitulo" placeholder="Ingresa el titulo de tu publicación" onChange={handleChangeTitulo}/>
+                                            <input className="form-control" type="text" name="titulo" placeholder="Nombre breve para identificar el inmueble" onChange={handleChangeTitulo}/>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text d-flex align-items-center ">Hashtags - Palabras relacionadas con su negocio
-                                            <i className="la tip ml-1" data-toggle="tooltip" data-placement="top" title="Máximo de 15 palabras clave relacionadas con su negocio">
-                                                <BsQuestion />
-                                            </i>
-                                        </label>
+                                        <label className="label-text">Tipo de Inmueble</label>
                                         <div className="form-group">
-                                            <span className="la form-icon">
-                                                <AiOutlineTags />
-                                            </span>
-                                            <input className="form-control" type="text" name="txtHashtags" placeholder="Las palabras clave deben estar separadas por comas." onChange={handleChangeHashtags} />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-12">
-                                    <div className="input-box">
-                                        <label className="label-text">Descripción</label>
-                                        <div className="form-group">
-                                            <span className="la form-icon">
-                                                <BsPencil />
-                                            </span>
-                                            <textarea className="message-control form-control" name="txtDescripcion" placeholder="Escriba la descripción de su publicación" onChange={handleChangeDescripcion}></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-12">
-                                    <div className="input-box">
-                                        <label className="label-text">Categoria</label>
-                                        <div className="form-group mb-0">
                                             <Select
-                                                placeholder="Selecciona una Categoria"
-                                                onChange={handleChangeCategoria}
-                                                options={state.categories}
+                                                placeholder="Categorias"
+                                                onChange={handleChangeCategorias}
+                                                options={state.categorias}
                                             />
                                         </div>
                                     </div>
                                 </div>
+                                <div className="col-lg-6">
+                                    <div className="input-box">
+                                        <label className="label-text">Tipo de Operacion</label>
+                                        <div className="form-group">
+                                            <Select
+                                                placeholder="Arriendos"
+                                                onChange={handleChangeOperacion}
+                                                options={operacion.operaciones}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="input-box">
+                                        <label className="label-text">Ambientes</label>
+                                        <div className="form-group">
+                                            <Select
+                                                placeholder="0"
+                                                onChange={handleChangeAmbientes}
+                                                options={habitaciones.cantidad}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="input-box">
+                                        <label className="label-text">Habitaciones</label>
+                                        <div className="form-group">
+                                            <Select
+                                                placeholder="0"
+                                                onChange={handleChangeHabitaciones}
+                                                options={habitaciones.cantidad}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="input-box">
+                                        <label className="label-text">Baños</label>
+                                        <div className="form-group">
+                                            <Select
+                                                placeholder="0"
+                                                onChange={handleChangeBaños}
+                                                options={baños.cantidad}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="input-box">
+                                        <label className="label-text">Área construida</label>
+                                        <div className="form-group">
+                                            <span className="la form-icon">
+                                                <BsPencilSquare />
+                                            </span>
+                                            <input className="form-control" type="text" name="area" placeholder="Área mts2" onChange={handleChangeAreaConstruida}/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="input-box">
+                                        <label className="label-text">Área total</label>
+                                        <div className="form-group">
+                                            <span className="la form-icon">
+                                                <BsPencilSquare />
+                                            </span>
+                                            <input className="form-control" type="text" name="area" placeholder="Área mts2" onChange={handleChangeAreaTotal}/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="input-box">
+                                        <label className="label-text">Estrato</label>
+                                        <div className="form-group">
+                                            <Select
+                                                placeholder="3"
+                                                onChange={handleChangeEstrato}
+                                                options={estratos.estrato}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="input-box">
+                                        <label className="label-text">Antiguedad en Años</label>
+                                        <div className="form-group">
+                                        <input className="form-control" type="text" name="antiguedad" placeholder="Ej: 5" onChange={handleChangeAntiguedad}/>
+
+                                        </div>
+                                    </div>
+                                </div>                             
+
+                                <div className="col-lg-12">
+                                    <div className="input-box">
+                                        <label className="label-text">Describe tu inmueble</label>
+                                        <div className="form-group">
+                                            <span className="la form-icon">
+                                                <BsPencil />
+                                            </span>
+                                            <textarea className="message-control form-control" name="descripcion" placeholder="Descripción del inmueble, ingresa información complementaria." onChange={handleChangeDescripcion}></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </form>
                     </div>

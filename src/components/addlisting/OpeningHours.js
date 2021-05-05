@@ -3,7 +3,7 @@ import Select from "react-select";
 
 const state = {
     selectedHours: null,
-    title: 'Horarios permitidos para visitar y mostrar el apartamento ',
+    title: 'Horario permitidos para visitar el apartamento ',
     shortby:[
         {
             value: 2,

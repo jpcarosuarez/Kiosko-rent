@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { FiMap } from 'react-icons/fi'
 import { FaMapSigns } from 'react-icons/fa'
 import { BsFileCode } from 'react-icons/bs'
@@ -32,7 +32,6 @@ const cities = {
 
 const states = {
 
-    title: 'Agregar Ubicación',
     localidad: [
 
         {
@@ -67,23 +66,31 @@ const states = {
             value: 7,
             label: 'Centro Cali'
         },
+        {
+            value: 8,
+            label: 'Otra Localidad'
+        }
     ]
 
 };
 
 
+const title = ['Agregar Ubicación']
 
 
 
 
 
-function AddLocation({handleChangeDireccion, handleChangeComplementaria, handleChangeUbicacion, handleChangeCiudad, handleChangeLocalidad, handleChangePostal }) {
+function AddLocation({handleChangeDireccion, handleChangeComplementaria, handleChangeBarrio, handleChangeCiudad, handleChangeLocalidad}) {
+    
+
+    
     return (
         <>
             <div className="billing-form-item">
                 <div className="billing-title-wrap">
                     <h3 className="widget-title pb-0">
-                        {states.title}
+                        {title}
                     </h3>
                     <div className="title-shape margin-top-10px"></div>
                 </div>
@@ -93,12 +100,12 @@ function AddLocation({handleChangeDireccion, handleChangeComplementaria, handleC
                             <div className="row">
                                 <div className="col-lg-6">
                                     <div className="input-box">
-                                        <label className="label-text">Dirección</label>
+                                        <label className="label-text">Dirección </label>
                                         <div className="form-group">
                                             <span className="la form-icon">
                                                 <FiMap />
                                             </span>
-                                            <input className="form-control" type="text" name="name" placeholder="Ingresar dirección" onChange={handleChangeDireccion}/>
+                                            <input className="form-control" type="text" name="name" placeholder="Información privada" onChange={handleChangeDireccion}/>
                                         </div>
                                     </div>
                                 </div>
@@ -109,7 +116,7 @@ function AddLocation({handleChangeDireccion, handleChangeComplementaria, handleC
                                             <span className="la form-icon">
                                                 <FaMapSigns />
                                             </span>
-                                            <input className="form-control" type="text" name="name" placeholder="Información Complementaria" onChange={handleChangeComplementaria} />
+                                            <input className="form-control" type="text" name="name" placeholder="Apto 707" onChange={handleChangeComplementaria} />
                                         </div>
                                     </div>
                                 </div>
@@ -119,7 +126,7 @@ function AddLocation({handleChangeDireccion, handleChangeComplementaria, handleC
                                         <div className="form-group">
                                             <Select
                                                 onChange={handleChangeCiudad}
-                                                placeholder="Selecciona una ciudad"
+                                                placeholder="Ciudadiudad"
                                                 options={cities.ciudad}
                                             />
                                         </div>
@@ -131,37 +138,28 @@ function AddLocation({handleChangeDireccion, handleChangeComplementaria, handleC
                                         <div className="form-group">
                                             <Select
                                                 onChange={handleChangeLocalidad}
-                                                placeholder="Selecciona una Ciudad"
+                                                placeholder="Localidad"
                                                 options={states.localidad}
                                             />
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="col-lg-12">
                                     <label className="label-text">Barrio </label>
                                     <div className="form-group">
+                                        <span className="la form-icon">
+                                            <BsFileCode />
+                                        </span>
                                         <input
                                             className="form-control" 
                                             type="text" 
                                             name="ubicacion"
                                             placeholder="Barrio"
-                                            onChange={handleChangeUbicacion}
+                                            onChange={handleChangeBarrio}
                                         />
                                     </div>
                                 </div>
-                                <div className="col-lg-6">
-                                    <div className="input-box">
-                                        <label className="label-text">
-                                            Codigo Postal
-                                        </label>
-                                        <div className="form-group">
-                                            <span className="la form-icon">
-                                                <BsFileCode />
-                                            </span>
-                                            <input className="form-control" type="text" name="text" placeholder="Codigo Postal" onChange={handleChangePostal}/>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                         </form>
                     </div>

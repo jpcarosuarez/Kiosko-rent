@@ -4,7 +4,7 @@ import { FiEdit } from 'react-icons/fi'
 import { FaDollarSign } from 'react-icons/fa'
 import { BsPencil, BsPencilSquare, BsQuestion } from 'react-icons/bs'
 
-function AddPrice(handleChangeAdministracion, handleChangeMatricula, handleChangePrecio) {
+function AddPrice(handleChangeAdministracion, handleChangeMatricula, handleChangePrecio, handleChangeNegocio) {
     return (
         <>
             <div className="billing-form-item">
@@ -63,7 +63,7 @@ function AddPrice(handleChangeAdministracion, handleChangeMatricula, handleChang
                                             <span className="la form-icon">
                                                 <BsPencil />
                                             </span>
-                                            <textarea className="message-control form-control" name="message" placeholder="Precio Negociable, Conversable, 3 primeros meses tanto.. etc.."></textarea>
+                                            <textarea className="message-control form-control" name="message" placeholder="Precio Negociable, Conversable, 3 primeros meses con descuento.. etc.." onChange={handleChangeNegocio}></textarea>
                                         </div>
                                     </div>
                                 </div>

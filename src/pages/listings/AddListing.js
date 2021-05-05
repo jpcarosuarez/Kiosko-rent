@@ -49,7 +49,7 @@ function AddListing() {
     const handleChangeCorreoRepresentante = (e) => setInmueble({...inmueble,correoRepresent: e.target.value});
     const handleChangeRepresentante = (e) => setInmueble({...inmueble,representante: e.target.value});
     const handleChangeCaracteristicas = (e) => setInmueble({...inmueble,caracteristicas: e.target.value});
-
+    const handleChangeNegocio =(e) => setInmueble({...inmueble,negocio: e.target.value});
 
     const grabarInmueble = () => {
             console.log("inmueble:", inmueble);
@@ -137,6 +137,7 @@ function AddListing() {
                             handleChangePrecio={handleChangePrecio}   
                             handleChangeAdministracion={handleChangeAdministracion}
                             handleChangeMatricula={handleChangeMatricula}
+                            handleChangeNegocio={handleChangeNegocio}
                             />
 
                             <div className="billing-form-item p-0 border-0 mb-0 shadow-none">

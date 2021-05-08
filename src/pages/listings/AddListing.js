@@ -28,6 +28,7 @@ function AddListing() {
     const handleChangeTitulo = (e) => setInmueble({...inmueble,titulo: e.target.value});
     const handleChangeHashtags = (e) => setInmueble({...inmueble,hashtags: e.target.value});
     const handleChangeDescripcion = (e) => setInmueble({...inmueble, descripcion: e.target.value});
+    const handleChangeCategoria = (e) => setInmueble({...inmueble, idCategoria: e.value});
     
     const grabarInmueble = () => {
             console.log("inmueble:", inmueble);
@@ -100,6 +101,7 @@ function AddListing() {
                             <GeneralInfo handleChangeTitulo={handleChangeTitulo} 
                                          handleChangeHashtags={handleChangeHashtags} 
                                          handleChangeDescripcion={handleChangeDescripcion}
+                                         handleChangeCategoria={handleChangeCategoria}
                                          categorias={categorias}/>
 
                             <AddLocation />

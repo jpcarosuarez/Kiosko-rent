@@ -45,7 +45,7 @@ const state = {
     //     },
     // ]
 }
-function GeneralInfo({handleChangeTitulo, handleChangeHashtags,handleChangeDescripcion, categorias}) {
+function GeneralInfo({handleChangeTitulo, handleChangeHashtags,handleChangeDescripcion,handleChangeCategoria, categorias}) {
     return (
         <>
             <div className="billing-form-item">
@@ -101,6 +101,7 @@ function GeneralInfo({handleChangeTitulo, handleChangeHashtags,handleChangeDescr
                                             <Select
                                                 placeholder="Selecciona una Categoria"
                                                 options={categorias}
+                                                onChange={handleChangeCategoria}
                                             />
                                         </div>
                                     </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import GeneralHeader from "../../components/common/GeneralHeader";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import GeneralInfo from "../../components/addlisting/GeneralInfo";
@@ -22,6 +22,7 @@ const states = {
 function AddListing() {
 
     const [inmueble,setInmueble] = useState({});
+    const [categorias, setCategorias] = useState([]);
     const [files, setFiles] = useState([]);
 
     const handleChangeTitulo = (e) => setInmueble({...inmueble,titulo: e.target.value});
@@ -61,6 +62,26 @@ function AddListing() {
             
     };
 
+    useEffect(() => {
+        const fetchCategorias = () => {
+           return getFirestore().collection('categorias').get()
+           .then(response => {
+            let array=[];
+            response.forEach(doc => {
+                array.push(
+                    {
+                    value: doc.id, 
+                    label: doc.data().descripcion ?? '',
+                })
+            })
+            setCategorias(array);
+        })
+          .catch(err => {
+            // some error handling
+          });
+      };
+      fetchCategorias();
+    }, []);
 
 
     return (
@@ -76,7 +97,10 @@ function AddListing() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-9 mx-auto">
-                            <GeneralInfo handleChangeTitulo={handleChangeTitulo} handleChangeHashtags={handleChangeHashtags} handleChangeDescripcion={handleChangeDescripcion}/>
+                            <GeneralInfo handleChangeTitulo={handleChangeTitulo} 
+                                         handleChangeHashtags={handleChangeHashtags} 
+                                         handleChangeDescripcion={handleChangeDescripcion}
+                                         categorias={categorias}/>
 
                             <AddLocation />
 

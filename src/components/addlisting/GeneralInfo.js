@@ -6,46 +6,46 @@ import Select from "react-select";
 const state = {
     title: 'Información general',
     selectedCatOp: null,
-    categories: [
-        {
-            value: 0,
-            label: 'Categoria'
-        },
-        {
-            value: 2,
-            label: 'Apartamento'
-        },
-        {
-            value: 3,
-            label: 'Apartaestudio'
-        },
-        {
-            value: 4,
-            label: 'Casa'
-        },
-        {
-            value: 5,
-            label: 'Finca'
-        },
-        {
-            value: 6,
-            label: 'Oficina'
-        },
-        {
-            value: 7,
-            label: 'Salón o terraza '
-        },
-        {
-            value: 8,
-            label: 'Bodega'
-        },
-        {
-            value: 9,
-            label: 'Local Comercial'
-        },
-    ]
+    // categories: [
+    //     {
+    //         value: 0,
+    //         label: 'Categoria'
+    //     },
+    //     {
+    //         value: 2,
+    //         label: 'Apartamento'
+    //     },
+    //     {
+    //         value: 3,
+    //         label: 'Apartaestudio'
+    //     },
+    //     {
+    //         value: 4,
+    //         label: 'Casa'
+    //     },
+    //     {
+    //         value: 5,
+    //         label: 'Finca'
+    //     },
+    //     {
+    //         value: 6,
+    //         label: 'Oficina'
+    //     },
+    //     {
+    //         value: 7,
+    //         label: 'Salón o terraza '
+    //     },
+    //     {
+    //         value: 8,
+    //         label: 'Bodega'
+    //     },
+    //     {
+    //         value: 9,
+    //         label: 'Local Comercial'
+    //     },
+    // ]
 }
-function GeneralInfo({handleChangeTitulo, handleChangeHashtags,handleChangeDescripcion}) {
+function GeneralInfo({handleChangeTitulo, handleChangeHashtags,handleChangeDescripcion, categorias}) {
     return (
         <>
             <div className="billing-form-item">
@@ -100,7 +100,7 @@ function GeneralInfo({handleChangeTitulo, handleChangeHashtags,handleChangeDescr
                                         <div className="form-group mb-0">
                                             <Select
                                                 placeholder="Selecciona una Categoria"
-                                                options={state.categories}
+                                                options={categorias}
                                             />
                                         </div>
                                     </div>

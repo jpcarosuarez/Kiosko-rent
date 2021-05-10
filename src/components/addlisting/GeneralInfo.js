@@ -6,44 +6,7 @@ import Select from "react-select";
 
 const state = {
     title: 'Información general del inmueble',
-    categorias: [
-        {
-            value: 'categoria',
-            label: 'Categoria'
-        },
-        {
-            value: 'apartamento',
-            label: 'Apartamento'
-        },
-        {
-            value: 'apartaestudio',
-            label: 'Apartaestudio'
-        },
-        {
-            value: 'casa',
-            label: 'Casa'
-        },
-        {
-            value: 'finca',
-            label: 'Finca'
-        },
-        {
-            value: 'oficina',
-            label: 'Oficina'
-        },
-        {
-            value: 'salon',
-            label: 'Salón o terraza '
-        },
-        {
-            value: 'bodega',
-            label: 'Bodega'
-        },
-        {
-            value: 'local',
-            label: 'Local Comercial'
-        },
-    ]
+
 }
 
 
@@ -153,7 +116,7 @@ const estratos = {
     ],
 }
 
-function GeneralInfo({handleChangeTitulo, handleChangeOperacion, handleChangeAmbientes, handleChangeDescripcion, handleChangeCategorias, handleChangeAntiguedad, handleChangeHabitaciones, handleChangeBaños, handleChangeAreaTotal, handleChangeAreaConstruida, handleChangeEstrato}) {
+function GeneralInfo({handleChangeTitulo, handleChangeOperacion, handleChangeAmbientes, handleChangeDescripcion, handleChangeCategorias, handleChangeAntiguedad, handleChangeHabitaciones, handleChangeBaños, handleChangeAreaTotal, handleChangeAreaConstruida, handleChangeEstrato, categorias}) {
     return (
         <>
             <div className="billing-form-item">
@@ -182,7 +145,7 @@ function GeneralInfo({handleChangeTitulo, handleChangeOperacion, handleChangeAmb
                                         <div className="form-group">
                                             <Select
                                                 onChange={handleChangeCategorias}
-                                                options={state.categorias}
+                                                options={categorias}
                                             />
                                         </div>
                                     </div>

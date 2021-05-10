@@ -181,7 +181,6 @@ function GeneralInfo({handleChangeTitulo, handleChangeOperacion, handleChangeAmb
                                         <label className="label-text">Tipo de Inmueble</label>
                                         <div className="form-group">
                                             <Select
-                                                placeholder="Categorias"
                                                 onChange={handleChangeCategorias}
                                                 options={state.categorias}
                                             />
@@ -193,9 +192,9 @@ function GeneralInfo({handleChangeTitulo, handleChangeOperacion, handleChangeAmb
                                         <label className="label-text">Tipo de Operacion</label>
                                         <div className="form-group">
                                             <Select
-                                                placeholder="Arriendos"
                                                 onChange={handleChangeOperacion}
                                                 options={operacion.operaciones}
+                                                placeholder="Arriendo"
                                             />
                                         </div>
                                     </div>

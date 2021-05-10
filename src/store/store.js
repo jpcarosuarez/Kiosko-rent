@@ -193,7 +193,22 @@ const sectiondata = {
             ]
         },
         {
-            title: 'Contáctanos',
+            title:'Ventas | Permutas',
+            path:'/',
+            dropdown: [
+                {
+                    title: 'Mostrar todos',
+                    path:'/'
+                },
+                {
+                    title: 'Publicar una Venta',
+                    path: '/add-listing/new'
+                }
+
+            ]
+        },
+        {
+            title: 'Contacto',
             path: '/contact',
         }
 
@@ -2438,7 +2453,7 @@ const sectiondata = {
         imagebox: [
             {
                 img: imgboximg,
-                title: 'Careers',
+                title: 'Ad',
                 desc: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem eaque ipsa quae ab illo',
                 cardLink: '#'
             },

@@ -126,13 +126,10 @@ function AddListing() {
                             handleChangeCorreoRepresentante={handleChangeCorreoRepresentante}
                             handleChangeRepresentante={handleChangeRepresentante}
                             />
-
                             <PhotoUploader files={files} setFiles={setFiles}/>
-
                             <Amenities
                             handleChangeCaracteristicas={handleChangeCaracteristicas}
                             />
-
                             <AddPrice 
                             handleChangePrecio={handleChangePrecio}   
                             handleChangeAdministracion={handleChangeAdministracion}

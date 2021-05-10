@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 
 
+
 /*
 	Template Name: Dirto
 	Author: TechyDevs
@@ -2139,7 +2140,7 @@ body {
   position: relative;
   z-index: 1;
   color: #fff;
-  background-image: url("../images/bogotaNoche.jpg");
+  background-image: url("../images/bogotaagentes.jpg");
   background-size: cover;
   background-position: center;
   overflow: hidden; }
@@ -2154,7 +2155,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(51, 63, 87, 0.8);
     z-index: -1; }
   .breadcrumb-area .bread-svg {
     position: absolute;
@@ -2173,6 +2173,7 @@ body {
     font-size: 40px;
     text-transform: capitalize;
     font-weight: 700;
+    color: #1f2833;
     margin-bottom: 22px; }
     @media (max-width: 320px) {
       .breadcrumb-content .breadcrumb__title {
@@ -2195,7 +2196,7 @@ body {
       -ms-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s;
-      color: #fff; }
+      color: #1f2833; }
       .breadcrumb-content .breadcrumb__list li a:hover {
         color: #1f2833; }
     .breadcrumb-content .breadcrumb__list li.active__list-item:after {
@@ -2409,7 +2410,7 @@ body {
    about-breadcrumb
  ====================================================*/
 .about-breadcrumb {
-  background-image: url("../images/bread-bg3.jpg");
+  background-image: url("../images/bogota.jpg");
   background-position: inherit; }
   .about-breadcrumb .breadcrumb-content {
     text-align: left; }

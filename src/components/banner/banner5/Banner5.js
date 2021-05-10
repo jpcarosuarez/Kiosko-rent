@@ -24,16 +24,14 @@ class Banner5 extends Component {
                             <div className="row">
                                 <div className="col-lg-8">
                                     <div className="breadcrumb-content">
-                                        <h2 className="breadcrumb__title mb-0">Dirto connects people <br/> with great
-                                            local <br/> businesses</h2>
-                                    </div>
+                                        <h2 className="breadcrumb__title mb-0">Conectamos personas <br/> con Inmuebles certificados</h2>                                    </div>
                                 </div>
                                 <div className="col-lg-4 text-right">
                                     <div className="video-play-btn">
                                         <span
                                             className="mfp-iframe video-popup-btn"
                                             onClick={this.openModal}
-                                            title="Play Video">
+                                            title="*">
                                             Play
                                         </span>
                                     </div>
@@ -41,12 +39,18 @@ class Banner5 extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="bread-svg">
-                        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
-                            <path
-                                d="M-4.22,89.30 C280.19,26.14 324.21,125.81 511.00,41.94 L500.00,150.00 L0.00,150.00 Z"/>
-                        </svg>
-                    </div>
+
+                    {
+                    /*
+                        <div className="bread-svg">
+                            <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+                                <path
+                                    d="M-4.22,89.30 C280.19,26.14 324.21,125.81 511.00,41.94 L500.00,150.00 L0.00,150.00 Z"/>
+                            </svg>
+                        </div>
+                    */
+                    }
+
                 </section>
             </>
         );

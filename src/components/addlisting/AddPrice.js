@@ -1,8 +1,7 @@
 import React from 'react';
 import { AiOutlineTags } from 'react-icons/ai'
-import { FiEdit } from 'react-icons/fi'
 import { FaDollarSign } from 'react-icons/fa'
-import { BsPencil, BsPencilSquare, BsQuestion } from 'react-icons/bs'
+import { BsPencil, BsQuestion } from 'react-icons/bs'
 
 function AddPrice(handleChangeAdministracion, handleChangeMatricula, handleChangePrecio, handleChangeNegocio) {
     return (
@@ -24,15 +23,16 @@ function AddPrice(handleChangeAdministracion, handleChangeMatricula, handleChang
                                             <span className="la form-icon">
                                                 <FaDollarSign />
                                             </span>
-                                            <input className="form-control" type="text" name="text" placeholder="$......" onChange={handleChangePrecio}/>
+                                            <input className="form-control" type="text" name="text" placeholder="750.000" onChange={handleChangePrecio}/>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="input-box">
                                         <div className="form-group">
-                                            <label className="label-text">Administración incluida en el precio</label>
-                                            <input className="form-control" type="checkbox" id="administracion" onChange={handleChangeAdministracion}/>
+                                            <input className="custom-checkbox" type="checkbox" id="administracion" onChange={handleChangeAdministracion}/>
+                                            <label className="custom-checkbox">Administración incluida en el precio </label>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -52,10 +52,6 @@ function AddPrice(handleChangeAdministracion, handleChangeMatricula, handleChang
                                         </div>
                                     </div>
                                 </div>
-
-
-
-
                                 <div className="col-lg-12">
                                     <div className="input-box">
                                         <label className="label-text">Información del negocio</label>

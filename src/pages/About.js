@@ -11,7 +11,6 @@ import Testimonial from "../components/sliders/Testimonial";
 import HowItWork4 from "../components/hiw/HowItWork4";
 import TeamOne from "../components/team/TeamOne";
 import Button from "../components/common/Button";
-import NewsLetter from "../components/other/cta/NewsLetter";
 import Footer from "../components/common/footer/Footer";
 import ScrollTopBtn from "../components/common/ScrollTopBtn";
 import sectiondata from "../store/store";
@@ -112,10 +111,6 @@ function About() {
                     </div>
                 </div>
             </section>
-
-            {/* NewsLetter */}
-            <NewsLetter newsLetterContent={sectiondata.calltoactions.newsletters} />
-
             {/* Footer */}
             <Footer />
 

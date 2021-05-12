@@ -51,6 +51,7 @@ function AddListing() {
     const handleChangeRepresentante = (e) => setInmueble({...inmueble,representante: e.target.value});
     const handleChangeCaracteristicas = (e) => {
             console.log(e);
+            console.log(e.target.dataset.id);
             console.log(e.target.checked);
      //setInmueble({...inmueble,caracteristicas: e.target.value});
     };

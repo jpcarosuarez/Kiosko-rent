@@ -28,30 +28,35 @@ function AddListing() {
     const [files, setFiles] = useState([]);
 
     const handleChangeTitulo = (e) => setInmueble({...inmueble,titulo: e.target.value});
-    const handleChangeCategorias = (e) => setInmueble({...inmueble,categorias: e.target.value});
-    const handleChangeMatricula = (e) => setInmueble({...inmueble,matricula: e.target.value});
+    const handleChangeCategorias = (e) => setInmueble({...inmueble,categorias: e});
     const handleChangeDescripcion = (e) => setInmueble({...inmueble,descripcion: e.target.value});
-    const handleChangeOperacion = (e) => setInmueble({...inmueble,operacion: e.target.value});
-    const handleChangePrecio = (e) => setInmueble({...inmueble,precio: e.target.value});
+    const handleChangeOperacion = (e) => setInmueble({...inmueble,operacion: e});
+    const handleChangeAmoblado = (e) => setInmueble({...inmueble,amoblafo: e});
+    const handleChangeAmbientes = (e) => setInmueble({...inmueble,ambientes: e});
+    const handleChangeHabitaciones = (e) => setInmueble({...inmueble,habitaciones: e});
+    const handleChangeBaños = (e) => setInmueble({...inmueble,baños: e});
+    const handleChangeAreaTotal = (e) => setInmueble({...inmueble,areaTotal: e.target.value});
+    const handleChangeAreaConstruida = (e) => setInmueble({...inmueble,areaConstru: e.target.value});
+    const handleChangeEstrato = (e) => setInmueble({...inmueble,estrato: e});
     const handleChangeDireccion = (e) => setInmueble({...inmueble,direccion: e.target.value});
     const handleChangeComplementaria = (e) => setInmueble({...inmueble,complementaria: e.target.value});
     const handleChangeBarrio = (e) => setInmueble({...inmueble,barrio: e.target.value});
-    const handleChangeCiudad = (e) => setInmueble({...inmueble,ciudad: e.target.value});
-    const handleChangeLocalidad = (e) => setInmueble({...inmueble,localidad: e.target.value});
+    const handleChangeCiudad = (e) => setInmueble({...inmueble,ciudad: e});
+    const handleChangeLocalidad = (e) => setInmueble({...inmueble,localidad: e});
     const handleChangePostal = (e) => setInmueble({...inmueble,codigoPostal: e.target.value});
     const handleChangeAdministracion = (e) => setInmueble({...inmueble,administracion: e.target.value});    
     const handleChangeAntiguedad = (e) => setInmueble({...inmueble,antiguedad: e.target.value});
-    const handleChangeAmbientes = (e) => setInmueble({...inmueble,ambientes: e.target.value});
-    const handleChangeHabitaciones = (e) => setInmueble({...inmueble,habitaciones: e.target.value});
-    const handleChangeBaños = (e) => setInmueble({...inmueble,baños: e.target.value});
-    const handleChangeAreaTotal = (e) => setInmueble({...inmueble,areaTotal: e.target.value});
-    const handleChangeAreaConstruida = (e) => setInmueble({...inmueble,areaConstru: e.target.value});
-    const handleChangeEstrato = (e) => setInmueble({...inmueble,estrato: e.target.value});
     const handleChangeTelefonoContacto = (e) => setInmueble({...inmueble,telefonoContacto: e.target.value});
     const handleChangeCorreoRepresentante = (e) => setInmueble({...inmueble,correoRepresent: e.target.value});
     const handleChangeRepresentante = (e) => setInmueble({...inmueble,representante: e.target.value});
-    const handleChangeCaracteristicas = (e) => setInmueble({...inmueble,caracteristicas: e.target.value});
+    const handleChangeCaracteristicas = (e) => {
+            console.log(e);
+            console.log(e.target.checked);
+     //setInmueble({...inmueble,caracteristicas: e.target.value});
+    };
     const handleChangeNegocio =(e) => setInmueble({...inmueble,negocio: e.target.value});
+    const handleChangeMatricula = (e) => setInmueble({...inmueble,matricula: e.target.value});
+    const handleChangePrecio = (e) => setInmueble({...inmueble,precio: e.target.value});
 
     const grabarInmueble = () => {
             console.log("inmueble:", inmueble);
@@ -133,6 +138,7 @@ function AddListing() {
                             handleChangeAreaTotal={handleChangeAreaTotal}
                             handleChangeAreaConstruida={handleChangeAreaConstruida}
                             handleChangeEstrato={handleChangeEstrato}
+                            handleChangeAmoblado={handleChangeAmoblado}
                             categorias={categorias}
 
                             />

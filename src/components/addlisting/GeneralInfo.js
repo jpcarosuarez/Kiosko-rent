@@ -60,6 +60,16 @@ const habitaciones = {
     ],  
 
 }
+const amoblado =[
+    {
+        value: 0, 
+        label:'Amoblado'
+    },
+    {   
+        value: 1, 
+        label:'Sin Amoblar'
+    }
+]
 
 const baños ={
 
@@ -111,12 +121,16 @@ const estratos = {
         {
             value: 5,
             label:'6'
-        },
+        },        
+        {
+            value: 6,
+            label:'7'
+        }
 
     ],
 }
 
-function GeneralInfo({handleChangeTitulo, handleChangeOperacion, handleChangeAmbientes, handleChangeDescripcion, handleChangeCategorias, handleChangeAntiguedad, handleChangeHabitaciones, handleChangeBaños, handleChangeAreaTotal, handleChangeAreaConstruida, handleChangeEstrato, categorias}) {
+function GeneralInfo({handleChangeTitulo, handleChangeAmoblado, handleChangeOperacion, handleChangeAmbientes, handleChangeDescripcion, handleChangeCategorias, handleChangeAntiguedad, handleChangeHabitaciones, handleChangeBaños, handleChangeAreaTotal, handleChangeAreaConstruida, handleChangeEstrato, categorias}) {
     return (
         <>
             <div className="billing-form-item">
@@ -146,7 +160,8 @@ function GeneralInfo({handleChangeTitulo, handleChangeOperacion, handleChangeAmb
                                             <Select
                                                 onChange={handleChangeCategorias}
                                                 options={categorias}
-                                            />
+                                                placeholder={'Selecciona el tipo de inmueble'}
+                                                />
                                         </div>
                                     </div>
                                 </div>
@@ -157,7 +172,19 @@ function GeneralInfo({handleChangeTitulo, handleChangeOperacion, handleChangeAmb
                                             <Select
                                                 onChange={handleChangeOperacion}
                                                 options={operacion.operaciones}
-                                                placeholder="Arriendo"
+                                                placeholder="Arriendo Mensual"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="input-box">
+                                        <label className="label-text">Amoblado / Sin Amoblar</label>
+                                        <div className="form-group">
+                                            <Select
+                                                options={amoblado}
+                                                onChange={handleChangeAmoblado}
+                                                placeholder="Sin Amoblar"
                                             />
                                         </div>
                                     </div>
@@ -167,9 +194,9 @@ function GeneralInfo({handleChangeTitulo, handleChangeOperacion, handleChangeAmb
                                         <label className="label-text">Ambientes</label>
                                         <div className="form-group">
                                             <Select
-                                                placeholder="0"
                                                 onChange={handleChangeAmbientes}
                                                 options={habitaciones.cantidad}
+                                                placeholder="1"
                                             />
                                         </div>
                                     </div>
@@ -179,7 +206,7 @@ function GeneralInfo({handleChangeTitulo, handleChangeOperacion, handleChangeAmb
                                         <label className="label-text">Habitaciones</label>
                                         <div className="form-group">
                                             <Select
-                                                placeholder="0"
+                                                placeholder="1"
                                                 onChange={handleChangeHabitaciones}
                                                 options={habitaciones.cantidad}
                                             />
@@ -191,7 +218,7 @@ function GeneralInfo({handleChangeTitulo, handleChangeOperacion, handleChangeAmb
                                         <label className="label-text">Baños</label>
                                         <div className="form-group">
                                             <Select
-                                                placeholder="0"
+                                                placeholder="1"
                                                 onChange={handleChangeBaños}
                                                 options={baños.cantidad}
                                             />

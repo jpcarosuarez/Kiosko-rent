@@ -90,7 +90,9 @@ const state = {
         },
     ]
 }
-function Amenities(handleChangeCaracteristicas) {
+
+function Amenities({handleChangeCaracteristicas}) {
+
     return (
         <>
             <div className="billing-form-item">
@@ -102,9 +104,9 @@ function Amenities(handleChangeCaracteristicas) {
 
                     {state.items.map(item => {
                         return (
-                            <div className="custom-checkbox" key={item.id} onChange={handleChangeCaracteristicas}>
-                                <input type="checkbox" id={'chb'+item.id} />
-                                <label htmlFor={'chb'+item.id}> {item.title}</label>
+                            <div className="custom-checkbox" key={item.id} >
+                                <input type="checkbox" id={'chb'+item.id} onChange={handleChangeCaracteristicas} />
+                                <label htmlFor={'chb'+item.id} > {item.title}</label>
                             </div>
                         )
                     })}

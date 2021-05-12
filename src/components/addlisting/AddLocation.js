@@ -105,7 +105,7 @@ function AddLocation({handleChangeDireccion, handleChangeComplementaria, handleC
                                             <span className="la form-icon">
                                                 <FiMap />
                                             </span>
-                                            <input className="form-control" type="text" name="name" placeholder="Información privada" onChange={handleChangeDireccion}/>
+                                            <input className="form-control" type="text" name="name" placeholder="Información privada que no se muestra publicamente" onChange={handleChangeDireccion}/>
                                         </div>
                                     </div>
                                 </div>
@@ -126,7 +126,7 @@ function AddLocation({handleChangeDireccion, handleChangeComplementaria, handleC
                                         <div className="form-group">
                                             <Select
                                                 onChange={handleChangeCiudad}
-                                                placeholder="Ciudadiudad"
+                                                placeholder="Ciudad"
                                                 options={cities.ciudad}
                                             />
                                         </div>

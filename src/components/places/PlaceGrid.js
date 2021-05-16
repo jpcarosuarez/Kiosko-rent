@@ -32,7 +32,7 @@ function PlaceGrid({griditems}) {
                                             <i>{item.titleIcon}</i>
                                         </h4>
                                         <p className="card-sub">
-                                            {item.stitle}
+                                            {item.stitle.label}
                                         </p>
                                     </Link>
                                     <a href={item.authorUrl} className="author-img">

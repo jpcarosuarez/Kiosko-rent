@@ -29,7 +29,7 @@ function PlaceListing({listitems}) {
                                     <h4 className="card-title">{item.title}<i> {item.titleIcon}</i>
                                     </h4>
                                     <p className="card-sub">
-                                        {item.stitle}
+                                        {item.stitle.label}
                                     </p>
                                 </Link>
                                 <a href={item.authorUrl} className="author-img">

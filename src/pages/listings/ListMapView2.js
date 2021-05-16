@@ -14,8 +14,6 @@ import {GiChickenOven, GiPositionMarker, GiWineGlass} from 'react-icons/gi';
 import authorimg from "../../assets/images/small-team1.jpg"; // 67*60
 import {
     IoIosCheckmarkCircle,
-    IoIosFitness, IoIosRocket, IoMdCut,
-    IoMdMusicalNotes, IoMdPaperPlane,
     IoMdStar,
     IoMdStarHalf
 } from "react-icons/io";
@@ -27,7 +25,7 @@ import {useState, useEffect} from 'react';
 function ListMapView2() {
 
     
-    const [arriendos,setArriendos] = useState([]);
+    const [ventas,setVentas] = useState([]);
     
     useEffect(() => {
         const fetchBusinesses = () => {
@@ -62,13 +60,13 @@ function ListMapView2() {
                     ratingNum: '4.5'
                 })
             })
-            setArriendos(array);
+            setVentas(array);
 
             
         })
-          .catch(err => {
+        .catch(err => {
             // some error handling
-          });
+        });
       };
       fetchBusinesses();
     }, []);
@@ -95,7 +93,7 @@ function ListMapView2() {
                                 <GenericHeader />
                             </div>
                             <div className="row twocol align-items-start justify-content-start">
-                                <PlaceGrid griditems={arriendos} />
+                                <PlaceGrid griditems={ventas} />
                             </div>
                         </div>
 

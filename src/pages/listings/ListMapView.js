@@ -1,4 +1,4 @@
-import React from 'react';
+import {useState, useEffect} from 'react';
 import {FiRefreshCw} from "react-icons/fi";
 import GeneralHeader from "../../components/common/GeneralHeader";
 import PlaceListing from "../../components/places/PlaceListing";
@@ -10,8 +10,66 @@ import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import GenericHeader from "../../components/common/GenericHeader";
 import MapViewCluster from "../../components/contact/MapViewCluster";
 import sectiondata from "../../store/store";
+import {getFirestore} from '../../db';
+import {GiChickenOven} from 'react-icons/gi';
+import {
+    IoIosCheckmarkCircle,
+    IoMdStar,
+    IoMdStarHalf
+} from "react-icons/io";
+import img2 from "../../assets/images/img7.jpg";
+import authorimg from "../../assets/images/small-team1.jpg"; // 67*60
 
 function ListMapView() {
+
+    
+    const [arriendos,setArriendos] = useState([]);
+    
+    useEffect(() => {
+        const fetchBusinesses = () => {
+           return getFirestore().collection('inmuebles').get()
+           .then(response => {
+            let array=[];
+            response.forEach(doc => {
+                array.push(
+                    {
+                    id: doc.id, 
+                    bedge: doc.data().titulo ?? '',
+                    title: 'Favorite Place Food Bank',
+                    titleIcon: <IoIosCheckmarkCircle />,
+                    titleUrl: '/listing-details',
+                    stitle: doc.data().ciudad ?? '',
+                    image: doc.data().imagen ?? img2,
+                    cardType: 'Restaurant',
+                    cardTypeIcon: <GiChickenOven />,
+                    author: authorimg,
+                    authorUrl: '#',
+                    number: '(492) 492-4828',
+                    website: 'www.mysitelink.com',
+                    date: 'Posted 1 month ago',
+                    view: '204',
+                    ratings: [
+                        <IoMdStar />,
+                        <IoMdStar />,
+                        <IoMdStar />,
+                        <IoMdStarHalf />,
+                        <IoMdStar className="last-star" />,
+                    ],
+                    ratingNum: '4.5'
+                })
+            })
+            setArriendos(array);
+
+            
+        })
+          .catch(err => {
+            // some error handling
+          });
+      };
+      fetchBusinesses();
+    }, []);
+
+
     return (
         <main className="List-map-view">
             {/* Header */}
@@ -34,7 +92,7 @@ function ListMapView() {
                         </div>
 
                         <div className="col-lg-8">
-                            <PlaceListing listitems={sectiondata.listing.listinglists} />
+                            <PlaceListing listitems={arriendos}  />
                         </div>
 
                     </div>

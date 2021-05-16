@@ -56,6 +56,7 @@ function AddPrice(handleChangeAdministracion, handleChangeMatricula, handleChang
                                             <div className="form-group">
                                                 <label className="label-text">Administracion integral de Inmueble en Exclusividad</label>
                                                 <p>Publicación GRATIS</p>
+                                                <p>Inmueble Certificado</p>
                                                 <p>Visitas guiadas y presentacion de inmueble a interesados</p>
                                                 <p>Fotografias del inmueble</p>
                                                 <p>Ventanero si es necesario</p>

@@ -24,7 +24,7 @@ class Banner5 extends Component {
                             <div className="row">
                                 <div className="col-lg-8">
                                     <div className="breadcrumb-content">
-                                        <h2 className="breadcrumb__title mb-0">Conectamos personas <br/> con Inmuebles certificados</h2>                                    </div>
+                                        <h2 className="breadcrumb__title mb-0">Conectamos personas <br/> con Inmuebles verificados</h2>                                    </div>
                                 </div>
                                 <div className="col-lg-4 text-right">
                                     <div className="video-play-btn">

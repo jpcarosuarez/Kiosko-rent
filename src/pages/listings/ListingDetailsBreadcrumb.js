@@ -8,6 +8,7 @@ import { RiBookmarkLine, RiExternalLinkLine, RiSendPlane2Line } from 'react-icon
 
 import { Dropdown } from "react-bootstrap";
 import {Link} from "react-router-dom";
+
 const state = {
     title: 'Tasty Hand-Pulled Noodles',
     stitle: '101 East Parkview Road, New York',

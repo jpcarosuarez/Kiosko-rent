@@ -5,7 +5,7 @@ function PopularDestination({destinations}) {
     return (
         <>
             {destinations.map((item, index) =>{
-                return (
+                return ( 
                     <div className={'column-td-6 col-lg-'+item.boxCol} key={index}>
                         <div className="category-item mb-4 mt-0 ml-0 mr-0 p-0">
                             <figure className="category-fig mb-0">

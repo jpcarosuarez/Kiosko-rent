@@ -77,7 +77,7 @@ function ListMapView2() {
         <main className="List-map-view2">
             {/* Header */}
             <GeneralHeader />
-
+                                                                                                                                                                        
             {/* Place List */}
             <section className="card-area margin-top-190px padding-bottom-100px">
                 <div className="container">

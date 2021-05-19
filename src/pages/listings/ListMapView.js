@@ -1,3 +1,4 @@
+import React from 'react';
 import {useState, useEffect} from 'react';
 import {FiRefreshCw} from "react-icons/fi";
 import GeneralHeader from "../../components/common/GeneralHeader";
@@ -34,8 +35,8 @@ function ListMapView() {
                 array.push(
                     {
                     id: doc.id, 
-                    bedge: doc.data().operacion ?? '',
-                    title: doc.data().titulo ?? '',
+                    bedge: doc.data().titulo ?? '',
+                    title: 'Favorite Place Food Bank',
                     titleIcon: <IoIosCheckmarkCircle />,
                     titleUrl: '/listing-details',
                     stitle: doc.data().ciudad ?? '',

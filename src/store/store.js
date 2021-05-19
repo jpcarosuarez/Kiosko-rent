@@ -245,7 +245,7 @@ const sectiondata = {
             content: 'Encuentra arriendos mensuales, diarios o por 3 horas o más',
             categories: [
                 {
-                    path: '/listing-grid',
+                    path: '/apartamentos',
                     text: 'apartamentos',
                     icon: <RiBuilding4Line />
                 },
@@ -1313,7 +1313,7 @@ const sectiondata = {
     listing: {
         sidebar: {
             widgetFilterCategory: {
-                title: 'Filter by Category',
+                title: 'Filtrar por Categoria',
                 items: [
                     {
                         id: 1,

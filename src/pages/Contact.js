@@ -22,7 +22,7 @@ function Contact() {
             <GeneralHeader />
 
             {/* Breadcrumb */}
-            <Breadcrumb CurrentPgTitle="Contáctanos" MenuPgTitle="pages" img={state.breadcrumbimg} />
+            <Breadcrumb CurrentPgTitle="Contacto" MenuPgTitle="Formulario de Contacto" img={state.breadcrumbimg} />
 
             <section className="contact-area padding-top-40px padding-bottom-80px">
                 <div className="container">
@@ -46,7 +46,7 @@ function Contact() {
                             <span className="la"><GoLocation /></span>
                             <h5 className="map__title">Dirección</h5>
                             <p className="map__desc">
-                                {sectiondata.contactdata.mapoverlay.address} <br /> {sectiondata.contactdata.mapoverlay.city}
+                                {sectiondata.contactdata.mapoverlay.address} <br /> {/*sectiondata.contactdata.mapoverlay.city*/}
                             </p>
                         </li>
                         <li>

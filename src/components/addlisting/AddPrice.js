@@ -61,7 +61,7 @@ function AddPrice(handleChangeAdministracion, handleChangeMatricula, handleChang
                                                 <p>Fotografias del inmueble</p>
                                                 <p>Ventanero si es necesario</p>
                                                 <p>Atención a Inquilinos durante el arriendo </p>
-                                                <p>Tecnicos especializados</p>                                                                                                                                      
+                                                {/*<p>Tecnicos especializados</p>*/}                                                                                                                                  
                                             </div>                                          
                                         </div>
                                     </div>

@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import {FiHeart, FiPhone} from "react-icons/fi";
 import {FaRegCalendarCheck} from "react-icons/fa";
 import {AiOutlineEye} from "react-icons/ai";
+import Imagen from "../../imagen/imagen";
 
 function PlaceListing({listitems}) {
     return (

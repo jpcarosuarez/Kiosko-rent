@@ -49,7 +49,7 @@ const state = {
         },
         {
             value: 10,
-            label: 'Terrazas'
+            label: 'Terrazas | Salones Comunales'
         }
     ]
 }

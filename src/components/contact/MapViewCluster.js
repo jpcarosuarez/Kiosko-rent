@@ -17,7 +17,7 @@ export default function MapViewCluster() {
     const [bounds, setBounds] = useState(null);
 
     // 2) load and format data
-    const url = "https://data.police.uk/api/crimes-street/all-crime?lat=52.6376&lng=-1.135171&data=2019-10";
+    const url = "https://www.google.com/maps?q=chapinero&um=1&ie=UTF-8&sa=X&ved=2ahUKEwi0kMf1ltLwAhV6KVkFHVTQAdoQ_AUoAXoECAEQAw";
     const { data, error } = useSwr(url, fetcher);
     const crimes = data && !error ? data.slice(0, 9) : [];
     const points = crimes.map(crime => ({
@@ -49,8 +49,8 @@ export default function MapViewCluster() {
         <>
             <div className="map-container map-height w-100">
                 <GoogleMapReact
-                bootstrapURLKeys={{key: 'AIzaSyAYzby4yYDVaXPmtu4jZAGR258K6IYwjIY&libraries'}}
-                defaultCenter={{lat: 52.6376, lng: -1.135171}}
+                bootstrapURLKeys={{/*key: 'AIzaSyCwQacoy1zqvLGlsGXN0Knh42ygrd9K4mslibraries'*/}}
+                defaultCenter={{lat: 4.624335, lng: -74.063644}}
                 defaultZoom={12}
                 yesIWantToUseGoogleMapApiInternals
                 onGoogleApiLoaded={({map}) => {

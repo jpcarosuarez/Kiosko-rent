@@ -7,15 +7,15 @@ import PopularDestination from "../../components/places/PopularDestination";
 import Button from "../../components/common/Button";
 import { BsEye } from 'react-icons/bs'
 import SectionDivider from "../../components/common/SectionDivider";
-import HowItWorkTwo from "../../components/hiw/hiw2/HowItWorkTwo";
-import RecommendedPlace from "../../components/places/RecommendedPlace";
-import FunFactsTwo from "../../components/other/funfacts/FunFactsTwo";
-import InfoBox3 from "../../components/other/infoboxes/InfoBox3";
-import Authors from "../../components/sliders/Authors";
-import Testimonial from "../../components/sliders/Testimonial";
-import LatestBlog from "../../components/blogs/LatestBlog";
-import CtaOne from "../../components/other/cta/CtaOne";
-import ClientLogo from "../../components/sliders/ClientLogo";
+//import HowItWorkTwo from "../../components/hiw/hiw2/HowItWorkTwo";
+//import RecommendedPlace from "../../components/places/RecommendedPlace";
+//import FunFactsTwo from "../../components/other/funfacts/FunFactsTwo";
+//import InfoBox3 from "../../components/other/infoboxes/InfoBox3";
+//import Authors from "../../components/sliders/Authors";
+//import Testimonial from "../../components/sliders/Testimonial";
+//import LatestBlog from "../../components/blogs/LatestBlog";
+//import CtaOne from "../../components/other/cta/CtaOne";
+//import ClientLogo from "../../components/sliders/ClientLogo";
 import NewsLetter from "../../components/other/cta/NewsLetter";
 import Footer from "../../components/common/footer/Footer";
 import sectiondata from "../../store/store";
@@ -62,17 +62,17 @@ function Home2() {
             <SectionDivider />
 
             {/* Recommended Place */}
-            <section className="card-area padding-top-100px padding-bottom-90px text-center">
+            {/*<section className="card-area padding-top-100px padding-bottom-90px text-center">
                 <div className="container">
                     <div className="row section-title-width text-center">
                         <SectionsHeading title={sectiondata.recommendedplaces.sectitle} desc={sectiondata.recommendedplaces.seccontent} />
                     </div>
                     
                                        
-                    {/*   <RecommendedPlace recommendplaces={sectiondata.recommendedplaces.items} />   */}
+                       <RecommendedPlace recommendplaces={sectiondata.recommendedplaces.items} />   
                 </div>
             </section>
-            
+            */}
             {/* FunFacts 
             <section className="funfact-area section-bg-2 padding-top-100px padding-bottom-50px text-center">
                 <div className="container">

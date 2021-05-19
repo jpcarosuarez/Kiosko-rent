@@ -11,7 +11,7 @@ import GenericHeader from "../../components/common/GenericHeader";
 import MapViewCluster from "../../components/contact/MapViewCluster";
 import sectiondata from "../../store/store";
 import {getFirestore} from '../../db';
-import {GiChickenOven} from 'react-icons/gi';
+import {GiChickenOven, GiPositionMarker, GiWineGlass} from 'react-icons/gi';
 import {
     IoIosCheckmarkCircle,
     IoMdStar,
@@ -34,8 +34,8 @@ function ListMapView() {
                 array.push(
                     {
                     id: doc.id, 
-                    bedge: doc.data().titulo ?? '',
-                    title: 'Favorite Place Food Bank',
+                    bedge: doc.data().operacion ?? '',
+                    title: doc.data().titulo ?? '',
                     titleIcon: <IoIosCheckmarkCircle />,
                     titleUrl: '/listing-details',
                     stitle: doc.data().ciudad ?? '',

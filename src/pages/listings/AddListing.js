@@ -31,7 +31,7 @@ function AddListing() {
     const handleChangeCategorias = (e) => setInmueble({...inmueble,categorias: e});
     const handleChangeDescripcion = (e) => setInmueble({...inmueble,descripcion: e.target.value});
     const handleChangeOperacion = (e) => setInmueble({...inmueble,operacion: e});
-    const handleChangeAmoblado = (e) => setInmueble({...inmueble,amoblafo: e});
+    const handleChangeAmoblado = (e) => setInmueble({...inmueble,amoblado: e});
     const handleChangeAmbientes = (e) => setInmueble({...inmueble,ambientes: e});
     const handleChangeHabitaciones = (e) => setInmueble({...inmueble,habitaciones: e});
     const handleChangeBaños = (e) => setInmueble({...inmueble,baños: e});

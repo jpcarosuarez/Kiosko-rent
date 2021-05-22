@@ -4,8 +4,8 @@ body {
     font-size: 16px;
     line-height: 24px;
     font-family: 'Oswald', sans-serif;    
-    color: #808996;
-    -webkit-font-smoothing: antialiased;
+    color: #055c56;
+    -moz-animation-direction: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 *:focus {

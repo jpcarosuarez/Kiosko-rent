@@ -137,32 +137,32 @@ import mainimage from "../assets/images/video-img.jpg"; // 750*500
 const sectiondata = {
     headermenu: [
         {
-            title: 'Espacios en arriendo o venta',
+            title: 'Tipos de Inmuebles',
             path: '/',
             dropdown: [
                 {
                     title: 'Apartamentos',
-                    path: '/list-map-view2'
+                    path: '/apartamentos'
                 },
                 {
                     title: 'Apartaestudios',
-                    path: '/list-map-view2'
+                    path: '/apartaestudios'
                 },
                 {
                     title: 'Oficinas',
-                    path: '/list-map-view2'
+                    path: '/oficinas'
                 },
                 {
                     title: 'Casas',
-                    path: '/list-map-view2'
+                    path: '/casas'
                 },
                 {
-                    title: 'Todos los espacios',
-                    path: '/all-categories'
+                    title: 'Mostrar todos',
+                    path: '/todos'
                 },
                 {
                     title: 'Publicar un Arriendo',
-                    path: '/add-listing/new'
+                    path: '/agregar'
                 }
             ]
         },
@@ -442,7 +442,7 @@ const sectiondata = {
             title: 'Más Buscados:',
             lists: [
                 {
-                    url: '#',
+                    url: '/apartamentos',
                     title: 'Apartamentos'
                 },
                 {
@@ -472,56 +472,56 @@ const sectiondata = {
                 icon: <GiChickenOven />,
                 title: 'Apartamentos',
                 stitle: '12 Listings',
-                url: '#',
+                url: '/apartamentos',
                 img: apartamentos
             },
             {
                 icon: <TiPlane />,
                 title: 'Apartaestudios',
                 stitle: '22 Listings',
-                url: '#',
+                url: '/apartaestudios',
                 img: img1
             },
             {
                 icon: <RiHotelBedLine />,
                 title: 'Casas',
                 stitle: '33 Listings',
-                url: '#',
+                url: '/casas',
                 img: casas
             },
             {
                 icon: <IoMdMusicalNotes />,
                 title: 'Oficinas',
                 stitle: '44 Listings',
-                url: '#',
+                url: '/oficinas',
                 img: img1
             },
             {
                 icon: <FiShoppingCart />,
                 title: 'Fincas',
                 stitle: '48 Listings',
-                url: '#',
+                url: '/fincas',
                 img: img1
             },
             {
                 icon: <IoIosFitness />,
                 title: 'Locales Comerciales',
                 stitle: '50 Listings',
-                url: '#',
+                url: '/locales',
                 img: img1
             },
             {
                 icon: <FaRegHospital />,
                 title: 'Habitaciones | Hoteles',
                 stitle: '20 Listings',
-                url: '#',
+                url: '/habitaciones',
                 img: img1
             },
             {
                 icon: <GiWineGlass />,
                 title: 'Bodegas',
                 stitle: '14 Listings',
-                url: '#',
+                url: '/bodegas',
                 img: img1
             }
 
@@ -531,21 +531,21 @@ const sectiondata = {
                 icon: <TiBrush />,
                 title: 'Parqueaderos',
                 stitle: '20 Listings',
-                url: '#',
+                url: '/parqueadero',
                 img: img1
             },
             {
                 icon: <TiBrush />,
                 title: 'Terrazas | Salones',
                 stitle: '20 Listings',
-                url: '#',
+                url: '/terrazas',
                 img: img1
             },
             {
                 icon: <TiBrush />,
                 title: 'Lotes',
                 stitle: '20 Listings',
-                url: '#',
+                url: '/lotes',
                 img: img1
             },
 
@@ -597,7 +597,7 @@ const sectiondata = {
                 cityName: 'Chapinero',
                 listingTxt: '44 listings',
                 boxCol: '4',
-                cardUrl: '/listing-grid'
+                cardUrl: '/chapinero'
             },
             {
                 img: candelaria,
@@ -605,7 +605,7 @@ const sectiondata = {
                 cityName: 'Candelaria',
                 listingTxt: '12 listings',
                 boxCol: '4',
-                cardUrl: '/listing-grid'
+                cardUrl: '/candelaria'
             },
             {
                 img: centrointernacional,
@@ -613,7 +613,7 @@ const sectiondata = {
                 cityName: 'Centro Internacional',
                 listingTxt: '22 listings',
                 boxCol: '4',
-                cardUrl: '/listing-grid'
+                cardUrl: '/centro-internacional'
             },
 
 
@@ -623,7 +623,7 @@ const sectiondata = {
                 cityName: 'Cedritos',
                 listingTxt: '48 listings',
                 boxCol: '3',
-                cardUrl: '/listing-grid'
+                cardUrl: '/cedritos'
             },
             {
                 img: usaquen,
@@ -631,7 +631,7 @@ const sectiondata = {
                 cityName: 'Usaquén',
                 listingTxt: '50 listings',
                 boxCol: '3',
-                cardUrl: '/listing-grid'
+                cardUrl: '/usaquen'
             },
             {
                 img: suba,
@@ -639,7 +639,7 @@ const sectiondata = {
                 cityName: 'Suba',
                 listingTxt: '14 listings',
                 boxCol: '3',
-                cardUrl: '/listing-grid'
+                cardUrl: '/suba'
             },
             {
                 img: teusaquillo,
@@ -647,7 +647,7 @@ const sectiondata = {
                 cityName: 'Teusaquillo',
                 listingTxt: '32 listings',
                 boxCol: '3',
-                cardUrl: '/listing-grid'
+                cardUrl: '/teusaquillo'
             },
             {
                 img: medellin,
@@ -655,7 +655,7 @@ const sectiondata = {
                 cityName: 'Medellín',
                 listingTxt: '20 listings',
                 boxCol: '6',
-                cardUrl: '/listing-grid'
+                cardUrl: '/medellin'
             },
             {
                 img: cali,
@@ -663,11 +663,11 @@ const sectiondata = {
                 cityName: 'Cali',
                 listingTxt: '14 listings',
                 boxCol: '6',
-                cardUrl: '/listing-grid'
+                cardUrl: '/cali'
             }
         ],
         viewmorebtn: 'Ver todas las ubicaciones',
-        viewmorebtnurl: '/all-locations'
+        viewmorebtnurl: '/todas-las-zonas'
     },
     ubicaciones: [
         {

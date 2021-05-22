@@ -1,4 +1,5 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import InmueblesContext from '../../contexts/AddListing.context';
 
 const state = {
     items: [
@@ -91,8 +92,9 @@ const state = {
     ]
 }
 
-function Amenities({handleChangeCaracteristicas}) {
-
+function Amenities() {
+    const form = useContext(InmueblesContext);
+   
     return (
         <>
             <div className="billing-form-item">
@@ -105,7 +107,7 @@ function Amenities({handleChangeCaracteristicas}) {
                     {state.items.map(item => {
                         return (
                             <div className="custom-checkbox" key={item.id} >
-                                <input type="checkbox" id={'chb'+item.id} data-id={item.id} onChange={handleChangeCaracteristicas} />
+                                <input type="checkbox" id={'chb'+item.id} data-id={item.id} {...form.caracteristicas} />
                                 <label htmlFor={'chb'+item.id} > {item.title}</label>
                             </div>
                         )

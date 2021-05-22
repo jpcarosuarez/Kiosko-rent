@@ -1,7 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useContext} from 'react';
 import {useDropzone} from 'react-dropzone'
 import { BsCloudUpload } from 'react-icons/bs'
 import {Link} from "react-router-dom";
+import InmueblesContext from '../../contexts/AddListing.context';
 
 
 const thumbsContainer = {
@@ -37,9 +38,10 @@ const img = {
     height: 'auto'
 };
 
-function PhotoUploader(props) {
-    const files = props.files;
-    const setFiles = props.setFiles;
+function PhotoUploader() {
+    const form = useContext(InmueblesContext);
+    const files = form.files;
+    const setFiles = form.setFiles;
     const {getRootProps, getInputProps} = useDropzone({
         accept: 'image/*',
         onDrop: acceptedFiles => {

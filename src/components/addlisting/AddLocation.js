@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { FiMap } from 'react-icons/fi'
 import { FaMapSigns } from 'react-icons/fa'
 import { BsFileCode } from 'react-icons/bs'
 import Select from "react-select";
+import InmueblesContext from '../../contexts/AddListing.context';
 
 const cities = {
 
@@ -81,7 +82,8 @@ const title = ['Agregar Ubicación']
 
 
 
-function AddLocation({handleChangeDireccion, handleChangeComplementaria, handleChangeBarrio, handleChangeCiudad, handleChangeLocalidad}) {
+function AddLocation() {
+    const form = useContext(InmueblesContext);
     
 
     
@@ -105,7 +107,7 @@ function AddLocation({handleChangeDireccion, handleChangeComplementaria, handleC
                                             <span className="la form-icon">
                                                 <FiMap />
                                             </span>
-                                            <input className="form-control" type="text" name="name" placeholder="Información privada que no se muestra publicamente" onChange={handleChangeDireccion}/>
+                                            <input className="form-control" type="text" name="name" placeholder="Información privada que no se muestra publicamente" {...form.direccion}/>
                                         </div>
                                     </div>
                                 </div>
@@ -116,7 +118,7 @@ function AddLocation({handleChangeDireccion, handleChangeComplementaria, handleC
                                             <span className="la form-icon">
                                                 <FaMapSigns />
                                             </span>
-                                            <input className="form-control" type="text" name="name" placeholder="Apto 707" onChange={handleChangeComplementaria} />
+                                            <input className="form-control" type="text" name="name" placeholder="Apto 707" {...form.complementaria} />
                                         </div>
                                     </div>
                                 </div>
@@ -125,7 +127,7 @@ function AddLocation({handleChangeDireccion, handleChangeComplementaria, handleC
                                         <label className="label-text">Ciudad</label>
                                         <div className="form-group">
                                             <Select
-                                                onChange={handleChangeCiudad}
+                                                {...form.ciudad}
                                                 placeholder="Ciudad"
                                                 options={cities.ciudad}
                                             />
@@ -137,7 +139,7 @@ function AddLocation({handleChangeDireccion, handleChangeComplementaria, handleC
                                         <label className="label-text">Localidad</label>
                                         <div className="form-group">
                                             <Select
-                                                onChange={handleChangeLocalidad}
+                                                {...form.localidad}
                                                 placeholder="Localidad"
                                                 options={states.localidad}
                                             />
@@ -155,7 +157,7 @@ function AddLocation({handleChangeDireccion, handleChangeComplementaria, handleC
                                             type="text" 
                                             name="ubicacion"
                                             placeholder="Barrio"
-                                            onChange={handleChangeBarrio}
+                                            {...form.barrio}
                                         />
                                     </div>
                                 </div>

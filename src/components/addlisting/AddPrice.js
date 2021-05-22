@@ -1,9 +1,12 @@
-import React from 'react';
-import { AiOutlineTags } from 'react-icons/ai'
-import { FaDollarSign } from 'react-icons/fa'
-import { BsPencil, BsQuestion } from 'react-icons/bs'
+import React,{useContext} from 'react';
+import { AiOutlineTags } from 'react-icons/ai';
+import { FaDollarSign } from 'react-icons/fa';
+import { BsPencil, BsQuestion } from 'react-icons/bs';
+import InmueblesContext from '../../contexts/AddListing.context';
 
-function AddPrice(handleChangeAdministracion, handleChangeMatricula, handleChangePrecio, handleChangeNegocio) {
+function AddPrice() {
+    const form = useContext(InmueblesContext);
+
     return (
         <>
             <div className="billing-form-item">
@@ -23,14 +26,14 @@ function AddPrice(handleChangeAdministracion, handleChangeMatricula, handleChang
                                             <span className="la form-icon">
                                                 <FaDollarSign />
                                             </span>
-                                            <input className="form-control" type="text" placeholder="750000" onChange={handleChangePrecio}/>
+                                            <input className="form-control" type="text" placeholder="750000" {...form.precios}/>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="input-box">
                                         <div className="form-group">
-                                            <input className="custom-checkbox" type="checkbox" onChange={handleChangeAdministracion}/>
+                                            <input className="custom-checkbox" type="checkbox" {...form.administracion}/>
                                             <label className="custom-checkbox">Administración de P.H. incluida en el precio </label>
                                             
                                         </div>
@@ -43,14 +46,14 @@ function AddPrice(handleChangeAdministracion, handleChangeMatricula, handleChang
                                             <span className="la form-icon">
                                                 <BsPencil />
                                             </span>
-                                            <textarea className="message-control form-control" name="message" placeholder="Precio Negociable, Conversable, 3 primeros meses con descuento.. etc.." onChange={handleChangeNegocio}></textarea>
+                                            <textarea className="message-control form-control" name="message" placeholder="Precio Negociable, Conversable, 3 primeros meses con descuento.. etc.." {...form.negocio}></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="input-box">
                                         <div className="form-group">
-                                            <input className="custom-checkbox" type="checkbox" onChange={handleChangeAdministracion}/>
+                                            <input className="custom-checkbox" type="checkbox" {...form.administracion}/>
                                             <label className="label-text custom-checkbox">Pre-Consignar Inmueble</label>                                          
                                             <BsPencil />
                                             <div className="form-group">
@@ -77,7 +80,7 @@ function AddPrice(handleChangeAdministracion, handleChangeMatricula, handleChang
                                             <span className="la form-icon">
                                                 <AiOutlineTags />
                                             </span>
-                                            <input className="form-control" type="text" name="matricula" placeholder="Solo si deseas que administremos íntegramente el inmueble." onChange={handleChangeMatricula} />
+                                            <input className="form-control" type="text" name="matricula" placeholder="Solo si deseas que administremos íntegramente el inmueble." {...form.matricula} />
                                         </div>
                                     </div>
                                 </div>

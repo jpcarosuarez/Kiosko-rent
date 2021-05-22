@@ -18,7 +18,7 @@ import {
     IoMdStarHalf
 } from "react-icons/io";
 import img2 from "../../assets/images/img7.jpg";
-import {getFirestore} from '../../db';
+import InmuebleService from "../../services/inmuebles.service";
 import {useState, useEffect} from 'react';
 
 
@@ -26,18 +26,17 @@ function ListMapView2() {
 
     
     const [ventas,setVentas] = useState([]);
+
+    const onDataChange = (items) => {
+        let inmuebles = [];
     
-    useEffect(() => {
-        const fetchBusinesses = () => {
-           return getFirestore().collection('inmuebles').get()
-           .then(response => {
-            let array=[];
-            response.forEach(doc => {
-                array.push(
-                    {
+        items.docs.forEach((doc) => {
+            console.log('data:',doc.data());
+            inmuebles.push(
+                {
                     id: doc.id, 
                     bedge: doc.data().titulo ?? '',
-                    title: 'Favorite Place Food Bank',
+                    title: doc.data().categoria?.descripcion, //doc.data().categoria.descripcion,
                     titleIcon: <IoIosCheckmarkCircle />,
                     titleUrl: '/listing-details',
                     stitle: doc.data().ciudad ?? '',
@@ -58,17 +57,17 @@ function ListMapView2() {
                         <IoMdStar className="last-star" />,
                     ],
                     ratingNum: '4.5'
-                })
-            })
-            setVentas(array);
-
+                });
             
-        })
-        .catch(err => {
-            // some error handling
+       
         });
+    
+        setVentas(inmuebles);
       };
-      fetchBusinesses();
+    
+    useEffect(() => {
+        const unsuscribe = InmuebleService.getAll().onSnapshot(onDataChange);
+        return () => unsuscribe();
     }, []);
     
 

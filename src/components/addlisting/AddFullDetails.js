@@ -1,10 +1,13 @@
-import React from 'react';
-import { AiOutlineUser} from 'react-icons/ai'
-import { FaRegEnvelope } from 'react-icons/fa'
-import { FiPhone } from 'react-icons/fi'
+import React,{useContext} from 'react';
+import { AiOutlineUser} from 'react-icons/ai';
+import { FaRegEnvelope } from 'react-icons/fa';
+import { FiPhone } from 'react-icons/fi';
+import InmueblesContext from '../../contexts/AddListing.context';
 
 
-function AddFullDetails({ handleChangeTelefonoContacto, handleChangeCorreoRepresentante, handleChangeRepresentante }) {
+function AddFullDetails() {
+    const form = useContext(InmueblesContext);
+    
     return (
         <>
             <div className="billing-form-item">
@@ -23,7 +26,7 @@ function AddFullDetails({ handleChangeTelefonoContacto, handleChangeCorreoRepres
                                             <span className="la form-icon">
                                                 <AiOutlineUser />
                                             </span>
-                                            <input className="form-control" type="text" name="name" placeholder="Nombre Completo" onChange={handleChangeRepresentante}/>
+                                            <input className="form-control" type="text" name="name" placeholder="Nombre Completo" {...form.representante}/>
                                         </div>
                                     </div>
                                 </div>
@@ -34,7 +37,7 @@ function AddFullDetails({ handleChangeTelefonoContacto, handleChangeCorreoRepres
                                             <span className="la form-icon">
                                                 <FaRegEnvelope />
                                             </span>
-                                            <input className="form-control" type="email" name="email" placeholder="Correo electrónico" onChange={handleChangeCorreoRepresentante} />
+                                            <input className="form-control" type="email" name="email" placeholder="Correo electrónico" {...form.correoRepresentante} />
                                         </div>
                                     </div>
                                 </div>
@@ -45,7 +48,7 @@ function AddFullDetails({ handleChangeTelefonoContacto, handleChangeCorreoRepres
                                             <span className="la form-icon">
                                                 <FiPhone />
                                             </span>
-                                            <input className="form-control" type="text" name="text" placeholder="Teléfono Contacto" onChange={handleChangeTelefonoContacto}/>
+                                            <input className="form-control" type="text" name="text" placeholder="Teléfono Contacto" {...form.telefonoContacto}/>
                                         </div>
                                     </div>
                                 </div>

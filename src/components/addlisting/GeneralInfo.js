@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { BsPencilSquare, BsPencil } from 'react-icons/bs'
 import Select from "react-select";
+import InmueblesContext from '../../contexts/AddListing.context';
+
 
 
 
@@ -130,7 +132,9 @@ const estratos = {
     ],
 }
 
-function GeneralInfo({handleChangeTitulo, handleChangeAmoblado, handleChangeOperacion, handleChangeAmbientes, handleChangeDescripcion, handleChangeCategorias, handleChangeAntiguedad, handleChangeHabitaciones, handleChangeBaños, handleChangeAreaTotal, handleChangeAreaConstruida, handleChangeEstrato, categorias}) {
+function GeneralInfo(formData) {
+    const form = useContext(InmueblesContext);
+
     return (
         <>
             <div className="billing-form-item">
@@ -149,7 +153,7 @@ function GeneralInfo({handleChangeTitulo, handleChangeAmoblado, handleChangeOper
                                             <span className="la form-icon">
                                                 <BsPencilSquare />
                                             </span>
-                                            <input className="form-control" type="text" name="titulo" placeholder="Nombre breve para identificar el inmueble" onChange={handleChangeTitulo}/>
+                                            <input className="form-control" type="text" name="titulo" placeholder="Nombre breve para identificar el inmueble" {...form.titulo}/>
                                         </div>
                                     </div>
                                 </div>
@@ -158,8 +162,8 @@ function GeneralInfo({handleChangeTitulo, handleChangeAmoblado, handleChangeOper
                                         <label className="label-text">Tipo de Inmueble</label>
                                         <div className="form-group">
                                             <Select
-                                                onChange={handleChangeCategorias}
-                                                options={categorias}
+                                                {...form.categoria}
+                                                options={form.categorias}
                                                 placeholder={'Selecciona el tipo de inmueble'}
                                                 />
                                         </div>
@@ -170,7 +174,7 @@ function GeneralInfo({handleChangeTitulo, handleChangeAmoblado, handleChangeOper
                                         <label className="label-text">Tipo de Operacion</label>
                                         <div className="form-group">
                                             <Select
-                                                onChange={handleChangeOperacion}
+                                                {...form.operacion}
                                                 options={operacion.operaciones}
                                                 placeholder="Arriendo Mensual"
                                             />
@@ -183,7 +187,7 @@ function GeneralInfo({handleChangeTitulo, handleChangeAmoblado, handleChangeOper
                                         <div className="form-group">
                                             <Select
                                                 options={amoblado}
-                                                onChange={handleChangeAmoblado}
+                                                {...form.amueblado}
                                                 placeholder="Sin Amoblar"
                                             />
                                         </div>
@@ -194,7 +198,7 @@ function GeneralInfo({handleChangeTitulo, handleChangeAmoblado, handleChangeOper
                                         <label className="label-text">Ambientes</label>
                                         <div className="form-group">
                                             <Select
-                                                onChange={handleChangeAmbientes}
+                                                {...form.ambientes}
                                                 options={habitaciones.cantidad}
                                                 placeholder="1"
                                             />
@@ -207,7 +211,7 @@ function GeneralInfo({handleChangeTitulo, handleChangeAmoblado, handleChangeOper
                                         <div className="form-group">
                                             <Select
                                                 placeholder="1"
-                                                onChange={handleChangeHabitaciones}
+                                                {...form.habitacion}
                                                 options={habitaciones.cantidad}
                                             />
                                         </div>
@@ -219,7 +223,7 @@ function GeneralInfo({handleChangeTitulo, handleChangeAmoblado, handleChangeOper
                                         <div className="form-group">
                                             <Select
                                                 placeholder="1"
-                                                onChange={handleChangeBaños}
+                                                {...form.baños}
                                                 options={baños.cantidad}
                                             />
                                         </div>
@@ -232,7 +236,7 @@ function GeneralInfo({handleChangeTitulo, handleChangeAmoblado, handleChangeOper
                                             <span className="la form-icon">
                                                 <BsPencilSquare />
                                             </span>
-                                            <input className="form-control" type="text" name="area" placeholder="Área mts2" onChange={handleChangeAreaConstruida}/>
+                                            <input className="form-control" type="text" name="area" placeholder="Área mts2" {...form.areaConstruida}/>
                                         </div>
                                     </div>
                                 </div>
@@ -243,7 +247,7 @@ function GeneralInfo({handleChangeTitulo, handleChangeAmoblado, handleChangeOper
                                             <span className="la form-icon">
                                                 <BsPencilSquare />
                                             </span>
-                                            <input className="form-control" type="text" name="area" placeholder="Área mts2" onChange={handleChangeAreaTotal}/>
+                                            <input className="form-control" type="text" name="area" placeholder="Área mts2" {...form.areaTotal} />
                                         </div>
                                     </div>
                                 </div>
@@ -253,7 +257,7 @@ function GeneralInfo({handleChangeTitulo, handleChangeAmoblado, handleChangeOper
                                         <div className="form-group">
                                             <Select
                                                 placeholder="3"
-                                                onChange={handleChangeEstrato}
+                                                {...form.estrato}
                                                 options={estratos.estrato}
                                             />
                                         </div>
@@ -263,8 +267,7 @@ function GeneralInfo({handleChangeTitulo, handleChangeAmoblado, handleChangeOper
                                     <div className="input-box">
                                         <label className="label-text">Antiguedad en Años</label>
                                         <div className="form-group">
-                                        <input className="form-control" type="text" name="antiguedad" placeholder="Ej: 5" onChange={handleChangeAntiguedad}/>
-
+                                        <input className="form-control" type="text" name="antiguedad" placeholder="Ej: 5" {...form.antiguedad}/>
                                         </div>
                                     </div>
                                 </div>                             
@@ -276,7 +279,7 @@ function GeneralInfo({handleChangeTitulo, handleChangeAmoblado, handleChangeOper
                                             <span className="la form-icon">
                                                 <BsPencil />
                                             </span>
-                                            <textarea className="message-control form-control" name="descripcion" placeholder="Descripción del inmueble, ingresa información complementaria." onChange={handleChangeDescripcion}></textarea>
+                                            <textarea className="message-control form-control" name="descripcion" placeholder="Descripción del inmueble, ingresa información complementaria." {...form.descripcion}></textarea>
                                         </div>
                                     </div>
                                 </div>

@@ -16,6 +16,7 @@ import apartamentos from "../../assets/images/apartamentos.jpg"; // 263*175
 const state = {
     breadcrumbImg: breadcrumbimg,
 }
+
 function AllCategories() {
 
     const db = getFirestore();

@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import Imagen from '../../../imagen/imagen';
 
 function PopularCategories({catitems}) {
     return (
@@ -9,7 +10,8 @@ function PopularCategories({catitems}) {
                     <div className="col-lg-3 column-td-6" key={index}>
                         <div className="category-item mb-4 mt-0 ml-0 mr-0 p-0">
                             <figure className="category-fig m-0">
-                                <img src={item.img} alt="category" className="cat-img" />
+                                <Imagen src={item.img} alt="category" width="263" height="165" className="cat-img"></Imagen>
+                                {/* <img src={item.img} alt="category" className="cat-img" /> */}
                                 <figcaption className="fig-caption">
                                     <Link to={item.url} className="cat-fig-box">
                                         <div className="icon-element mb-3">

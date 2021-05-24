@@ -3,7 +3,7 @@ import { getStorage } from '../db';
 import { SpinningCircles } from 'svg-loaders-react'
 import './imagen.css';
 
-export default function Imagen({ src, alt, width,height}) {
+export default function Imagen({ src, alt, width,height, className}) {
   const [url, setUrl] = useState("http://placehold.it/" +width+"x"+height);//ruta por defecto
   const [loading, setLoading] = useState(true);
 
@@ -25,7 +25,7 @@ export default function Imagen({ src, alt, width,height}) {
       {loading ? (
         <SpinningCircles fill="Aquamarine" size="small" />
         ) : (
-          <img src={url} alt={alt} width={width} height={height}/>
+          <img src={url} alt={alt} width={width} height={height} className={className}/>
         )}
      </>
   );

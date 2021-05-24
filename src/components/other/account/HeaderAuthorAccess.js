@@ -19,7 +19,7 @@ export default function HeaderAuthorAccess() {
                         <Link to="/sign-up">Registrar</Link>
                     </li>
                     <li>
-                        <Button text="Agregar Inmueble" url="/add-listing/new" >
+                        <Button text="Agregar Inmueble" url="/agregar" >
                             <FiPlusCircle />
                         </Button>
                     </li>

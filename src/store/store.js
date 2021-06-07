@@ -158,7 +158,7 @@ const sectiondata = {
                 },
                 {
                     title: 'Mostrar todos',
-                    path: '/todos'
+                    path: '/categorias'
                 },
                 {
                     title: 'Publicar un Arriendo',

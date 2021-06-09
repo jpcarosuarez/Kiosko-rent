@@ -72,6 +72,7 @@ function AddListing() {
     baños,
     areaTotal,
     areaConstruida,
+    areaEstrato,
     amoblado,
     categoria,
     direccion,

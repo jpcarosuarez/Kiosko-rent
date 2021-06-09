@@ -208,7 +208,7 @@ const sectiondata = {
             ]
         },
         {
-            title: 'Contacto',
+            title: 'Nosotros',
             path: '/contact',
         }
 
@@ -241,8 +241,8 @@ const sectiondata = {
     ],
     herobanners: {
         banner2: {
-            title: 'La nueva forma de arrendar',
-            content: 'Encuentra arriendos mensuales, diarios o por 3 horas o más',
+            title: 'Integridad, servicio, compromiso. Tu confianza es el corazón de nuestro negocio',
+            content: 'Permítanos ayudarlo a encontrar el inmueble perfecto',
             categories: [
                 {
                     path: '/apartamentos',
@@ -251,27 +251,27 @@ const sectiondata = {
                 },
             
                 {
-                    path: '/listing-grid',
+                    path: '/casas',
                     text: 'casas',
                     icon: <HiOutlineHome />
                 },
                 {
-                    path: '/listing-grid',
+                    path: '/oficinas',
                     text: 'oficinas',
                     icon: <ImOffice />
                 },
                 {
-                    path: '/listing-grid',
+                    path: '/bodegas',
                     text: 'bodegas',
                     icon: <RiBuilding3Line />
                 },
                 {
-                    path: '/listing-grid',
+                    path: '/locales',
                     text: 'Locales',
                     icon: <RiStoreLine />
                 },
                 {
-                    path: '/listing-grid',
+                    path: '/terrazas',
                     text: 'Terrazas | Salones',
                     icon: <RiGovernmentLine />
                 }

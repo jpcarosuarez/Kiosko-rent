@@ -1,8 +1,7 @@
-import React from 'react';
-import {useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import {FiRefreshCw} from "react-icons/fi";
 import GeneralHeader from "../../components/common/GeneralHeader";
-import PlaceListing from "../../components/places/PlaceListing";
+//import PlaceListing from "../../components/places/PlaceListing";
 import ListingListSidebar from "../../components/sidebars/ListingListSidebar";
 import Button from "../../components/common/Button";
 import NewsLetter from "../../components/other/cta/NewsLetter";
@@ -11,6 +10,7 @@ import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import GenericHeader from "../../components/common/GenericHeader";
 import MapViewCluster from "../../components/contact/MapViewCluster";
 import sectiondata from "../../store/store";
+import WasiView from "../../wasi";
 import {getFirestore} from '../../db';
 import {GiChickenOven, GiPositionMarker, GiWineGlass} from 'react-icons/gi';
 import {
@@ -93,7 +93,9 @@ function ListMapView() {
                         </div>
 
                         <div className="col-lg-8">
-                            <PlaceListing listitems={arriendos}  />
+                            {/* <PlaceListing listitems={arriendos}  /> */}
+                            <WasiView />
+
                         </div>
 
                     </div>

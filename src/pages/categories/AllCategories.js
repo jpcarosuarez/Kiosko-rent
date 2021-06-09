@@ -10,6 +10,7 @@ import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import breadcrumbimg from '../../assets/images/bogotaAndes.jpg'
 import sectiondata from "../../store/store";
 import {getFirestore} from '../../db';
+import {BsBuilding} from 'react-icons/bs';
 import {GiChickenOven, GiPositionMarker, GiWineGlass} from 'react-icons/gi';
 import apartamentos from "../../assets/images/apartamentos.jpg"; // 263*175
 
@@ -29,7 +30,7 @@ function AllCategories() {
                 response.forEach(doc => {
                     arr.push({
                         id: doc.id,
-                        icon: <GiChickenOven/>, //TODO: traer icono segun categoria
+                        icon: doc.data().icon, //TODO: traer icono segun categoria
                         title: doc.data().descripcion,
                         stitle: '12 Listings', //TODO: número de publicaciones de la colección
                         url: '#',
@@ -37,8 +38,9 @@ function AllCategories() {
                     })
                 })
                 setCategorias(arr);
-                console.log(arr);
+               // console.log(arr);
             })
+            
         .catch(e => console.log(e))
     });
 
@@ -56,8 +58,8 @@ function AllCategories() {
             <section className="cat-area padding-top-40px padding-bottom-80px">
                 <div className="container">
                     <div className="row">
-                        <PopularCategories catitems={sectiondata.popularcategories.categories} />
-                        {/* <PopularCategories catitems={categorias} /> */}
+                        {/* <PopularCategories catitems={sectiondata.popularcategories.categories} />*/}
+                        <PopularCategories catitems={categorias} /> 
                         {/* (se quita y se muestran todas) <PopularCategoriesMore catitems={sectiondata.popularcategories.morecats} /> */}
                     </div>
                 </div>
